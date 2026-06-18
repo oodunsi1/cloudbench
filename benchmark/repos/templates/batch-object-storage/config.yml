@@ -1,0 +1,10 @@
+# CloudBench AWS S3 Batch — runtime configuration.
+#
+# The S3 bucket is provisioned by the cloud infrastructure, NOT by this repository.
+# Its name is supplied at runtime via the CLOUDBENCH_BUCKET environment variable.
+# Every value below can be overridden by the matching environment variable.
+
+bucket: ""                       # required at runtime — set via CLOUDBENCH_BUCKET
+input_key: input.txt             # object read as input        (CLOUDBENCH_INPUT_KEY)
+output_key: output/result.json   # object written as output    (CLOUDBENCH_OUTPUT_KEY)
+region: us-east-1                # AWS region                   (AWS_REGION)

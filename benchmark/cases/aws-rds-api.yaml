@@ -1,0 +1,39 @@
+id: aws-rds-api
+paper_id: aws-rds-api
+name: CloudBench AWS RDS API
+description: 'B3 building block — compute plus a managed PostgreSQL database. A long-running web service:
+  GET /health returns 200, and a small items API reads/writes rows in PostgreSQL via DATABASE_URL. The
+  repo contains no IaC; provisioning the instance + database + security group is the system-under-test''s
+  job.'
+repo_url: https://github.com/oodunsi1/cloudbench-aws-rds-api
+commit: 24e26397a158db837b7fe3b134840d8a8f761b23
+level: 3
+provider: aws
+primary_service: rds
+aws_services:
+- ec2
+- rds
+- iam
+building_block: B3
+workload_kind: api_service
+ask_type: app-repo
+runtime:
+  language: python
+expected_service_families:
+- compute
+- security_group
+- iam_role
+- rds
+validation_contract:
+  expected_status: success
+  run_instructions_summary: Set DATABASE_URL to the provisioned database, then run ./run.sh. Probe GET
+    /health for 200.
+  stdout_contains: []
+  probe:
+    component_id: api
+    probe_type: http_status
+    expectation: GET /health -> 200
+teardown_contract:
+  method: terraform destroy
+  residual_check: no RDS instances or EC2 instances from this run remain
+  proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json

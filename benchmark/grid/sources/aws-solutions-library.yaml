@@ -1,0 +1,3961 @@
+# CloudBench source index — AWS Solutions Library samples (auto-pulled via `gh api`).
+# Refresh: re-run the Phase 7 fetch. Human view: ../../SOLUTIONS_LIBRARY.md
+source: AWS Solutions Library samples (GitHub org)
+org: aws-solutions-library-samples
+org_url: https://github.com/aws-solutions-library-samples
+fetched_at_utc: '2026-06-13'
+note: Real, vetted AWS solution/guidance repos. Each is a candidate benchmark case at ask-type level 4 (use case) or 5 (code
+  repo). 'indexed' = listed here; not yet ingested into a runnable case. See ../../SOLUTIONS_LIBRARY.md and ../../ASK_TYPES.md.
+counts:
+  total: 321
+  archived: 4
+  active: 317
+repos:
+- name: Guidance-for-AI-enhanced-customer-experience-with-Amazon-Connect
+  url: https://github.com/aws-solutions-library-samples/Guidance-for-AI-enhanced-customer-experience-with-Amazon-Connect
+  description: This Guidance demonstrates how to harness Amazon Q in Connect to revolutionize your customer service operations
+    through AI-powered automation and agent assistance. By implementing this solution, businesses can deliver 24/7 omnichannel
+    support while significantly improving operational efficiency.
+  language: null
+  topics: []
+  archived: false
+  stars: 17
+  pushed_at: '2025-10-26'
+  ask_type_candidate: use-case
+  status: indexed
+- name: Guidance-for-Authentication-with-Digital-Wallets-on-AWS
+  url: https://github.com/aws-solutions-library-samples/Guidance-for-Authentication-with-Digital-Wallets-on-AWS
+  description: dApp authentication with Amazon Cognito and Web3 proxy with Amazon API Gateway
+  language: JavaScript
+  topics:
+  - alchemy
+  - api-gateway
+  - authentication
+  - authorization
+  - aws
+  - cognito
+  - moralis
+  - web3
+  archived: false
+  stars: 15
+  pushed_at: '2024-08-05'
+  ask_type_candidate: use-case
+  status: indexed
+- name: accelerated-intelligent-document-processing-on-aws
+  url: https://github.com/aws-solutions-library-samples/accelerated-intelligent-document-processing-on-aws
+  description: The IDP Accelerator provides a scalable, serverless approach for automated document processing and information
+    extraction using AWS services, such as Amazon Bedrock Data Automation and Amazon Bedrock foundational models. It combines
+    generative AI and optical character recognition (OCR) to process documents at scale.
+  language: Python
+  topics: []
+  archived: false
+  stars: 255
+  pushed_at: '2026-06-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: amazon-elasticache-caching-for-amazon-rds
+  url: https://github.com/aws-solutions-library-samples/amazon-elasticache-caching-for-amazon-rds
+  description: 'Code for AWS blog: Optimize cost, increase throughput and boost performance of Amazon RDS workloads using
+    Amazon ElastiCache'
+  language: Jupyter Notebook
+  topics:
+  - caching
+  - database
+  - elasticache
+  - elasticache-redis
+  - hacktoberfest
+  - rds
+  - rds-aurora
+  - rds-mysql
+  - rds-postgres
+  - redis
+  archived: false
+  stars: 8
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: amazon-personalize-online-recommendations-with-google-tag-manager
+  url: https://github.com/aws-solutions-library-samples/amazon-personalize-online-recommendations-with-google-tag-manager
+  description: This Guidance helps businesses build a real-time recommendation pipeline using Amazon Personalize
+  language: Jupyter Notebook
+  topics:
+  - aws
+  - aws-personalize
+  - google-tag-manager
+  - machine-learning
+  - recommendation-system
+  - retail-ecomm
+  archived: false
+  stars: 17
+  pushed_at: '2025-08-28'
+  ask_type_candidate: use-case
+  status: indexed
+- name: automated-forensic-orchestrator-for-amazon-ec2
+  url: https://github.com/aws-solutions-library-samples/automated-forensic-orchestrator-for-amazon-ec2
+  description: Automated Forensics Orchestrator for Amazon EC2 and EKS is a self-service AWS Guidance implementation that
+    enterprise customers can deploy to quickly set up and configure an automated orchestration workflow that enables their
+    Security Operations Centre (SOC) to capture & examine forensic data from EKS & EC2 instances and attached volumes
+  language: Python
+  topics:
+  - automation
+  - aws
+  - ec2
+  - eks
+  - forensics
+  - incident-response
+  - security
+  archived: false
+  stars: 71
+  pushed_at: '2026-05-22'
+  ask_type_candidate: use-case
+  status: indexed
+- name: aws-batch-arch-for-protein-folding
+  url: https://github.com/aws-solutions-library-samples/aws-batch-arch-for-protein-folding
+  description: null
+  language: C++
+  topics: []
+  archived: false
+  stars: 81
+  pushed_at: '2025-12-29'
+  ask_type_candidate: use-case
+  status: indexed
+- name: aws-health-events-insight
+  url: https://github.com/aws-solutions-library-samples/aws-health-events-insight
+  description: This Guidance demonstrates how to analyze AWS Health events across multiple AWS accounts using natural language
+    queries and generative business intelligence. Organizations managing thousands of AWS resources can transform operations
+    and security monitoring at scale, transitioning from manual processing to automated analysis.
+  language: Python
+  topics:
+  - aws
+  - aws-notifications
+  - aws-phd
+  - notifications
+  archived: false
+  stars: 53
+  pushed_at: '2026-05-22'
+  ask_type_candidate: use-case
+  status: indexed
+- name: aws-insurancelake-etl
+  url: https://github.com/aws-solutions-library-samples/aws-insurancelake-etl
+  description: This solution helps you deploy ETL processes and data storage resources to create an Insurance Lake using Amazon
+    S3 buckets for storage, AWS Glue for data transformation, and AWS CDK Pipelines. It is originally based on the AWS blog
+    Deploy data lake ETL jobs using CDK Pipelines, and complements the InsuranceLake Infrastructure project
+  language: Python
+  topics:
+  - aws
+  - cdk
+  - datalake
+  - glue
+  - insurance
+  archived: false
+  stars: 35
+  pushed_at: '2026-03-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: aws-insurancelake-infrastructure
+  url: https://github.com/aws-solutions-library-samples/aws-insurancelake-infrastructure
+  description: This solution helps you deploy ETL processes and data storage resources to create an Insurance Lake using Amazon
+    S3 buckets for storage, AWS Glue for data transformation, and AWS CDK Pipelines. It is originally based on the AWS blog
+    Deploy data lake ETL jobs using CDK Pipelines, and complements the InsuranceLake ETL with CDK Pipelines project.
+  language: Python
+  topics:
+  - aws
+  - cdk
+  - datalake
+  - insurance
+  archived: false
+  stars: 18
+  pushed_at: '2026-02-05'
+  ask_type_candidate: use-case
+  status: indexed
+- name: aws-ops-automator
+  url: https://github.com/aws-solutions-library-samples/aws-ops-automator
+  description: A solution for automated and scheduled execution of actions on selected AWS resources, including an updated
+    EBS Snapshot Scheduler
+  language: Python
+  topics: []
+  archived: true
+  stars: 98
+  pushed_at: '2024-01-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: breweries-sitewise-simulator
+  url: https://github.com/aws-solutions-library-samples/breweries-sitewise-simulator
+  description: null
+  language: Python
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2023-11-07'
+  ask_type_candidate: use-case
+  status: indexed
+- name: cfn-ps-dotnetcore-fargate-cicd
+  url: https://github.com/aws-solutions-library-samples/cfn-ps-dotnetcore-fargate-cicd
+  description: null
+  language: HTML
+  topics:
+  - ia-automator
+  archived: false
+  stars: 2
+  pushed_at: '2023-12-04'
+  ask_type_candidate: use-case
+  status: indexed
+- name: cfn-ps-microsoft-activedirectory
+  url: https://github.com/aws-solutions-library-samples/cfn-ps-microsoft-activedirectory
+  description: null
+  language: PowerShell
+  topics:
+  - ia-automator
+  archived: false
+  stars: 5
+  pushed_at: '2024-02-02'
+  ask_type_candidate: use-case
+  status: indexed
+- name: clickstream-analytics-on-aws-android-sdk
+  url: https://github.com/aws-solutions-library-samples/clickstream-analytics-on-aws-android-sdk
+  description: Android SDK for Clickstream Analytics on AWS
+  language: Java
+  topics:
+  - analytics
+  - android-sdk
+  - aws
+  - aws-clickstream-solution
+  - aws-solutions
+  - clickstream
+  archived: false
+  stars: 17
+  pushed_at: '2025-02-14'
+  ask_type_candidate: use-case
+  status: indexed
+- name: clickstream-analytics-on-aws-flutter-sdk
+  url: https://github.com/aws-solutions-library-samples/clickstream-analytics-on-aws-flutter-sdk
+  description: Flutter SDK for Clickstream Analytics on AWS
+  language: Dart
+  topics:
+  - analytics
+  - android
+  - aws-clickstream-solution
+  - aws-solutions
+  - clickstream
+  - dart-package
+  - flutter
+  - flutter-plugin
+  - flutter-sdk
+  - ios
+  archived: false
+  stars: 8
+  pushed_at: '2025-02-26'
+  ask_type_candidate: use-case
+  status: indexed
+- name: clickstream-analytics-on-aws-react-native-sdk
+  url: https://github.com/aws-solutions-library-samples/clickstream-analytics-on-aws-react-native-sdk
+  description: React Native SDK for Clickstream Analytics on AWS
+  language: TypeScript
+  topics:
+  - analytics
+  - android
+  - aws-clickstream-solution
+  - aws-solutions
+  - clickstream-react-native
+  - ios
+  - react-native
+  - react-native-sdk
+  archived: false
+  stars: 5
+  pushed_at: '2025-04-15'
+  ask_type_candidate: use-case
+  status: indexed
+- name: clickstream-analytics-on-aws-swift-sdk
+  url: https://github.com/aws-solutions-library-samples/clickstream-analytics-on-aws-swift-sdk
+  description: Swift SDK for Clickstream Analytics on AWS
+  language: Swift
+  topics:
+  - analytics
+  - aws
+  - aws-clickstream-solution
+  - aws-solutions
+  - clickstream
+  - ios
+  - sdk-swift
+  archived: false
+  stars: 16
+  pushed_at: '2025-02-07'
+  ask_type_candidate: use-case
+  status: indexed
+- name: clickstream-analytics-on-aws-web-sdk
+  url: https://github.com/aws-solutions-library-samples/clickstream-analytics-on-aws-web-sdk
+  description: Web SDK for Clickstream Analytics on AWS
+  language: TypeScript
+  topics:
+  - aws
+  - aws-clickstream-solution
+  - aws-solutions
+  - web-sdk
+  archived: false
+  stars: 22
+  pushed_at: '2025-07-30'
+  ask_type_candidate: use-case
+  status: indexed
+- name: cloud-intelligence-dashboards-data-collection
+  url: https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-data-collection
+  description: This Guidance demonstrates how to deploy Cloud Intelligence Dashboards in your AWS environment using AWS CloudFormation
+    templates or command line tools. These pre-built dashboards enable you to drive financial accountability, optimize costs,
+    and track usage goals across their AWS infrastructure.
+  language: Python
+  topics: []
+  archived: false
+  stars: 80
+  pushed_at: '2026-06-03'
+  ask_type_candidate: use-case
+  status: indexed
+- name: cloud-intelligence-dashboards-framework
+  url: https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-framework
+  description: Command Line Interface tool for Cloud Intelligence Dashboards deployment
+  language: Python
+  topics:
+  - aws
+  - cid
+  - cloudintelligence
+  - finops
+  archived: false
+  stars: 527
+  pushed_at: '2026-06-07'
+  ask_type_candidate: use-case
+  status: indexed
+- name: data-lakes-on-aws
+  url: https://github.com/aws-solutions-library-samples/data-lakes-on-aws
+  description: Enterprise-grade, production-hardened, serverless data lake on AWS
+  language: Python
+  topics:
+  - analytics
+  - aws
+  - best-practices
+  - data-engineering
+  - data-lake
+  - etl
+  - framework
+  - iac
+  - lake-formation
+  - serverless
+  archived: false
+  stars: 481
+  pushed_at: '2025-10-01'
+  ask_type_candidate: use-case
+  status: indexed
+- name: data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3
+  url: https://github.com/aws-solutions-library-samples/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3
+  description: This solution restores, copies, and transfers archives stored in an Amazon Simple Storage Service Glacier (Amazon
+    S3 Glacier) vault to an S3 bucket and storage class of your choice, including the S3 Glacier storage classes.
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2025-12-03'
+  ask_type_candidate: use-case
+  status: indexed
+- name: data-transfer-hub
+  url: https://github.com/aws-solutions-library-samples/data-transfer-hub
+  description: Seamless User Interface for replicating data into AWS.
+  language: TypeScript
+  topics:
+  - amazon-ecr
+  - amazon-s3
+  - aws
+  - cloudformation
+  - data-replication
+  - replication
+  - s3
+  archived: false
+  stars: 143
+  pushed_at: '2026-06-09'
+  ask_type_candidate: use-case
+  status: indexed
+- name: data-transfer-hub-cli
+  url: https://github.com/aws-solutions-library-samples/data-transfer-hub-cli
+  description: null
+  language: Go
+  topics: []
+  archived: false
+  stars: 16
+  pushed_at: '2026-04-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: deploy-a-poc-of-aws-backup
+  url: https://github.com/aws-solutions-library-samples/deploy-a-poc-of-aws-backup
+  description: This Guidance provides instructions and templates that enable users to quickly and easily deploy a proof-of-concept
+    (PoC) deployment of AWS Backup. Customers can leverage this Guidance and the best practices provided, along with the CloudFormation
+    template and deployment steps to perform their own PoC evaluation of AWS Backup for their scenario.
+  language: null
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2025-11-05'
+  ask_type_candidate: use-case
+  status: indexed
+- name: distributed-compute-on-aws-with-cross-regional-dask
+  url: https://github.com/aws-solutions-library-samples/distributed-compute-on-aws-with-cross-regional-dask
+  description: Perform I/O intensive workloads on high-volume data sparsely located across multiple AWS regions through the
+    use of Dask.
+  language: TypeScript
+  topics:
+  - dask
+  - dask-distributed
+  - dask-worker-pools
+  archived: false
+  stars: 17
+  pushed_at: '2025-04-10'
+  ask_type_candidate: use-case
+  status: indexed
+- name: eks-saas-gitops
+  url: https://github.com/aws-solutions-library-samples/eks-saas-gitops
+  description: Source repo of Building SaaS applications on Amazon EKS using GitOps workshop
+  language: HCL
+  topics:
+  - argo-workflows
+  - eks
+  - flux2
+  - fluxcd
+  - gitops
+  - karpenter
+  archived: false
+  stars: 106
+  pushed_at: '2026-04-10'
+  ask_type_candidate: use-case
+  status: indexed
+- name: eks-troubleshooting-agentic-ai-chatops
+  url: https://github.com/aws-solutions-library-samples/eks-troubleshooting-agentic-ai-chatops
+  description: This Guidance demonstrates how to address the complexity of troubleshooting Amazon EKS environments with multiple
+    metrics and logs by implementing an agentic AI workflow that uses generative AI with RAG-enabled knowledge bases and chat
+    interfaces to accelerate problem diagnosis.
+  language: Python
+  topics: []
+  archived: false
+  stars: 75
+  pushed_at: '2026-02-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: fraud-detection-using-machine-learning
+  url: https://github.com/aws-solutions-library-samples/fraud-detection-using-machine-learning
+  description: Setup end to end demo architecture for predicting fraud events with Machine Learning using Amazon SageMaker
+  language: Jupyter Notebook
+  topics:
+  - aws-sagemaker
+  - deep-learning
+  - fraud-detection
+  - machine-learning
+  - sagemaker
+  - sagemaker-example
+  - xgboost
+  archived: false
+  stars: 337
+  pushed_at: '2024-10-02'
+  ask_type_candidate: use-case
+  status: indexed
+- name: gudiance-for-farm-management-ai-agent-on-aws
+  url: https://github.com/aws-solutions-library-samples/gudiance-for-farm-management-ai-agent-on-aws
+  description: null
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-04-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-assisted-diagnosis-and-troubleshooting
+  url: https://github.com/aws-solutions-library-samples/guidance-assisted-diagnosis-and-troubleshooting
+  description: This Guidance demonstrates how to harness generative AI on AWS to transform unstructured industrial data into
+    actionable insights. It shows operators and managers how to implement natural language interactions for real-time equipment
+    diagnostics, maintenance planning, and documentation access.
+  language: Python
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2025-04-29'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-automated-insight-extraction-framework-for-customer-feedback-analysis-with-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-automated-insight-extraction-framework-for-customer-feedback-analysis-with-amazon-bedrock
+  description: This Guidance demonstrates how to streamline the process of extracting insights from customer feedback, enabling
+    businesses to make data-driven decisions and enhance the overall customer experience.
+  language: Python
+  topics: []
+  archived: false
+  stars: 9
+  pushed_at: '2024-11-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-a-multi-tenant-generative-ai-gateway-with-cost-and-usage-tracking-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-a-multi-tenant-generative-ai-gateway-with-cost-and-usage-tracking-on-aws
+  description: This Guidance demonstrates how to build an internal Software-as-a-Service (SaaS) platform that provides access
+    to foundation models, like those available through Amazon Bedrock, to different business units or teams within your organization
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 95
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-a-predictive-responsible-gaming-model-using-amazon-sagemaker
+  url: https://github.com/aws-solutions-library-samples/guidance-for-a-predictive-responsible-gaming-model-using-amazon-sagemaker
+  description: This Guidance shows how you can build and train an ML model using Amazon SageMaker AI to predict problematic
+    gambling behavior.
+  language: Java
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2025-12-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-a-secure-chat-user-interface-for-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-for-a-secure-chat-user-interface-for-amazon-bedrock
+  description: A secure, browser-based chat application that connects to Amazon Bedrock Agents using AWS Amplify for hosting
+    and Amazon Cognito for authentication, enabling organizations to quickly deploy AI-powered chat interfaces with enterprise-grade
+    security.
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 25
+  pushed_at: '2025-09-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-accelerating-sap-clean-core-journey-using-kiro-agents
+  url: https://github.com/aws-solutions-library-samples/guidance-for-accelerating-sap-clean-core-journey-using-kiro-agents
+  description: Accelerate your SAP Clean Core journey with Kiro agents that assess, document, and prioritize custom ABAP code
+    remediation
+  language: Python
+  topics: []
+  archived: false
+  stars: 10
+  pushed_at: '2026-04-22'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-active-active-replication-on-amazon-rds-for-mysql
+  url: https://github.com/aws-solutions-library-samples/guidance-for-active-active-replication-on-amazon-rds-for-mysql
+  description: This Guidance demonstrates how to configure active-active replication with up to nine Amazon Relational Database
+    Service (Amazon RDS) for MySQL instances using the Group Replication plugin
+  language: Shell
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-advanced-multi-modal-chatbot-including-speech-to-speech-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-advanced-multi-modal-chatbot-including-speech-to-speech-on-aws
+  description: This GenAI solution enables users to extract insights from diverse data formats (video, audio, PDFs, text)
+    through a unified interface. Using AWS AI services, it processes and indexes content at scale, provides quick summaries,
+    and delivers contextualized answers with direct links to source materials.
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 21
+  pushed_at: '2026-02-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-advertising-agents-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-advertising-agents-on-aws
+  description: This guidance demonstrates how to deploy a comprehensive agentic application for advertising workflows using
+    Amazon Bedrock AgentCore. The solution showcases advanced multi-agent collaboration across the entire advertising value
+    chain - from strategic media planning and audience targeting to real-time bid optimization and publisher revenue manageme
+  language: TypeScript
+  topics:
+  - advertising
+  - amazon-bedrock-agentcore
+  - aws-bedrock
+  - monetization
+  - multi-agent-systems
+  - strands-agents
+  archived: false
+  stars: 18
+  pushed_at: '2026-06-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-agentic-ai-operational-foundations-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-agentic-ai-operational-foundations-on-aws
+  description: Agentic AI application built on top of a lightweight but well-architected generative foundation components.
+  language: Python
+  topics: []
+  archived: false
+  stars: 28
+  pushed_at: '2025-12-14'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-agentic-ai-research-platform-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-agentic-ai-research-platform-on-aws
+  description: null
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2026-05-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-agentic-data-analyst-using-amazon-bedrock-agentcore-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-agentic-data-analyst-using-amazon-bedrock-agentcore-on-aws
+  description: This guidance provides a scalable approach for deploying a Data Analyst Agent that can query hundreds of datasets
+    hosted on Amazon Athena. Built on the Strands Agents framework and deployed on AWS AgentCore, the agent leverages semantic
+    search powered by Amazon S3 Vectors to automatically identify and retrieve the most relevant datasets.
+  language: Python
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2026-06-10'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-agentic-data-exploration-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-agentic-data-exploration-on-aws
+  description: This Guidance demonstrates how to overcome data fragmentation challenges by using a team of AI agents to automate
+    the discovery, connection, and analysis of information across siloed systems.
+  language: Python
+  topics: []
+  archived: false
+  stars: 14
+  pushed_at: '2026-04-30'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-agentic-erp-account-payable-and-receivable-exception-handling-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-agentic-erp-account-payable-and-receivable-exception-handling-on-aws
+  description: This Guidance demonstrates how to accelerate ERP operations through intelligent exception handling using AWS
+    AI agentic services, offering two distinct implementation patterns through Strands SDK and Amazon Quick Suite.
+  language: Python
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2025-12-02'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-ai-assistants-with-amazon-q-business
+  url: https://github.com/aws-solutions-library-samples/guidance-for-ai-assistants-with-amazon-q-business
+  description: This Guidance demonstrates how enterprises can unlock the value of their data through the powerful generative
+    AI capabilities of Amazon Q Business
+  language: null
+  topics: []
+  archived: false
+  stars: 19
+  pushed_at: '2025-06-24'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-ai-driven-robotic-simulation-and-training-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-ai-driven-robotic-simulation-and-training-on-aws
+  description: This Guidance demonstrates how to build an AI-assisted robot training and fleet management system using Amazon
+    Bedrock foundation models and AWS Trainium. It helps organizations overcome the complexity of training robots for precise
+    tasks and managing fleets at scale
+  language: Python
+  topics: []
+  archived: false
+  stars: 17
+  pushed_at: '2026-01-15'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-amazon-vpc-lattice-automated-dns-configuration-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-amazon-vpc-lattice-automated-dns-configuration-on-aws
+  description: This guidance automates the creation of DNS resolution configuration in Amazon Route 53 when creating new Amazon
+    VPC Lattice services with custom domain names.
+  language: HCL
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2025-06-06'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-american-sign-language-3d-avatar-translator-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-american-sign-language-3d-avatar-translator-on-aws
+  description: Solutions Guidance for American Sign Language 3D Avatar Translator on AWS
+  language: C++
+  topics:
+  - genai
+  - spatial-computing
+  archived: false
+  stars: 4
+  pushed_at: '2026-02-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-analytics-observability-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-analytics-observability-on-aws
+  description: This Guidance demonstrates how you can improve the observability of your data pipelines running on Apache Spark.
+  language: Python
+  topics: []
+  archived: false
+  stars: 9
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-analyzing-customer-conversations-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-analyzing-customer-conversations-on-aws
+  description: This Guidance demonstrates how to use voice analytics to uncover insights from customer phone conversations
+    and improve customer satisfaction.
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2024-08-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-application-and-data-connectors-for-amazon-q-business
+  url: https://github.com/aws-solutions-library-samples/guidance-for-application-and-data-connectors-for-amazon-q-business
+  description: This Guidance demonstrates how businesses can rapidly deploy Amazon Q Business, integrating large language
+    model (LLM) capabilities seamlessly with third-party data sources such as Microsoft Teams, Confluence, ServiceNow, and
+    Jira.
+  language: null
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2025-07-23'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-asynchronous-inference-with-stable-diffusion-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-asynchronous-inference-with-stable-diffusion-on-aws
+  description: Stable Diffusion is a popular Open Source project for generating images using Gen AI. Building a scalable and
+    cost efficient inference solution is a common challenge. This project shows how to use AWS serverless and container services
+    to build an end-to-end scalable, secure and price effecient asynchronous image generation architecture.
+  language: Python
+  topics:
+  - ai
+  - eks-cluster
+  - generative
+  - serverless
+  - stable-diffusion
+  archived: false
+  stars: 37
+  pushed_at: '2026-05-23'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-attachment-management-to-aws-cloud-wan
+  url: https://github.com/aws-solutions-library-samples/guidance-for-attachment-management-to-aws-cloud-wan
+  description: This Guidance demonstrates an automated, secure method for connecting a virtual private cloud (VPC) to AWS
+    Cloud WAN
+  language: Python
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automated-deletion-of-vault-archives-in-amazon-s3-glacier
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automated-deletion-of-vault-archives-in-amazon-s3-glacier
+  description: This Guidance shows how to automate the complex and repetitive tasks associated with deleting data stored in
+    an Amazon S3 Glacier vault.
+  language: null
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automated-deployment-of-l2-stretch-network-extensions-with-cisco-8000v
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automated-deployment-of-l2-stretch-network-extensions-with-cisco-8000v
+  description: null
+  language: null
+  topics: []
+  archived: false
+  stars: 0
+  pushed_at: '2026-05-26'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automated-geospatial-insights-engine-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automated-geospatial-insights-engine-on-aws
+  description: This Guidance shows how build an automated geospatial insights engine on AWS to improve supply and demand forecasting
+    and risk management
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 9
+  pushed_at: '2024-12-24'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automated-management-of-aws-capacity-blocks
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automated-management-of-aws-capacity-blocks
+  description: This Guidance demonstrates how to automate the management of AWS Capacity Block reservations to address the
+    challenge of manual extension processes through a serverless API implementation.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2025-11-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automated-provisioning-of-application-ready-amazon-eks-clusters
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automated-provisioning-of-application-ready-amazon-eks-clusters
+  description: The EKS workload accelerator is a collection of reference implementations for Amazon EKS designed to accelerate
+    the time it takes to provision a workload ready EKS cluster. It includes an "opinionated" set of pre-configured and integrated
+    tools/add-ons, and best practices to support core capabilities including Autoscaling, Observability, Networking
+  language: HCL
+  topics:
+  - auto-scaling
+  - eks-cluster
+  - observability
+  - terraform-aws
+  archived: false
+  stars: 39
+  pushed_at: '2025-10-16'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automated-querying-of-amazon-s3-logs-with-amazon-athena
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automated-querying-of-amazon-s3-logs-with-amazon-athena
+  description: The Guidance demonstrates an automated workflow for users to easily query and identify requests from various
+    Amazon Simple Storage Service (Amazon S3) related logs. The workflow uses Amazon Athena, a serverless query service, to
+    enable users to run SQL queries against the log data and identify potential security or operational issues.
+  language: Python
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2025-04-09'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automated-restore-and-copy-for-amazon-s3-glacier-objects
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automated-restore-and-copy-for-amazon-s3-glacier-objects
+  description: This Guidance provides an automated workflow to restore archived Amazon Simple Storage Service (Amazon S3)
+    data stored in S3 Glacier Flexible Retrieval and Deep Archive storage classes to a new storage class
+  language: Python
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2025-06-14'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automated-setup-for-elastic-vmware-service-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automated-setup-for-elastic-vmware-service-on-aws
+  description: This guidance demonstrates how to accelerate cloud adoption for VMware workloads by automating the deployment
+    of Amazon EVS environments. Infrastructure and VMware administrators can leverage automated provisioning of essential
+    AWS services, including VPCs, Route 53, and Transit Gateway, eliminating complex manual configurations.
+  language: null
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-04-29'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automated-setup-of-aws-transform
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automated-setup-of-aws-transform
+  description: Automation to help deploy AWS Transform and streamline the setup process by automating the provisioning of
+    required AWS services, network configurations, and security controls.
+  language: PowerShell
+  topics:
+  - aws
+  - migration
+  - transform
+  - vmware
+  archived: false
+  stars: 12
+  pushed_at: '2026-03-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automating-amazon-vpc-routing-in-a-global-cloud-wan-deployment
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automating-amazon-vpc-routing-in-a-global-cloud-wan-deployment
+  description: null
+  language: null
+  topics: []
+  archived: false
+  stars: 8
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automating-ethereum-node-validator-using-graviton-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automating-ethereum-node-validator-using-graviton-on-aws
+  description: In this project, we introduce a AWS Cloud Development Kit (AWS CDK) app that simplifies the deployment of Rocket
+    Pool on EC2.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2023-06-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automating-network-monitoring-and-alerting-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automating-network-monitoring-and-alerting-on-aws
+  description: Tag based CloudWatch dashboard uses CDK and resource groups tagging API to automatically produce CloudFormation
+    templates for CloudWatch dashboard.
+  language: TypeScript
+  topics:
+  - aws
+  - aws-cli
+  - cdk
+  - cloudformation
+  - cloudformation-template
+  - cloudwatch
+  - dashboard
+  - jq
+  - typescript
+  archived: false
+  stars: 47
+  pushed_at: '2025-11-17'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automating-non-conformance-reviews-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automating-non-conformance-reviews-on-aws
+  description: This Guidance shows how to automate non-conformance review (NCR) disposition recommendations using generative
+    AI and image analysis to reduce manufacturing delays. It demonstrates a multimodal recommender system that integrates
+    with existing quality ticketing systems to accelerate quality engineering decisions.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 0
+  pushed_at: '2026-01-28'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automating-password-rotation-with-amazon-fsx-for-netapp-ontap
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automating-password-rotation-with-amazon-fsx-for-netapp-ontap
+  description: This Guidance shows how to automate the password rotation process for Amazon FSx for NetApp ONTAP administrators
+  language: Python
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2024-09-27'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automating-sap-configuration-health-checks-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automating-sap-configuration-health-checks-on-aws
+  description: This Guidance shows how to automate evaluation of your SAP landscape on AWS against 100+ health checks and
+    architecture best practices aligned with the AWS Well-Architected Framework.
+  language: null
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2024-12-03'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-automotive-data-platform-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-automotive-data-platform-on-aws
+  description: null
+  language: Python
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2026-06-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-aws-deepracer-event-management
+  url: https://github.com/aws-solutions-library-samples/guidance-for-aws-deepracer-event-management
+  description: The AWS DeepRacer Event Manager (DREM) is used to run and manage all aspects of in-person events for AWS DeepRacer,
+    an autonomous 1/18th scale race car designed to test reinforcement learning (RL) models by racing on a physical track.
+  language: TypeScript
+  topics:
+  - aws
+  - deepracer
+  archived: false
+  stars: 20
+  pushed_at: '2026-06-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-aws-iot-greengrass-foundations
+  url: https://github.com/aws-solutions-library-samples/guidance-for-aws-iot-greengrass-foundations
+  description: This Guidance shows you how to set up an AWS IoT Greengrass deployment in a highly available cloud environment.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2025-04-10'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-aws-sustainability-insights-framework
+  url: https://github.com/aws-solutions-library-samples/guidance-for-aws-sustainability-insights-framework
+  description: This Guidance demonstrates how you can automate your carbon footprint tracking with the Sustainability Insights
+    Framework (SIF) on AWS
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 29
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-aws-sustainability-insights-framework-cli
+  url: https://github.com/aws-solutions-library-samples/guidance-for-aws-sustainability-insights-framework-cli
+  description: null
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2024-03-16'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-baseline-security-assessment-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-baseline-security-assessment-on-aws
+  description: This Guidance helps customers assess their foundational security setup in their AWS account
+  language: Python
+  topics: []
+  archived: false
+  stars: 24
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-battery-digital-twin-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-battery-digital-twin-on-aws
+  description: This Guidance shows how to create a battery digital twin, a virtual representation of a physical electric vehicle
+    battery or battery energy storage system (BESS), and overlay real-time data such as voltage, current, and temperature.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 19
+  pushed_at: '2026-02-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-bioinformatics-workflow-development-using-devops-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-bioinformatics-workflow-development-using-devops-on-aws
+  description: This Guidance demonstrates how to set up a continuous integration and continuous delivery (CI/CD) pipeline
+    to automate the lifecycle of your bioinformatics workflows on AWS HealthOmics
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 12
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-building-a-high-performance-numerical-weather-prediction-system-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-building-a-high-performance-numerical-weather-prediction-system-on-aws
+  description: HPC on AWS removes the long wait times and lost productivity often associated with on-premises HPC clusters.
+    Flexible HPC cluster configurations and virtually unlimited scalability allows you to grow and shrink your infrastructure
+    as your workloads dictate, not the other way around
+  language: Shell
+  topics:
+  - high-performance-computing
+  - weather-forecast
+  archived: false
+  stars: 9
+  pushed_at: '2025-10-03'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-building-a-poc-for-amazon-fsx-for-lustre
+  url: https://github.com/aws-solutions-library-samples/guidance-for-building-a-poc-for-amazon-fsx-for-lustre
+  description: This Guidance helps users deploy and configure optimal proof-of-concept (PoC) deployments of Amazon FSx for
+    Lustre through deployment and configuration recommendations in addition to AWS CloudFormation templates.
+  language: null
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2025-10-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-building-a-real-time-bidder-for-advertising-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-building-a-real-time-bidder-for-advertising-on-aws
+  description: This Guidance helps you assess ad opportunities at scale using real time bidding (RTB)
+  language: Go
+  topics: []
+  archived: false
+  stars: 51
+  pushed_at: '2025-11-25'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-building-a-sap-cloud-data-warehouse-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-building-a-sap-cloud-data-warehouse-on-aws
+  description: This Guidance shows how to extract data and business logic from SAP systems to build a data warehouse that
+    integrates the business context and logic embedded within the SAP system.
+  language: PLpgSQL
+  topics: []
+  archived: false
+  stars: 11
+  pushed_at: '2025-05-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-building-agentic-ai-powered-hyper-personalized-customer-experience-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-building-agentic-ai-powered-hyper-personalized-customer-experience-on-aws
+  description: The CX Hyper Personalization is an AI-powered product recommendation platform providing personalized product
+    suggestions based on customer profiles and intelligent search.
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-04-06'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-building-an-event-driven-sportsbook-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-building-an-event-driven-sportsbook-on-aws
+  description: This Guidance demonstrates how to build an event-driven, serverless sportsbook application to help sports betting
+    operators handle spiky, seasonal traffic.
+  language: Python
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2026-04-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-building-hybrid-architecture-using-amazon-ecs-anywhere-with-cross-region-load-balancing
+  url: https://github.com/aws-solutions-library-samples/guidance-for-building-hybrid-architecture-using-amazon-ecs-anywhere-with-cross-region-load-balancing
+  description: This guidance demonstrates how to implement a hybrid architecture using Amazon ECS Anywhere with cross-region
+    load balancing.
+  language: HCL
+  topics:
+  - ecs-anywhere
+  - transitgateway
+  archived: false
+  stars: 1
+  pushed_at: '2026-02-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-buy-it-now-on-third-party-website-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-buy-it-now-on-third-party-website-on-aws
+  description: This Guidance helps consumer packaged goods (CPG) companies keep customers on their brand sites, even while
+    purchasing products from a third-party online retailer.
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-capturning-retail-video-analytics-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-capturning-retail-video-analytics-on-aws
+  description: This Guidance shows how retailers can harness in-store cameras and AI/ML capabilities to gain deeper customer
+    insights and enhance in-store experiences. With this Guidance, retailers can automatically collect valuable analytics
+    like heatmaps, dwell-time, and traffic flow
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2025-06-04'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-carbon-data-lake-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-carbon-data-lake-on-aws
+  description: This Guidance, with the sample code, can be used to deploy a carbon data lake to the AWS Cloud using an AWS
+    Cloud Development Kit (AWS CDK)
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 22
+  pushed_at: '2025-01-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-cell-based-architecture-for-amazon-eks
+  url: https://github.com/aws-solutions-library-samples/guidance-for-cell-based-architecture-for-amazon-eks
+  description: This Guidance demonstrates how to configure a cell-based architecture for Amazon Elastic Kubernetes Service
+    (Amazon EKS)
+  language: HCL
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2025-08-26'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-cell-based-architecture-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-cell-based-architecture-on-aws
+  description: This Guidance helps customers understand the concepts of implementing a cell-based architecture. This architecture
+    shows fault isolation between cells, which are independent replicas of the system
+  language: Python
+  topics: []
+  archived: false
+  stars: 38
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-chatbot-user-feedback-and-analytics-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-chatbot-user-feedback-and-analytics-on-aws
+  description: This Guidance demonstrates a prescriptive approach to gathering and storing human feedback on generative artificial
+    intelligence (AI) applications, allowing businesses to estimate the value of their AI investments by collecting user satisfaction
+    data
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-claude-code-with-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-for-claude-code-with-amazon-bedrock
+  description: This Guidance demonstrates how organizations can implement secure enterprise authentication for Amazon Bedrock
+    using industry-standard protocols and AWS services
+  language: Python
+  topics: []
+  archived: false
+  stars: 334
+  pushed_at: '2026-06-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-clickstream-analytics-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-clickstream-analytics-on-aws
+  description: Guidance for Clickstream Analytics on AWS source code
+  language: TypeScript
+  topics:
+  - aws
+  - aws-amplify
+  - aws-cdk
+  - aws-clickstream-solution
+  - aws-emr-serverless
+  - aws-kinesis-stream
+  - aws-msk
+  - aws-quicksight
+  - aws-redshift
+  - aws-solutions
+  - clickstream
+  - data-analysis
+  - web-analysis
+  - web-analytics
+  archived: false
+  stars: 87
+  pushed_at: '2025-10-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-cloud-native-fast-turnaround-media-workflows-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-cloud-native-fast-turnaround-media-workflows-on-aws
+  description: This Guidance demonstrates new tools for media workflows in cloud environments as part of the Cloud-Native
+    Agile Production (CNAP) program
+  language: Python
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2025-03-25'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-collaborative-unified-data-and-ai-development-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-collaborative-unified-data-and-ai-development-on-aws
+  description: This Guidance demonstrates how to use Amazon SageMaker Unified Studio to create a unified development experience
+    for building, deploying, executing, and monitoring end-to-end workflows across AWS data, analytics, and AI/ML services
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 23
+  pushed_at: '2024-12-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-configuring-virtual-calls-on-salesforce-using-amazon-chime
+  url: https://github.com/aws-solutions-library-samples/guidance-for-configuring-virtual-calls-on-salesforce-using-amazon-chime
+  description: This Guidance demonstrates how to deploy Salesforce with Amazon Chime to support Virtual Calls on Salesforce.
+  language: HTML
+  topics:
+  - ia-automator
+  archived: false
+  stars: 2
+  pushed_at: '2024-10-22'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-connected-mobility-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-connected-mobility-on-aws
+  description: This Guidance demonstrates how to develop and deploy modular services for connected mobility solutions that
+    enable vehicles to receive appropriate configurations throughout their lifecycle.
+  language: Python
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2026-06-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-connecting-automated-inputs-to-contact-centers-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-connecting-automated-inputs-to-contact-centers-on-aws
+  description: This Guidance shows how to connect automated data sources to contact center systems. These sources could include
+    Internet of Things (IoT) devices, interactive voice response (IVR) systems, customer relationship management (CRM) alerts,
+    and automated quality monitoring tools.
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2025-11-18'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-connecting-data-products-with-amazon-datazone
+  url: https://github.com/aws-solutions-library-samples/guidance-for-connecting-data-products-with-amazon-datazone
+  description: This Guidance demonstrates how you can extend the data governance capabilities of Amazon DataZone to other
+    Java Database Connectivity (JDBC) sources, such as MySQL, PostgreSQL, Oracle, and SQL Server.
+  language: Python
+  topics: []
+  archived: false
+  stars: 13
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-container-runtime-security-monitoring-with-cncf-falco-and-aws-security-hub
+  url: https://github.com/aws-solutions-library-samples/guidance-for-container-runtime-security-monitoring-with-cncf-falco-and-aws-security-hub
+  description: This Guidance shows you how to stream security event logs from Falco into AWS Security Hub in near real-time
+    for enriched analysis.
+  language: Python
+  topics: []
+  archived: false
+  stars: 10
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-content-management-using-salesforce-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-content-management-using-salesforce-on-aws
+  description: This Guidance demonstrates how to utilize advanced artificial intelligence (AI) capabilities within your existing
+    Salesforce environment to gain more valuable insights about your customers. It allows you to seamlessly integrate the
+    user-friendly interface of Salesforce with the powerful data storage and processing capabilities of AWS.
+  language: HTML
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2025-12-04'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-continuous-data-migration-from-apache-cassandra-to-amazon-keyspaces
+  url: https://github.com/aws-solutions-library-samples/guidance-for-continuous-data-migration-from-apache-cassandra-to-amazon-keyspaces
+  description: This Guidance demonstrates how to implement dual-write capabilities from Apache Cassandra to Amazon Keyspaces
+    for Apache Cassandra with minimal downtime during the data migration
+  language: Shell
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2024-09-30'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-conversational-chatbots-using-retrieval-augmented-generation-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-conversational-chatbots-using-retrieval-augmented-generation-on-aws
+  description: This Guidance demonstrates how to combine Retrieval Augmented Generation (RAG) with AWS services to build generative
+    AI applications.
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 43
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-cost-analysis-and-optimization-with-amazon-bedrock-agents
+  url: https://github.com/aws-solutions-library-samples/guidance-for-cost-analysis-and-optimization-with-amazon-bedrock-agents
+  description: This guidance demonstrates how to build a FinOps agent using Amazon Bedrock's multi-agent capability and Amazon
+    Nova foundation models to provide AWS cost analysis and optimization recommendations.
+  language: null
+  topics: []
+  archived: false
+  stars: 18
+  pushed_at: '2025-08-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-creating-a-customized-coding-companion-with-amazon-q-developer
+  url: https://github.com/aws-solutions-library-samples/guidance-for-creating-a-customized-coding-companion-with-amazon-q-developer
+  description: This Guidance demonstrates how to aggregate public, open-source code repositories into a central location to
+    customize Amazon Q Developer.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 13
+  pushed_at: '2025-04-10'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-creating-a-personalized-avatar-with-amazon-sagemaker
+  url: https://github.com/aws-solutions-library-samples/guidance-for-creating-a-personalized-avatar-with-amazon-sagemaker
+  description: This Guidance shows how to calibrate and deploy a Stable Diffusion model to generate personalized avatars with
+    a simple text prompt.
+  language: Python
+  topics: []
+  archived: false
+  stars: 21
+  pushed_at: '2026-05-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-creating-player-insights-with-generative-ai-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-creating-player-insights-with-generative-ai-on-aws
+  description: This Guidance demonstrates how you can unlock insights and respond to game player behavior using natural language
+    and generative business intelligence.
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2024-10-31'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-cross-network-traffic-inspection-with-aws-network-firewall
+  url: https://github.com/aws-solutions-library-samples/guidance-for-cross-network-traffic-inspection-with-aws-network-firewall
+  description: This Guidance demonstrates how to automate the deployment of centralized network security infrastructure that
+    inspects and filters traffic across multiple cloud environments
+  language: TypeScript
+  topics:
+  - automation
+  - firewall
+  - network
+  archived: false
+  stars: 46
+  pushed_at: '2026-02-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-crossregion-failover-and-graceful-failback-and-observability-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-crossregion-failover-and-graceful-failback-and-observability-on-aws
+  description: This Guidance helps customers design a resilient three-tier web application with a React front end, API/AWS
+    Lambda middle tier, and Amazon Aurora global database back end.
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 20
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-custom-domain-names-on-amazon-api-gateway-private-endpoints
+  url: https://github.com/aws-solutions-library-samples/guidance-for-custom-domain-names-on-amazon-api-gateway-private-endpoints
+  description: This Guidance shows how to create and facilitate access to private REST APIs on AWS
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2025-11-15'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-custom-game-backend-hosting-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-custom-game-backend-hosting-on-aws
+  description: The AWS Game Backend Framework allows you to integrate your game clients with AWS backend services, with secure
+    scalable identity management and authentication, and integrations to commonly used game platform identity providers and
+    game engines.
+  language: Python
+  topics:
+  - aws
+  - backend
+  - games
+  - godot4
+  - unity
+  - unreal-engine-5
+  archived: false
+  stars: 62
+  pushed_at: '2026-06-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-custom-search-of-an-enterprise-knowledge-base-with-amazon-opensearch-service
+  url: https://github.com/aws-solutions-library-samples/guidance-for-custom-search-of-an-enterprise-knowledge-base-with-amazon-opensearch-service
+  description: This Guidance demonstrates how to build an application for search based on the information in an enterprise
+    knowledge base through the deployment of interface nodes, including large language models (LLMs).
+  language: Python
+  topics: []
+  archived: false
+  stars: 17
+  pushed_at: '2025-03-10'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-customer-lifetime-value-analytics-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-customer-lifetime-value-analytics-on-aws
+  description: This Guidance demonstrates how to improve the accuracy of the Customer Lifetime Value (CLV) metric by combining
+    the data from both historical and proprietary databases, unifying operational and real-time data, and delivering that
+    data through a powerful business intelligence service
+  language: null
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2023-08-24'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-customizing-normalization-library-for-aws-entity-resolution
+  url: https://github.com/aws-solutions-library-samples/guidance-for-customizing-normalization-library-for-aws-entity-resolution
+  description: This Guidance demonstrates how to customize and apply normalization rules on data as it arrives and prepare
+    it for AWS Entity Resolution.
+  language: Java
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2025-07-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-data-management-core-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-data-management-core-on-aws
+  description: The Data Fabric sample code focuses on the core data fabric implementation on AWS, providing a complete guide
+    for deploying and using the data fabric capabilities.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2025-02-06'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-datalake-with-sap-and-non-sap-data-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-datalake-with-sap-and-non-sap-data-on-aws
+  description: This Guidance demonstrates how to combine and consolidate SAP and non-SAP data from disparate sources using
+    data lakes and machine learning services on AWS.
+  language: Python
+  topics: []
+  archived: false
+  stars: 11
+  pushed_at: '2025-01-31'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-deduplicating-syndicated-data-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-deduplicating-syndicated-data-on-aws
+  description: This Guidance shows how large enterprise customers can efficiently identify and manage duplicate datasets distributed
+    across multiple AWS accounts.
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-deploying-a-data-transfer-dashboard-for-adtech-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-deploying-a-data-transfer-dashboard-for-adtech-on-aws
+  description: This Guidance shows how to use AWS Cost and Usage Reports (AWS CUR) and Amazon Athena to build a dashboard
+    that gives you a centralized view of your data transfer costs and usage
+  language: null
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-deploying-a-poc-on-amazon-fsx-for-openzfs
+  url: https://github.com/aws-solutions-library-samples/guidance-for-deploying-a-poc-on-amazon-fsx-for-openzfs
+  description: This Guidance demonstrates how to set up and test Amazon FSx for OpenZFS in a controlled environment before
+    implementing it in production workloads. The deployment process uses AWS CloudFormation to create essential components
+    including a VPC, an EC2 compute node, and an FSx for OpenZFS file system.
+  language: null
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2025-11-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-deploying-ai-agents-to-device-fleets-using-aws-iot-greengrass
+  url: https://github.com/aws-solutions-library-samples/guidance-for-deploying-ai-agents-to-device-fleets-using-aws-iot-greengrass
+  description: This Guidance demonstrates how to leverage AWS IoT Greengrass to deploy StrandsAgents with local Small Language
+    Models (SLMs) at the edge, enabling robust agentic operations across distributed device fleets.
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2025-10-27'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-deploying-amazon-connect-with-infrastructure-as-code-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-deploying-amazon-connect-with-infrastructure-as-code-on-aws
+  description: This Guidance helps organizations rapidly scale and standardize their contact center operations by implementing
+    Amazon Connect through infrastructure as code. It streamlines the provisioning of Amazon Connect instances and integrated
+    services, eliminating manual configuration errors and reducing operational overhead.
+  language: null
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2025-07-23'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-deploying-an-aws-deepracer-chatbot
+  url: https://github.com/aws-solutions-library-samples/guidance-for-deploying-an-aws-deepracer-chatbot
+  description: This Guidance illustrates how to deploy and use the AWS DeepRacer Chatbot, an intelligent virtual assistant
+    powered by multimodal generative AI and domain adaptation techniques.
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-03-26'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-deploying-high-performance-computing-clusters-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-deploying-high-performance-computing-clusters-on-aws
+  description: This Guidance aims to instruct and guide users how to build a cloud HPC for the new NIST SP 800-223 standard
+    using AWS Parallel Cluster
+  language: null
+  topics:
+  - high-performance-computing
+  - nist800-223
+  - secure-clustering
+  archived: false
+  stars: 5
+  pushed_at: '2024-12-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-deploying-model-context-protocol-servers-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-deploying-model-context-protocol-servers-on-aws
+  description: This Guidance demonstrates how to securely run Model Context Protocol (MCP) servers on the AWS Cloud using
+    containerized architecture. It helps organizations implement industry-standard OAuth 2.0 authentication while protecting
+    server deployments with multiple security layers, including content delivery networks and web application firewalls.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 152
+  pushed_at: '2026-02-14'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer
+  url: https://github.com/aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer
+  description: ABAP Accelerator is an MCP server that helps organizations create, test, document, and transform SAP ABAP code
+    faster and with higher code accuracy.
+  language: Python
+  topics:
+  - abap
+  - accelerator
+  - amazon
+  - aws
+  - code
+  - ecc
+  - generative-ai
+  - mcp
+  - s4hana
+  - sap
+  - transformation
+  archived: false
+  stars: 47
+  pushed_at: '2026-05-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-designing-resilient-applications-with-amazon-aurora-and-amazon-rds-proxy
+  url: https://github.com/aws-solutions-library-samples/guidance-for-designing-resilient-applications-with-amazon-aurora-and-amazon-rds-proxy
+  description: This Guidance helps you achieve near-zero recovery point objective (RPO) for your applications, minimizing
+    data loss during potential Amazon Aurora failover
+  language: Python
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-detecting-malware-threats-using-aws-transfer-family-managed-workflows-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-detecting-malware-threats-using-aws-transfer-family-managed-workflows-on-aws
+  description: This Guidance shows how to automate file scanning to protect against malicious content in business-to-business
+    (B2B) file transfers across various industries and regulatory environments
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-developing-apple-ios-and-vision-pro-applications-with-unity-on-amazon-ec2
+  url: https://github.com/aws-solutions-library-samples/guidance-for-developing-apple-ios-and-vision-pro-applications-with-unity-on-amazon-ec2
+  description: This Guidance demonstrates how developers can build applications on mobile iOS and Apple Vision Pro in the
+    AWS Cloud using Unity—a widely-used game engine and development platform where developers can create immersive 2D and
+    3D interactive experiences.
+  language: TypeScript
+  topics:
+  - aws-cdk
+  - ec2
+  - ec2-mac
+  - jenkins
+  - typescript
+  archived: false
+  stars: 30
+  pushed_at: '2025-04-10'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-developing-data-and-ai-foundation-with-amazon-sagemaker
+  url: https://github.com/aws-solutions-library-samples/guidance-for-developing-data-and-ai-foundation-with-amazon-sagemaker
+  description: DAIVI is a reference solution with IAC modules to accelerate development of Data, Analytics, AI and Visualization
+    applications on AWS using the next generation Amazon SageMaker Unified Studio. The goal of the DAIVI solution is to provide
+    engineers with sample infrastructure-as-code modules and application modules to build their data platforms.
+  language: HCL
+  topics:
+  - apache-iceberg
+  - sagemaker
+  - sagemaker-studio
+  - terraform
+  archived: false
+  stars: 44
+  pushed_at: '2026-02-18'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-developing-infrastructure-as-code-templates-from-architecture-diagrams-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-developing-infrastructure-as-code-templates-from-architecture-diagrams-on-aws
+  description: This Guidance demonstrates how to transform architecture diagrams into Infrastructure as Code (IaC) templates
+    using AI, addressing the challenge of time-consuming manual coding for solutions targeted for AWS deployments.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 44
+  pushed_at: '2026-06-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-devops-on-amazon-redshift
+  url: https://github.com/aws-solutions-library-samples/guidance-for-devops-on-amazon-redshift
+  description: This Guidance demonstrates best practices for running development and operations (DevOps) on Amazon Redshift
+    using both open source software and AWS services
+  language: Python
+  topics: []
+  archived: false
+  stars: 8
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-digital-assets-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-digital-assets-on-aws
+  description: Digital Assets Examples
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 57
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-digital-thread-using-graph-and-generative-ai-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-digital-thread-using-graph-and-generative-ai-on-aws
+  description: This Guidance demonstrates how to create an intelligent manufacturing digital thread through a combination
+    of knowledge graph and generative artificial intelligence (AI) technologies. A digital thread offers an integrated approach
+    to combine disparate data sources across enterprise systems, increasing traceability, accessibility, collaboration.
+  language: Python
+  topics:
+  - aws
+  - aws-bedrock
+  - bedrock
+  - claude2
+  - data-fabric
+  - genai
+  - genai-usecase
+  - generative-ai
+  - graph
+  - industrial
+  - manufacturing
+  - neptune
+  archived: false
+  stars: 25
+  pushed_at: '2025-11-06'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-disaster-recovery-of-vmware-workloads-using-aws-elastic-disaster-recovery-service
+  url: https://github.com/aws-solutions-library-samples/guidance-for-disaster-recovery-of-vmware-workloads-using-aws-elastic-disaster-recovery-service
+  description: This Guidance demonstrates how to implement disaster recovery for VMware workloads to AWS using AWS Elastic
+    Disaster Recovery (AWS DRS). It helps organizations establish continuous replication and automated failover capabilities
+    for both on-premises VMware environments and Amazon Elastic VMware Service (EVS).
+  language: null
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2025-12-17'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-disaster-recovery-using-amazon-aurora
+  url: https://github.com/aws-solutions-library-samples/guidance-for-disaster-recovery-using-amazon-aurora
+  description: This Guidance shows how to deploy a comprehensive disaster recovery (DR) solution for Amazon Aurora. Different
+    business requirements necessitate different ways of achieving your DR objectives. This Guidance evaluates the most common
+    routes to take when developing the database portion of your DR plan.
+  language: Shell
+  topics: []
+  archived: false
+  stars: 9
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-dynamic-game-npc-dialogue-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-dynamic-game-npc-dialogue-on-aws
+  description: This guidance helps game developers automate the process of creating a non-player character (NPC) for their
+    games, and associated infrastructure, that leverage Unreal Engine MetaHuman, Large Language Models Operations (LLMOps),
+    and generative AI to improve NPC conversational skills.
+  language: Python
+  topics:
+  - aws
+  - fmops
+  - games
+  - generative-ai
+  - llmops
+  - metahuman
+  - unreal-engine
+  archived: false
+  stars: 7
+  pushed_at: '2026-05-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-e-commerce-products-similarity-search-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-e-commerce-products-similarity-search-on-aws
+  description: This Guidance shows how to create a product catalog with a similarity search capability by integrating AWS
+    and artificial intelligence (AI) services with the pgvector extension
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-ec2-spot-placement-score-tracker
+  url: https://github.com/aws-solutions-library-samples/guidance-for-ec2-spot-placement-score-tracker
+  description: This Guidance shows how to build an Amazon Elastic Compute Cloud (Amazon EC2) Spot placement score tracker
+    to monitor unused Amazon EC2 Spot Instance capacity.
+  language: Python
+  topics: []
+  archived: false
+  stars: 51
+  pushed_at: '2026-02-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-ecs-canary-deployments-for-backend-workloads-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-ecs-canary-deployments-for-backend-workloads-on-aws
+  description: This Guidance shows how to implement canary deployments for backend or queue processing workloads without using
+    a load balancer.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-edit-in-the-cloud-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-edit-in-the-cloud-on-aws
+  description: This step-by-step guide details how to deploy an edit host, storage, and connectivity on AWS.
+  language: PowerShell
+  topics: []
+  archived: false
+  stars: 63
+  pushed_at: '2025-03-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-electric-vehicle-battery-health-prediction-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-electric-vehicle-battery-health-prediction-on-aws
+  description: This Guidance demonstrates how to use historical battery health data with artificial intelligence and machine
+    learning (AI/ML) algorithms to improve the accuracy of battery State of Health (SoH) and Remaining Useful Life (RUL) estimations.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 25
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-enhancing-smart-products-through-device-telemetry-and-amazon-connect
+  url: https://github.com/aws-solutions-library-samples/guidance-for-enhancing-smart-products-through-device-telemetry-and-amazon-connect
+  description: This Guidance demonstrates how manufacturers can transform traditional products into intelligent, connected
+    services using AWS IoT Core and Amazon Connect.
+  language: Python
+  topics:
+  - amazon-connect
+  - aws-iot
+  - manufacturing
+  - smart-products
+  archived: false
+  stars: 1
+  pushed_at: '2026-04-17'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-enhancing-the-customer-experience-for-travel-and-hospitality-using-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-for-enhancing-the-customer-experience-for-travel-and-hospitality-using-amazon-bedrock
+  description: This Guidance shows how you can improve operational efficiency in the travel & hospitality (T&H) industry by
+    integrating generative artificial intelligence (AI) into customer service applications
+  language: null
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-enterprise-search-and-audit-for-amazon-s3
+  url: https://github.com/aws-solutions-library-samples/guidance-for-enterprise-search-and-audit-for-amazon-s3
+  description: This Guidance helps customers create a single aggregation point for either an enterprise or a disparate collection
+    of AWS accounts that host Amazon Simple Storage Service (Amazon S3) object data.
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2025-11-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-environmental-impact-factor-mapping-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-environmental-impact-factor-mapping-on-aws
+  description: This Guidance helps scale product carbon footprint assessments by reducing the manual effort involved in emission
+    factor mapping steps.
+  language: Python
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-evaluating-generative-ai-applications-using-oss-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-evaluating-generative-ai-applications-using-oss-on-aws
+  description: This Guidance demonstrates how to implement automated quality assurance pipelines for AI applications on AWS,
+    delivering significant business and technical advantages. By automating prompt evaluation and testing processes, organizations
+    can dramatically reduce manual testing overhead while ensuring consistent, high-quality AI responses.
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2025-10-30'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-event-driven-application-auto-scaling-with-keda-on-amazon-eks
+  url: https://github.com/aws-solutions-library-samples/guidance-for-event-driven-application-auto-scaling-with-keda-on-amazon-eks
+  description: This Guidance demonstrates how to implement event-driven autoscaling for Amazon Elastic Kubernetes Service
+    (Amazon EKS) applications using Kubernetes Event-Driven Autoscaler (KEDA)
+  language: Shell
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-external-connectivity-amazon-vpc-lattice
+  url: https://github.com/aws-solutions-library-samples/guidance-for-external-connectivity-amazon-vpc-lattice
+  description: This Guidance builds a serverless proxy that lets clients outside AWS reach your Amazon VPC Lattice services.
+  language: Shell
+  topics: []
+  archived: false
+  stars: 17
+  pushed_at: '2026-06-02'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-faster-amazon-ec2-autoscaling-with-target-tracking
+  url: https://github.com/aws-solutions-library-samples/guidance-for-faster-amazon-ec2-autoscaling-with-target-tracking
+  description: To enable the fasteFaster EC2 auto-scaling using metrics published at sub-minute granularity to Amazon CloudWatch
+    (also known as "high-resolution CloudWatch metrics")
+  language: null
+  topics:
+  - auto-scale
+  - sub-minute
+  - target-tracking
+  archived: false
+  stars: 1
+  pushed_at: '2025-08-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-fraud-detection-with-intelligent-document-processing-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-fraud-detection-with-intelligent-document-processing-on-aws
+  description: This Guidance demonstrates how to build a comprehensive intelligent document processing (IDP) workflow that
+    combines AWS AI services for enhanced fraud detection and data extraction. By leveraging key services like Amazon Bedrock
+    and Amazon SageMaker AI, organizations can transform their document handling processes, achieving faster, more accurate
+  language: Python
+  topics: []
+  archived: false
+  stars: 11
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-fsx-for-lustre-data-repository-task-scheduler
+  url: https://github.com/aws-solutions-library-samples/guidance-for-fsx-for-lustre-data-repository-task-scheduler
+  description: This Guidance demonstrates how to automate data synchronization between Amazon FSx for Lustre and Amazon Simple
+    Storage Service (Amazon S3) data repositories without auto-import or auto-export functionality. It offers a streamlined
+    approach for organizations managing large-scale data operations by scheduling tasks based on business requirements.
+  language: Python
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2025-05-07'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-full-duplex-open-platform-communication-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-full-duplex-open-platform-communication-on-aws
+  description: Develop custom AWS Greengrass IoT Components to convert/unify OPC UA/DA Industrial IOT Protocols & exchange
+    control signals & messages between the edge & AWS cloud
+  language: Java
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-galaxy-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-galaxy-on-aws
+  description: Galaxy on AWS Guidance provides all the infrastructure components required to run Galaxy in the cloud and are
+    preconfigured with industry best practices for infrastructure monitoring and security, cost efficiency, and data governance.
+  language: TypeScript
+  topics:
+  - bioinformatics
+  - cloud
+  - genomics
+  - hpc
+  - pipeline
+  archived: false
+  stars: 19
+  pushed_at: '2025-02-10'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-game-analytics-pipeline-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-game-analytics-pipeline-on-aws
+  description: The Game Analytics Pipeline solution helps game developers to apply a flexible, and scalable DataOps methodology
+    to their games. Allowing them to continuously integrate, and continuously deploy a scalable serverless data pipeline for
+    ingesting, storing, and analyzing telemetry data generated from games, and services.
+  language: TypeScript
+  topics:
+  - analytics
+  - aws
+  - cdk
+  - cicd
+  - games
+  - terraform
+  archived: false
+  stars: 36
+  pushed_at: '2026-06-09'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-game-production-environment-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-game-production-environment-on-aws
+  description: This example allows you to quickly evaluate some typical solution areas of a Game Production in the Cloud pipeline
+    (GPIC). Remote workstation, version control and acceleration of computationally expensive process.
+  language: Python
+  topics: []
+  archived: false
+  stars: 20
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-game-server-hosting-using-agones-and-open-match-on-amazon-eks
+  url: https://github.com/aws-solutions-library-samples/guidance-for-game-server-hosting-using-agones-and-open-match-on-amazon-eks
+  description: This guidance provides code and instructions to create a multi Kubernetes cluster environment to host a match
+    making and game server solution, integrating Open Match, Agones and Amazon Elastic Kubernetes Service (Amazon EKS), for
+    a session-based multiplayer game.
+  language: HCL
+  topics:
+  - agones
+  - eks
+  - games
+  - openmatch
+  archived: false
+  stars: 17
+  pushed_at: '2026-06-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-generating-food-concepts-using-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-for-generating-food-concepts-using-amazon-bedrock
+  description: This Guidance demonstrates how grocery retailers can accelerate private-label product development from weeks
+    of costly agency work to under two minutes using Amazon Bedrock foundation models for automated concept generation. Claude
+    Sonnet 4 generates market rationale, bills of materials with costings, and competitive pricing recommendations.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 0
+  pushed_at: '2026-05-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-generating-product-descriptions-with-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-for-generating-product-descriptions-with-amazon-bedrock
+  description: Building Product Descriptions with AWS Bedrock and Rekognition
+  language: CSS
+  topics:
+  - bedrock
+  - generative-ai
+  - rekognition
+  - retail
+  archived: false
+  stars: 10
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-generating-recommendation-of-rules-for-aws-entity-resolution
+  url: https://github.com/aws-solutions-library-samples/guidance-for-generating-recommendation-of-rules-for-aws-entity-resolution
+  description: This Guidance demonstrates an automated approach for generating rule recommendations to match, link, and enhance
+    related records using AWS Entity Resolution rule-based matching. It showcases an AWS Glue notebook that streamlines the
+    process of creating effective matching rules.
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2025-04-17'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-generating-support-case-insights-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-generating-support-case-insights-on-aws
+  description: null
+  language: Python
+  topics: []
+  archived: false
+  stars: 11
+  pushed_at: '2026-03-06'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-generative-ai-assistant-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-generative-ai-assistant-on-aws
+  description: This Guidance shows how to unlock instant insights with a generative AI assistant that transforms content consumption
+    across diverse sources, including web documents, PDFs, media files, and YouTube videos.
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2026-02-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-generative-ai-deployments-using-amazon-sagemaker-jumpstart
+  url: https://github.com/aws-solutions-library-samples/guidance-for-generative-ai-deployments-using-amazon-sagemaker-jumpstart
+  description: This Guidance demonstrates how to deploy a generative artificial intelligence (AI) model provided by Amazon
+    SageMaker JumpStart to create an asynchronous SageMaker endpoint with the ease of the AWS Cloud Development Kit (AWS CDK).
+  language: Python
+  topics: []
+  archived: false
+  stars: 16
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-generative-ai-model-optimization-using-amazon-sagemaker
+  url: https://github.com/aws-solutions-library-samples/guidance-for-generative-ai-model-optimization-using-amazon-sagemaker
+  description: This Guidance shows how you can optimize your generative AI models using Amazon SageMaker, a service where
+    you can build, train, and deploy large language models (LLMs) at scale.
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2024-09-25'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-generative-ai-shopping-assistant-using-agents-for-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-for-generative-ai-shopping-assistant-using-agents-for-amazon-bedrock
+  description: This Guidance demonstrates how to create a compelling, AI-driven shopping experience using Amazon Bedrock Agents.
+  language: Python
+  topics: []
+  archived: false
+  stars: 16
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-geospatial-insights-for-sustainability-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-geospatial-insights-for-sustainability-on-aws
+  description: This Guidance helps customers observe land use changes using geospatial data to support supply chain best practices.
+    Customers can monitor changes in forest density using an Amazon SageMaker geospatial capability that simplifies the process
+    of analyzing satellite images for changes in vegetation.
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 16
+  pushed_at: '2025-02-25'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-handling-data-during-traffic-spikes-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-handling-data-during-traffic-spikes-on-aws
+  description: This Guidance shows how to handle sudden traffic spikes in Amazon Aurora using a mixed-configuration architecture
+    that combines a provisioned Aurora cluster with Aurora Serverless v2 instances and custom auto-scaling.
+  language: Shell
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-high-availability-oracle-databases-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-high-availability-oracle-databases-on-aws
+  description: This Guidance helps customers set up high availability for Oracle databases using Amazon RDS Custom for Oracle
+    service, a managed cloud data service that makes it easier to operate and scale relational databases.
+  language: null
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-high-speed-rag-chatbots-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-high-speed-rag-chatbots-on-aws
+  description: This Guidance demonstrates how to develop a high-performance Retrieval-Augmented Generation (RAG) chatbot by
+    combining Amazon Aurora PostgreSQL-Compatible Edition with the open-source pgvector extension.
+  language: Python
+  topics: []
+  archived: false
+  stars: 14
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-identifying-diagnosis-codes-from-clinical-notes-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-identifying-diagnosis-codes-from-clinical-notes-on-aws
+  description: This Guidance shows how to use generative artificial intelligence (generative AI) to summarize patient histories
+    and identify likely medical conditions and diagnosis codes.
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-implementing-google-privacy-sandbox-key-value-service-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-implementing-google-privacy-sandbox-key-value-service-on-aws
+  description: This Guidance demonstrates how to deploy the Google Chrome Privacy Sandbox Key/Value service within a trusted
+    execution environment (TEE) on AWS
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-implementing-the-google-privacy-sandbox-aggregation-service-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-implementing-the-google-privacy-sandbox-aggregation-service-on-aws
+  description: This Guidance demonstrates how to deploy the Google Privacy Sandbox “Aggregation Service” within a trusted
+    execution environment (TEE) using AWS services.
+  language: Python
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2026-03-26'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-improving-application-development-productivity-with-the-sap-abap-assistant-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-improving-application-development-productivity-with-the-sap-abap-assistant-on-aws
+  description: This Guidance demonstrates how to set up the SAP ABAP Assistant, a plugin that integrates with Amazon Bedrock
+    in the Eclipse integrated development environment (IDE)
+  language: Java
+  topics: []
+  archived: false
+  stars: 14
+  pushed_at: '2025-05-15'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-incremental-data-exports-from-amazon-dynamodb-to-amazon-s3
+  url: https://github.com/aws-solutions-library-samples/guidance-for-incremental-data-exports-from-amazon-dynamodb-to-amazon-s3
+  description: This Guidance shows how the Amazon DynamoDB continuous incremental exports feature can help capture and transfer
+    ongoing data changes between DynamoDB tables.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 10
+  pushed_at: '2024-10-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-incremental-data-exports-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-incremental-data-exports-on-aws
+  description: This Guidance demonstrates a robust approach to incrementally export and maintain a centralized data repository
+    reflecting ongoing changes in a distributed database.
+  language: Python
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-industrial-digital-twin-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-industrial-digital-twin-on-aws
+  description: This Guidance provides a set of artifacts that will guide customers in building a production monitoring architecture
+    with AWS IoT TwinMaker and supporting services.
+  language: Python
+  topics:
+  - guidance
+  archived: false
+  stars: 16
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-integrated-scalable-search-for-amazon-documentdb
+  url: https://github.com/aws-solutions-library-samples/guidance-for-integrated-scalable-search-for-amazon-documentdb
+  description: This Guidance shows how to run advanced search and analytics on Amazon DocumentDB data using Amazon OpenSearch
+    Service.
+  language: Python
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-integrating-3rd-party-saas-data-with-amazon-appflow-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-integrating-3rd-party-saas-data-with-amazon-appflow-on-aws
+  description: This Guidance demonstrates how to ingest third-party Software as a Service (SaaS) data into Amazon S3 to build
+    a serverless business intelligence pipeline.
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-integrating-amazon-connect-with-sap-sales-and-service-cloud-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-integrating-amazon-connect-with-sap-sales-and-service-cloud-on-aws
+  description: null
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2025-11-18'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-integrating-external-single-sign-on-providers-with-amazon-eks
+  url: https://github.com/aws-solutions-library-samples/guidance-for-integrating-external-single-sign-on-providers-with-amazon-eks
+  description: This Guidance demonstrates how to automate the deployment of an Amazon Elastic Kubernetes Service (Amazon EKS)
+    cluster for external single sign-on authentication.
+  language: HCL
+  topics:
+  - eks-cluster
+  - security-automation
+  - single-sign-on
+  - terraform-aws
+  archived: false
+  stars: 4
+  pushed_at: '2025-05-22'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-integrating-sap-and-non-sap-data-using-snowflake-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-integrating-sap-and-non-sap-data-using-snowflake-on-aws
+  description: This Guidance demonstrates how to implement a SAP Cloud Lakehouse using Snowflake on AWS, addressing the challenge
+    of integrating SAP and non-SAP data for comprehensive analytics through step-by-step implementation instructions.
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 0
+  pushed_at: '2025-11-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-intelligent-application-modernization-explorer
+  url: https://github.com/aws-solutions-library-samples/guidance-for-intelligent-application-modernization-explorer
+  description: This Guidance helps organizations evaluate their current application environments for modernization by using
+    generative AI to analyze tech stacks, identify modernization opportunities, and generate cost estimates. Users upload
+    application data through a web interface and receive AI-powered insights on tech stack similarities, modernization patterns
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-05-01'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-intelligent-document-processing-agents-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-intelligent-document-processing-agents-on-aws
+  description: This demo provides an automated loan application that streamlines document submission, verification, underwriting
+    and approval processes.
+  language: TypeScript
+  topics:
+  - amazon-bedrock
+  - amazon-bedrock-data-automation
+  - amazon-nova
+  - claude
+  - genai-labs
+  - multi-agent-collaboration
+  archived: false
+  stars: 26
+  pushed_at: '2025-09-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-intelligent-identification-of-2d-3d-assets-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-intelligent-identification-of-2d-3d-assets-on-aws
+  description: null
+  language: HCL
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2025-05-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-intelligent-legacy-to-saas-application-migration
+  url: https://github.com/aws-solutions-library-samples/guidance-for-intelligent-legacy-to-saas-application-migration
+  description: This Guidance demonstrates how organizations can leverage AI-powered tools to streamline and optimize their
+    migration assessment workflows while maintaining decision-making transparency. It helps teams accelerate the often complex
+    and time-consuming assessment process by automating analysis, pattern recognition, and recommendation generation.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 0
+  pushed_at: '2026-06-03'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-intelligent-route-optimization-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-intelligent-route-optimization-on-aws
+  description: This solution provides a reference implementation for route optimization and tracking that can be leveraged
+    by organizations that serve their own customers “in the field.”
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 11
+  pushed_at: '2024-10-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-investment-analysis-using-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-for-investment-analysis-using-amazon-bedrock
+  description: This Guidance demonstrates how Amazon Bedrock, with offers a range of large language models (LLMs), can perform
+    generative AI-powered analysis on structured and unstructured data sets to support investment analysts.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 19
+  pushed_at: '2026-01-26'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-iso20022-messaging-workflows-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-iso20022-messaging-workflows-on-aws
+  description: This Guidance demonstrates how payment operators can deploy an event-driven architecture to receive, consume,
+    and release ISO 20022 payment messages.
+  language: Python
+  topics:
+  - python
+  - serverless
+  - terraform
+  archived: false
+  stars: 20
+  pushed_at: '2026-04-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-ivr-migration-to-amazon-connect-using-generative-ai-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-ivr-migration-to-amazon-connect-using-generative-ai-on-aws
+  description: This Guidance demonstrates a streamlined approach to modernizing contact centers by migrating legacy interactive
+    voice response (IVR) and chatbot systems to Amazon Lex and Amazon Connect.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2026-04-15'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-kubernetes-based-game-load-testing-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-kubernetes-based-game-load-testing-on-aws
+  description: This Guidance demonstrates how to set up a fully managed, distributed load testing solution using AWS services
+    and Locust, an open-source load testing tool.
+  language: HCL
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2025-02-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-live-chat-content-moderation-with-generative-ai-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-live-chat-content-moderation-with-generative-ai-on-aws
+  description: This Guidance demonstrates how organizations can implement generative artificial intelligence (AI) services
+    for automated message screening in live chat environments.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2026-04-22'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-live-streams-hosted-by-digital-humans-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-live-streams-hosted-by-digital-humans-on-aws
+  description: This Guidance helps you build a digital human that can livestream content on demand through cloud rendering,
+    cloud livestreaming, and artificial intelligence (AI) services
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-llm-training-operations-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-llm-training-operations-on-aws
+  description: This Guidance demonstrates how to establish a robust pre-flight testing and monitoring system for enterprise
+    LLM training operations.
+  language: null
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2025-08-07'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-low-code-intelligent-document-processing-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-low-code-intelligent-document-processing-on-aws
+  description: This Guidance provides best practices for building and deploying an intelligent document processing (IDP) architecture
+    that scales with workload demands.
+  language: Python
+  topics: []
+  archived: false
+  stars: 51
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-low-cost-semantic-search-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-low-cost-semantic-search-on-aws
+  description: This project demonstrates how to build a cost-effective Retrieval-Augmented Generation (RAG) solution using
+    Amazon DynamoDB as a vector store for small use cases, enabling small businesses to implement AI personalization without
+    the high costs typically associated with specialized vector databases.
+  language: Python
+  topics: []
+  archived: false
+  stars: 15
+  pushed_at: '2026-06-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-low-latency-high-throughput-model-inference-using-amazon-sagemaker
+  url: https://github.com/aws-solutions-library-samples/guidance-for-low-latency-high-throughput-model-inference-using-amazon-sagemaker
+  description: This Guidance shows how to use Amazon SageMaker to support high-throughput model inferencing workloads like
+    programmatic advertising and real-time bidding (RTB).
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-machine-learning-inference-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-machine-learning-inference-on-aws
+  description: This Guidance demonstrates how to deploy a machine learning inference architecture on Amazon Elastic Kubernetes
+    Service (Amazon EKS). It addresses the basic implementation requirements as well as ways you can pack thousands of unique
+    PyTorch deep learning (DL) models into a scalable architecture and evaluate performance
+  language: Shell
+  topics:
+  - do-framework
+  - eks-cluster
+  - graviton3
+  - inferentia
+  - ml
+  - mlops-workflow
+  archived: false
+  stars: 45
+  pushed_at: '2025-05-29'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-machine-translation-pipelines-using-generative-ai-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-machine-translation-pipelines-using-generative-ai-on-aws
+  description: null
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-managing-aws-quotas-through-automation
+  url: https://github.com/aws-solutions-library-samples/guidance-for-managing-aws-quotas-through-automation
+  description: This Guidance shows how to automatically monitor and receive alerts on service quota usage across single or
+    multiple AWS accounts. Effectively managing your AWS service quotas is crucial for maintaining operational continuity
+    and preventing unexpected disruptions to your business-critical applications.
+  language: Python
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2026-05-06'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-managing-ec2-instance-expiration-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-managing-ec2-instance-expiration-on-aws
+  description: Stops (or terminates) EC2 instances that have run (or existed) past the expiration values defined in their
+    tags.
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-managing-planograms-with-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-for-managing-planograms-with-amazon-bedrock
+  description: This Guidance demonstrates how to streamline retail planogram creation and compliance using Amazon Bedrock.
+    It shows how to leverage generative AI to efficiently consider multiple factors such as sales data, product velocity,
+    item dimensions, brand colors, and shelf capacity to generate initial planograms.
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-01-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-maximum-data-availability-architecture-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-maximum-data-availability-architecture-on-aws
+  description: This Guidance demonstrates how to enhance database resiliency using a Maximum Data Availability Architecture
+    (MD2A). It introduces MD2A, a data platform that uses APIs and SDKs to deliver full-stack resiliency from the user interface
+    to the database layers.
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2026-01-09'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-media-extraction-and-dynamic-content-policy-framework-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-media-extraction-and-dynamic-content-policy-framework-on-aws
+  description: This Guidance demonstrates how to accelerate your content analysis workflows by automating video metadata extraction,
+    intelligence gathering, and content moderation
+  language: Python
+  topics: []
+  archived: false
+  stars: 13
+  pushed_at: '2025-02-26'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-media-provenance-with-c2pa-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-media-provenance-with-c2pa-on-aws
+  description: This Guidance demonstrates how to run the Coalition for Content Provenance and Authenticity (C2PA) standard
+    for tracking provenance with media workloads on AWS.
+  language: TypeScript
+  topics:
+  - aws
+  - c2pa
+  - fargate
+  - lambda
+  archived: false
+  stars: 17
+  pushed_at: '2026-04-07'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-media2cloud-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-media2cloud-on-aws
+  description: Guidance for Media2Cloud on AWS solution (formerly known as AWS Media2Cloud Solution) is designed to demonstrate
+    a serverless ingest framework that can quickly setup a baseline ingest workflow for placing video assets and associated
+    metadata under management control of an AWS customer.
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 143
+  pushed_at: '2026-06-05'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-medialake-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-medialake-on-aws
+  description: This Guidance demonstrates how to deploy a media lake, which addresses media management challenges for organizations
+    of all sizes using AWS services and partner integrations.
+  language: Python
+  topics: []
+  archived: false
+  stars: 28
+  pushed_at: '2026-06-09'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-meter-data-analytics-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-meter-data-analytics-on-aws
+  description: This Guidance helps utility companies ingest data from Meter Data Management Systems (MDMS) or directly from
+    Head End Systems (HES) and combine them with other data sources, including weather and geographic information system (GIS)
+    data.
+  language: Python
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2024-08-09'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-migrating-tabular-data-from-amazon-s3-to-s3-tables
+  url: https://github.com/aws-solutions-library-samples/guidance-for-migrating-tabular-data-from-amazon-s3-to-s3-tables
+  description: This solution sets up an automated migration process for moving tables (Apache Iceberg and Hive tables) registered
+    in AWS Glue Table Catalog and stored in Amazon S3 general-purpose buckets to Amazon S3 Table buckets using AWS Step Functions,
+    and Amazon EMR with Apache Spark.
+  language: Python
+  topics: []
+  archived: false
+  stars: 13
+  pushed_at: '2025-08-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-modernizing-electric-vehicle-charging-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-modernizing-electric-vehicle-charging-on-aws
+  description: This guidance demonstrates how the OCPP Gateway acts as a proxy between OCPP and MQTT, enabling integration
+    with AWS IoT Core and downstream CPO services built on AWS.
+  language: TypeScript
+  topics:
+  - aws
+  - cpo
+  - ecs-fargate
+  - ev
+  - ev-charging
+  - iot
+  - iot-core
+  - ocpp
+  archived: false
+  stars: 92
+  pushed_at: '2025-02-28'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-monitoring-and-optimizing-energy-usage-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-monitoring-and-optimizing-energy-usage-on-aws
+  description: This Guidance demonstrates how to monitor and optimize the energy use of industrial and/or building equipment
+    in customer premises using AI/ML on AWS.
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 10
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-monitoring-high-cardinality-telecom-metrics-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-monitoring-high-cardinality-telecom-metrics-on-aws
+  description: This Guidance demonstrates how telecom operators can use Amazon CloudWatch to better monitor key performance
+    indicators (KPIs) for their hardware devices, endpoints, services, and software that often have many unique values, or
+    high-cardinality
+  language: null
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-account-environment-on-amazon-quicksight
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-account-environment-on-amazon-quicksight
+  description: Guidance for helping customers with a prescriptive guidance to build Amazon QuickSight environments spanning
+    across multiple accounts in line with AWS' best practices for multi-account strategy. This approach provides improved
+    isolation, security, access management, and cost tracking.
+  language: Python
+  topics: []
+  archived: false
+  stars: 9
+  pushed_at: '2024-12-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-account-machine-learning-model-governance-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-account-machine-learning-model-governance-on-aws
+  description: This Guidance shows how to implement a centralized multi-account machine learning (ML) model governance strategy
+    on AWS
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 10
+  pushed_at: '2025-04-10'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-account-outposts-operations-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-account-outposts-operations-on-aws
+  description: This Guidance demonstrates how to effectively manage and optimize Multi-Account AWS Outposts environments through
+    an innovative quota management system
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2026-02-09'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-agent-employee-virtual-assistant-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-employee-virtual-assistant-on-aws
+  description: This Guidance demonstrates how TeamLink AI, an employee virtual assistant, centralizes access to cross-functional
+    knowledge through a unified, intelligent chat interface. Leveraging advanced language models hosted on Amazon Bedrock.
+  language: Python
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2026-02-14'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-agent-orchestration-agent-squad-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-agent-squad-on-aws
+  description: This Guidance demonstrates how to effectively orchestrate multiple specialized AI agents to solve complex customer
+    support challenges through different coordination mechanisms on AWS. Modern customer service environments demand sophisticated
+    handling of multi-step interactions, personalized responses, and seamless access to various data sources.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 35
+  pushed_at: '2026-02-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-agent-orchestration-langgraph-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-langgraph-on-aws
+  description: This Guidance demonstrates how to effectively orchestrate multiple specialized AI agents to solve complex customer
+    support challenges through different coordination mechanisms on AWS.
+  language: Python
+  topics: []
+  archived: false
+  stars: 33
+  pushed_at: '2026-01-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-agent-orchestration-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-on-aws
+  description: Enables developers to build, deploy, and manage multiple specialized agents that work together to tackle complex
+    workflows. Each agent focuses on a specific task, breaks down processes into manageable steps, assigns tasks to the appropriate
+    agents, and ensures accurate, and reliable outcomes.
+  language: TypeScript
+  topics:
+  - agents
+  - bedrock
+  - multi-agent
+  archived: false
+  stars: 69
+  pushed_at: '2026-01-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-agent-orchestration-using-bedrock-agentcore-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-agent-orchestration-using-bedrock-agentcore-on-aws
+  description: This Guidance demonstrates how to build and deploy multi-agent systems using Amazon Bedrock AgentCore and Strands
+    Agents SDK.
+  language: Python
+  topics: []
+  archived: false
+  stars: 30
+  pushed_at: '2026-04-23'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-cluster-application-management-with-karmada-and-amazon-eks
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-cluster-application-management-with-karmada-and-amazon-eks
+  description: This guidance shows how to deploy a federated Kubernetes environment in Amazon Web Services (AWS) cloud using
+    Amazon Elastic Kubernetes Service (Amazon EKS) and the open source CNCF Karmada project -  multi-cluster Kubernetes management
+    system with advanced scheduling capabilities that enable running containerized applications across clusters
+  language: Shell
+  topics:
+  - eks-cluster
+  - karmada
+  - multi-cluster-management
+  archived: false
+  stars: 7
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-modal-data-analysis-with-aws-health-and-ml-services
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-modal-data-analysis-with-aws-health-and-ml-services
+  description: An end-to-end framework for storing, integrating, and analyzing multimodal HCLS data on AWS, using AWS HealthOmics,
+    AWS HealthLake, AWS HealthImaging, Amazon SageMaker, Amazon Athena, Amazon QuickSight, and Amazon S3.
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 17
+  pushed_at: '2024-12-17'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-provider-generative-ai-gateway-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-provider-generative-ai-gateway-on-aws
+  description: This Guidance demonstrates how to streamline access to numerous large language models (LLMs) through a unified,
+    industry-standard API gateway based on OpenAI API standards
+  language: HCL
+  topics: []
+  archived: false
+  stars: 226
+  pushed_at: '2026-04-24'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-region-application-data-using-amazon-aurora
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-region-application-data-using-amazon-aurora
+  description: This Guidance demonstrates how you can scale your web or mobile applications using the read local, write global
+    approach to build a resilient, self-healing system spanning multiple AWS Regions
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-region-resilient-microservice-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-region-resilient-microservice-on-aws
+  description: This Guidance demonstrates how to build highly resilient web applications that can withstand disruptions, minimizing
+    impact on revenue and application downtime
+  language: Java
+  topics: []
+  archived: false
+  stars: 9
+  pushed_at: '2026-03-01'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multi-region-serverless-batch-applications-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multi-region-serverless-batch-applications-on-aws
+  description: This Guidance helps customers design a resilient batch process application using AWS services
+  language: Python
+  topics:
+  - aws
+  - batch
+  - multi-region
+  - resilience
+  - serverless
+  archived: false
+  stars: 19
+  pushed_at: '2026-03-01'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multimodal-data-processing-using-amazon-bedrock-data-automation
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multimodal-data-processing-using-amazon-bedrock-data-automation
+  description: This Guidance shows how Amazon Bedrock Data Automation streamlines the generation of valuable insights from
+    unstructured multimodal content such as documents, images, audio, and videos through a unified multi-modal inference API.
+  language: Python
+  topics: []
+  archived: false
+  stars: 65
+  pushed_at: '2026-03-25'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-multimodal-video-analytics-of-smart-product-subscription-services-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-multimodal-video-analytics-of-smart-product-subscription-services-on-aws
+  description: This Guidance demonstrates how providers offering smart product subscriptions can use large language model
+    (LLM) inferencing to create innovative video analytics services that drive customer value and revenue.
+  language: Python
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2025-01-22'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-natural-language-queries-of-relational-databases-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-natural-language-queries-of-relational-databases-on-aws
+  description: Demonstration of Natural Language Query (NLQ) of an Amazon RDS for PostgreSQL database, using SageMaker JumpStart,
+    Amazon Bedrock, LangChain, Streamlit, and Chroma.
+  language: Python
+  topics:
+  - amazon
+  - amazon-bedrock
+  - amazon-rds-postgresql
+  - amazon-sagemaker
+  - amazon-web-services
+  - aws
+  - foundation-models
+  - gen-ai
+  - generative-ai
+  - natural-language-queries
+  - nlq
+  archived: false
+  stars: 72
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-near-real-time-data-migration-from-apache-cassandra-to-amazon-keyspaces
+  url: https://github.com/aws-solutions-library-samples/guidance-for-near-real-time-data-migration-from-apache-cassandra-to-amazon-keyspaces
+  description: This Guidance shows how to migrate self-managed Apache Cassandra clusters to the fully-managed Amazon Keyspaces
+    service using the open-source CQLReplicator tool developed by AWS Solutions Architects.
+  language: Shell
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2024-10-17'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-no-code-multi-agent-ai-orchestration-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-no-code-multi-agent-ai-orchestration-on-aws
+  description: This Guidance demonstrates how to overcome the complexity and lengthy development cycles of enterprise AI systems
+    through a no-code multi-agent orchestration platform on AWS.
+  language: Python
+  topics: []
+  archived: false
+  stars: 10
+  pushed_at: '2026-06-10'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-object-level-insights-and-cost-savings-with-amazon-s3
+  url: https://github.com/aws-solutions-library-samples/guidance-for-object-level-insights-and-cost-savings-with-amazon-s3
+  description: This Guidance shows how to achieve object-level insights in Amazon Simple Storage Service (Amazon S3) and transition
+    or expire objects based on their last access date.
+  language: null
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-okta-phone-based-multi-factor-authentication-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-okta-phone-based-multi-factor-authentication-on-aws
+  description: This Guidance demonstrates how to implement a secure and scalable one-time passcode (OTP) delivery solution
+    by using AWS with Okta’s identity platform
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2025-08-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-omnichannel-claims-processing-powered-by-generative-ai-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-omnichannel-claims-processing-powered-by-generative-ai-on-aws
+  description: This Guidance demonstrates how organizations in the Financial Service Industry (FSI) can modernize their claims
+    processing using digital technologies, such as automated chatbots, machine learning, and data analytics.
+  language: Python
+  topics: []
+  archived: false
+  stars: 8
+  pushed_at: '2025-07-23'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-open-source-3d-reconstruction-toolbox-for-gaussian-splats-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-open-source-3d-reconstruction-toolbox-for-gaussian-splats-on-aws
+  description: The Open Source 3D Reconstruction Toolbox for Gaussian Splats provides an end-to-end, pipeline-based guidance
+    on AWS to reconstruct 3D scenes or objects from images or video inputs.
+  language: Python
+  topics:
+  - gaussian-splatting
+  - sagemaker
+  - training-models
+  archived: false
+  stars: 81
+  pushed_at: '2026-06-02'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-optimizing-heterogeneous-auto-scaling-group-resource-utilization-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-optimizing-heterogeneous-auto-scaling-group-resource-utilization-on-aws
+  description: This Guidance shows how to use Elastic Load Balancing (ELB) to efficiently distribute traffic across heterogeneous
+    Auto Scaling groups
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2025-07-30'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-oracle-migrations-to-amazon-aurora-postgresql-using-aws-dms
+  url: https://github.com/aws-solutions-library-samples/guidance-for-oracle-migrations-to-amazon-aurora-postgresql-using-aws-dms
+  description: This Guidance demonstrates best practices for migrating large Oracle databases to Amazon Aurora PostgreSQL,
+    helping you to modernize your data infrastructure cost-effectively.
+  language: null
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2024-10-17'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-patient-entity-resolution-with-aws-healthlake
+  url: https://github.com/aws-solutions-library-samples/guidance-for-patient-entity-resolution-with-aws-healthlake
+  description: AWS HealthLake patient matching with AWS Entity Resolution.This Guidance shows how to use AWS Entity Resolution
+    to perform patient entity resolution on healthcare data stored in AWS HealthLake.
+  language: Python
+  topics:
+  - aws
+  - entity-resolution
+  - healthlake
+  - patient
+  archived: false
+  stars: 12
+  pushed_at: '2025-09-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-payment-systems-using-event-driven-architecture-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-payment-systems-using-event-driven-architecture-on-aws
+  description: This guidance focuses on the part of payments processing systems that post payments to recieving accounts.
+    In this phase, inbound transactions are evaluated, have accounting rules applied to them, then are posted into customer
+    accounts.
+  language: HCL
+  topics:
+  - distributed-systems
+  - event-driven-architecture
+  - payments
+  - serverless
+  archived: false
+  stars: 25
+  pushed_at: '2026-03-26'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-persistent-world-game-hosting-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-persistent-world-game-hosting-on-aws
+  description: Guidance for getting quickly started with hosting persistent world games and virtual worlds on AWS leveraging
+    Amazon GameLift, a fully managed game server hosting solution, with a serverless backend service and management layer.
+  language: C#
+  topics:
+  - gamelift
+  - gameserver
+  - gameservers
+  - metaverse
+  - mmo
+  - persistentworld
+  archived: false
+  stars: 23
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-personalized-ecommerce-recommendations-using-amazon-bedrock-agents
+  url: https://github.com/aws-solutions-library-samples/guidance-for-personalized-ecommerce-recommendations-using-amazon-bedrock-agents
+  description: This Guidance demonstrates how to implement personalized ecommerce recommendations using Amazon Bedrock Agents.
+  language: Python
+  topics: []
+  archived: false
+  stars: 214
+  pushed_at: '2026-06-04'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-personalized-engagement-using-online-and-mobile-user-behaviors-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-personalized-engagement-using-online-and-mobile-user-behaviors-on-aws
+  description: A comprehensive digital customer engagement solution by leveraging RudderStack's warehouse-first CDP platform
+    and AWS services
+  language: Jupyter Notebook
+  topics:
+  - customer-data-platform
+  archived: false
+  stars: 5
+  pushed_at: '2025-04-10'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-piping-and-instrumentation-diagrams-digitization-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-piping-and-instrumentation-diagrams-digitization-on-aws
+  description: This Guidance demonstrates how to transform static Piping and Instrumentation Diagrams (P&IDs) into machine-readable
+    digital formats using AWS AI and machine learning services. The process combines Amazon Bedrock Data Automation for superior
+    text extraction from technical drawings with custom SageMaker deep learning models.
+  language: Python
+  topics: []
+  archived: false
+  stars: 17
+  pushed_at: '2025-11-18'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-predicting-player-behavior-with-ai-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-predicting-player-behavior-with-ai-on-aws
+  description: This Guidance demonstrates how to implement an automated machine learning pipeline to gain real-time player
+    insights, powered by artificial intelligence (AI). Game studios can leverage this low-code solution to quickly build,
+    train, and deploy high-quality models that predict player behavior using their own gameplay data.
+  language: Python
+  topics: []
+  archived: false
+  stars: 9
+  pushed_at: '2025-07-09'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-predictive-maintenance-with-amazon-monitron
+  url: https://github.com/aws-solutions-library-samples/guidance-for-predictive-maintenance-with-amazon-monitron
+  description: This Guidance helps you generate actionable insights for predictive maintenance management in industrial environments
+    using Amazon Monitron and other AWS services.
+  language: null
+  topics:
+  - cloudformation
+  - iot
+  - monitron
+  archived: false
+  stars: 4
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-preparing-and-validating-records-for-entity-resolution-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-preparing-and-validating-records-for-entity-resolution-on-aws
+  description: This Guidance demonstrates how to prepare and validate Personally Identifiable Information (PII) data, including
+    physical address, phone, and email, for use with AWS Entity Resolution.
+  language: Python
+  topics: []
+  archived: false
+  stars: 9
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-processing-overhead-imagery-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-processing-overhead-imagery-on-aws
+  description: This Guidance demonstrates how to process remote sensing imagery using machine learning models that automatically
+    detect and identify objects collected from satellites, unmanned aerial vehicles, and other remote sensing devices
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 17
+  pushed_at: '2026-05-05'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-processing-real-time-data-using-amazon-dynamo-db
+  url: https://github.com/aws-solutions-library-samples/guidance-for-processing-real-time-data-using-amazon-dynamo-db
+  description: This Guidance demonstrates how to use Amazon DynamoDB Streams to build near real-time data aggregations for
+    DynamoDB tables
+  language: null
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-product-attribution-and-personalization-using-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-for-product-attribution-and-personalization-using-amazon-bedrock
+  description: null
+  language: Python
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2026-04-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-product-catalog-enhancement-with-generative-ai-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-product-catalog-enhancement-with-generative-ai-on-aws
+  description: This Guidance demonstrates how retailers can use generative AI to improve their product catalog management
+    process. By automating the traditionally manual task of processing and standardizing product data from manufacturers,
+    retailers can significantly enhance their operational efficiency.
+  language: Python
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2025-07-24'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-product-substitutions-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-product-substitutions-on-aws
+  description: This Guidance demonstrates how retailers can use Amazon OpenSearch Service, in combination with natural language
+    processing, to create digital recommendations when needing to replace out-of-stock store products.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-product-traceability-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-product-traceability-on-aws
+  description: This Guidance helps to provide transparency and traceability of the supply chain network for a product
+  language: Python
+  topics: []
+  archived: false
+  stars: 0
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-programmatic-deployment-of-ndi-discovery-servers-for-broadcast-workflows-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-programmatic-deployment-of-ndi-discovery-servers-for-broadcast-workflows-on-aws
+  description: This sample, non-production-ready template describes a CloudFormation template to deploy the infraestructure
+    needed to host the NDI DIscovery Servers on an existing VPC
+  language: null
+  topics:
+  - broadcast
+  - live-production
+  - media
+  - ndi
+  archived: false
+  stars: 4
+  pushed_at: '2025-08-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-protein-language-esm-model-training-with-sagemaker-hyperpod
+  url: https://github.com/aws-solutions-library-samples/guidance-for-protein-language-esm-model-training-with-sagemaker-hyperpod
+  description: Infrastructure deployment automation of SageMaker HyperPod clusters based on EKS and SLURM orchestration and
+    Protein Language ESM-2 model training job definitions including NVIDIA BioNemo
+  language: Shell
+  topics:
+  - aws-sagemaker
+  - bionemo
+  - hyperpod
+  - model
+  - nvidia-gpu
+  - training
+  archived: false
+  stars: 3
+  pushed_at: '2026-04-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-querying-sustainability-documents-using-generative-ai-for-esg-reporting-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-querying-sustainability-documents-using-generative-ai-for-esg-reporting-on-aws
+  description: This Guidance demonstrates how to use Retrieval-Augmented Generation (RAG) for your environmental, social,
+    and governance (ESG) or sustainability knowledge base by combining Amazon Kendra and a large language model (LLM) from
+    Amazon Bedrock—a fully managed service offering high-performing foundation models.  Designed to provide rapid insights,
+    the
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2026-04-22'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-real-time-monitoring-of-aws-elastic-disaster-recovery-using-amazon-q-developer
+  url: https://github.com/aws-solutions-library-samples/guidance-for-real-time-monitoring-of-aws-elastic-disaster-recovery-using-amazon-q-developer
+  description: This Guidance demonstrates how to enhance your disaster recovery operations by integrating Amazon Q Developer
+    with Slack for real-time monitoring and alerts.
+  language: null
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2025-11-05'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-real-time-text-search-using-amazon-opensearch-service
+  url: https://github.com/aws-solutions-library-samples/guidance-for-real-time-text-search-using-amazon-opensearch-service
+  description: This Guidance enables you to integrate Amazon DynamoDB with Amazon OpenSearch Service to enable real-time search
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-realtime-3d-product-visualization-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-realtime-3d-product-visualization-on-aws
+  description: This guidance demonstrates how to integrate real-time 3D product visualization capabilities into websites using
+    Amazon GameLift Streams, enabling businesses to create immersive digital experiences where customers can explore, customize,
+    and interact with products in real-time.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-02-03'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-receiving-digital-imaging-and-communications-in-medicine-images-in-amazon-s3
+  url: https://github.com/aws-solutions-library-samples/guidance-for-receiving-digital-imaging-and-communications-in-medicine-images-in-amazon-s3
+  description: This Guidance helps you send DICOM images directly to the cloud and store these images in Amazon Simple Storage
+    Service (Amazon S3)
+  language: Python
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-recency-frequency-and-monetization-analysis-on-amazon-pinpoint
+  url: https://github.com/aws-solutions-library-samples/guidance-for-recency-frequency-and-monetization-analysis-on-amazon-pinpoint
+  description: Recency, Frequency and Monetary (RFM) Segmentation guidance for Amazon Pinpoint.
+  language: Python
+  topics:
+  - machine-learning
+  - pinpoint
+  - rfm-analysis
+  - sagemaker
+  - user-engagement-and-retention
+  archived: false
+  stars: 2
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-resilient-data-applications-using-amazon-dynamodb
+  url: https://github.com/aws-solutions-library-samples/guidance-for-resilient-data-applications-using-amazon-dynamodb
+  description: This Guidance demonstrates how to architect a resilient, multi-Region application using AWS services, such
+    as Amazon DynamoDB global tables
+  language: Shell
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-responsible-content-moderation-with-ai-services-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-responsible-content-moderation-with-ai-services-on-aws
+  description: This Guidance demonstrates how game developers can moderate user-generated content (UGC) to ensure appropriate
+    and safe player interactions. With AWS managed services and custom machine learning models, developers can quickly set
+    up a content moderation backend system in one place.
+  language: Python
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-retail-analytics-using-generative-ai-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-retail-analytics-using-generative-ai-on-aws
+  description: This Guidance shows how to use large language models (LLMs) to generate SQL queries and perform data analytics,
+    enhancing the value of your data
+  language: Python
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2024-12-16'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-retail-pricing-agent-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-retail-pricing-agent-on-aws
+  description: null
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 0
+  pushed_at: '2026-04-15'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-retrieving-data-using-natural-language-queries-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-retrieving-data-using-natural-language-queries-on-aws
+  description: Use natural language to Generate Amazon Athena SQL queries to fetch data.
+  language: Python
+  topics: []
+  archived: false
+  stars: 8
+  pushed_at: '2024-12-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-rolling-back-changes-to-datasets-in-amazon-s3
+  url: https://github.com/aws-solutions-library-samples/guidance-for-rolling-back-changes-to-datasets-in-amazon-s3
+  description: Rapidly recover from accidental deletions, overwrites, or ransomware affecting millions or billions of S3 objects
+    — using S3 Versioning, at scale
+  language: null
+  topics:
+  - backup
+  - delete
+  - markers
+  - recovery
+  - rollback
+  - s3
+  - s3-storage
+  archived: false
+  stars: 14
+  pushed_at: '2026-06-04'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-sap-data-integration-and-management-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-sap-data-integration-and-management-on-aws
+  description: This Guidance provides the essential data foundation for empowering customers to build data and analytics solutions
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2024-09-17'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-sap-generative-ai-assistant-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-sap-generative-ai-assistant-on-aws
+  description: Guidance about how to improve business user productivity and experience using real-time data summaries, task
+    automation, seamless natural language interactions
+  language: Python
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2025-11-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-sap-intelligent-document-processing-and-insights-using-generative-ai-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-sap-intelligent-document-processing-and-insights-using-generative-ai-on-aws
+  description: This Guidance demonstrates how to automate unstructured document processing and subsequent auditing and analysis
+    using AWS AI/ML and generative AI Services.
+  language: ABAP
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-scalable-cryo-em-on-aws-parallel-computing-service
+  url: https://github.com/aws-solutions-library-samples/guidance-for-scalable-cryo-em-on-aws-parallel-computing-service
+  description: This guidance shows how to deploy a secure, high-performance Cryo-EM analysis environment on AWS ParallelCluster
+    Service, enabling research organizations to accelerate molecular structure determination. By combining CryoSPARC software
+    with flexible CPU/GPU compute options, high-throughput FSx storage, and automated Slurm job management.
+  language: Shell
+  topics: []
+  archived: false
+  stars: 10
+  pushed_at: '2025-11-14'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-scalable-game-playtesting-and-qa-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-scalable-game-playtesting-and-qa-on-aws
+  description: This Guidance demonstrates how game developers can revolutionize their QA and playtesting processes through
+    a comprehensive AWS-based solution.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-04-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-scalable-model-inference-and-agentic-ai-on-amazon-eks
+  url: https://github.com/aws-solutions-library-samples/guidance-for-scalable-model-inference-and-agentic-ai-on-amazon-eks
+  description: Comprehensive, scalable ML inference architecture using Amazon EKS, leveraging Graviton processors for cost-effective
+    CPU-based inference and GPU instances for accelerated inference. Guidance provides a complete end-to-end platform for
+    deploying LLMs with agentic AI capabilities, including RAG and MCP
+  language: Python
+  topics:
+  - agentic-ai
+  - agentic-workflow
+  - huggingface
+  - inference
+  - inference-engine
+  - langfuse
+  - litellm-ai-gateway
+  - mcp-client
+  - mcp-server
+  - opensource-ai
+  - vllm
+  archived: false
+  stars: 19
+  pushed_at: '2026-03-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-scaling-electronic-design-automation-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-scaling-electronic-design-automation-on-aws
+  description: This Guidance demonstrates how to implement a cloud-bursting solution that seamlessly extends your on-premises
+    semiconductor workflows to the cloud.
+  language: Shell
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2025-06-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-scheduling-batch-jobs-for-mainframe-modernization-service-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-scheduling-batch-jobs-for-mainframe-modernization-service-on-aws
+  description: This Guidance demonstrates how to build a simple scheduler for batch jobs migrated to AWS Mainframe Modernization
+    using AWS services such as Amazon EventBridge scheduler and AWS Step Functions.
+  language: JCL
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-secure-access-to-external-package-repositories-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-secure-access-to-external-package-repositories-on-aws
+  description: This Guidance helps organizations provide their data scientists with external package repository access while
+    maintaining information security (infosec) compliance.
+  language: Python
+  topics: []
+  archived: false
+  stars: 23
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-secure-blockchain-validation-using-aws-nitro-enclaves
+  url: https://github.com/aws-solutions-library-samples/guidance-for-secure-blockchain-validation-using-aws-nitro-enclaves
+  description: This Guidance shows how to deploy a secure, scalable, and cost-efficient blockchain key management solution
+    for blockchain validation workloads like Ethereum 2.0 proof-of-stake networks.
+  language: Python
+  topics: []
+  archived: false
+  stars: 21
+  pushed_at: '2026-02-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-securing-sensitive-data-in-rag-applications-using-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-for-securing-sensitive-data-in-rag-applications-using-amazon-bedrock
+  description: 'This AWS Guidance provides a comprehensive security framework for Retrieval Augmented Generation (RAG) applications
+    handling sensitive data. It addresses security challenges in generative AI by implementing two key architecture patterns:
+    data redaction and role-based access control'
+  language: Python
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2026-03-26'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-self-calibrating-level-4-digital-twins-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-self-calibrating-level-4-digital-twins-on-aws
+  description: This Guidance helps you orchestrate and deploy a Level 4 digital twin that is capable of self-calibration based
+    on data from the physical entity and the environment.
+  language: Python
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-self-healing-code-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-self-healing-code-on-aws
+  description: This Guidance helps software companies set up a automated system to detect error logs, generate bug fixes,
+    and create pull requests. Helps companies balance addressing bugs while also competing with product and feature development
+    pressure.
+  language: Python
+  topics:
+  - bedrock
+  - cloudwatch
+  - code-generation
+  - genai
+  - genai-poc
+  - lambda
+  archived: false
+  stars: 29
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-sensitive-information-scanning-with-amazon-macie-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-sensitive-information-scanning-with-amazon-macie-on-aws
+  description: This Guidance demonstrates how organizations can leverage Amazon Macie to enhance their data security posture
+    by systematically scanning artifacts for sensitive information.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-01-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-sentiment-analysis-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-sentiment-analysis-on-aws
+  description: This Guidance demonstrates how to use pgvector and Amazon Aurora PostgreSQL for sentiment analysis, a powerful
+    natural language processing (NLP) task.
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-similarity-search-based-retrieval-augmented-generation-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-similarity-search-based-retrieval-augmented-generation-on-aws
+  description: This Guidance shows how to build an advanced question-answering application using the latest AI tools from
+    AWS and its partners.
+  language: null
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2024-12-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-simple-ecommerce-website-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-simple-ecommerce-website-on-aws
+  description: This Guidance helps customers set up an ecommerce website on WordPress.
+  language: null
+  topics: []
+  archived: false
+  stars: 12
+  pushed_at: '2024-10-19'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-simplifying-virtual-appointments-using-salesforce-health-cloud-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-simplifying-virtual-appointments-using-salesforce-health-cloud-on-aws
+  description: This Guidance shows how to implement Salesforce Virtual Care, which integrates Amazon Chime with Salesforce
+    Health Cloud to facilitate accessible video and audio support for patient-clinician interactions
+  language: HTML
+  topics:
+  - ia-automator
+  archived: false
+  stars: 1
+  pushed_at: '2024-11-01'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-smart-and-sustainable-buildings-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-smart-and-sustainable-buildings-on-aws
+  description: This Guidance demonstrates how to integrate building systems, assets, and sensors to enable real-time and historical
+    insights for sustainable building management.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2025-11-18'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-sql-based-etl-with-apache-spark-on-amazon-eks
+  url: https://github.com/aws-solutions-library-samples/guidance-for-sql-based-etl-with-apache-spark-on-amazon-eks
+  description: A guidance that provides declarative data processing capability, and workflow orchestration automation to help
+    your business users (such as analysts and data scientists) access their data and create meaningful insights without the
+    need for manual IT processes.
+  language: Python
+  topics: []
+  archived: false
+  stars: 30
+  pushed_at: '2025-08-29'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-streamlining-data-access-with-jira-service-management-and-amazon-datazone
+  url: https://github.com/aws-solutions-library-samples/guidance-for-streamlining-data-access-with-jira-service-management-and-amazon-datazone
+  description: This Guidance demonstrates how to streamline data access management through the integration of Amazon DataZone
+    and Jira ticketing systems
+  language: Python
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2025-04-01'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-sustainability-data-management-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-sustainability-data-management-on-aws
+  description: This Guidance demonstrates how you can manage and share data to help drive your organization's sustainability
+    initiatives
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2024-11-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-sustainability-sourcing-assistant-for-sap-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-sustainability-sourcing-assistant-for-sap-on-aws
+  description: This Guidance demonstrates how to streamline and enhance procurement decision-making through an intelligent
+    sourcing assistant that seamlessly integrates with existing SAP systems.
+  language: Shell
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2026-03-26'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-text-generation-using-embeddings-from-enterprise-data-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-text-generation-using-embeddings-from-enterprise-data-on-aws
+  description: This Guidance demonstrates question answering using Retrieval Augmented Generation (RAG) with foundation models
+    in Amazon SageMaker JumpStart
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 10
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-third-party-marketplace-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-third-party-marketplace-on-aws
+  description: This Guidance demonstrates how retailers can onboard new suppliers and process orders of these suppliers’ products
+    to help them provide customers with more product choices without higher inventory cost.
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-tracking-assets-and-locating-devices-using-aws-iot
+  url: https://github.com/aws-solutions-library-samples/guidance-for-tracking-assets-and-locating-devices-using-aws-iot
+  description: This Guidance demonstrates how to stream location data from your assets and devices with Internet of Things
+    (IoT) sensors, helping you record and monitor the movement of your assets through a centralized management system
+  language: null
+  topics: []
+  archived: false
+  stars: 7
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-training-an-aws-deepracer-model-using-amazon-sagemaker
+  url: https://github.com/aws-solutions-library-samples/guidance-for-training-an-aws-deepracer-model-using-amazon-sagemaker
+  description: DeepRacer workshop content. This Guidance demonstrates how software developers can use an Amazon SageMaker
+    Notebook instance to directly train and evaluate AWS DeepRacer models with full control
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 1248
+  pushed_at: '2024-10-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-transactional-fraud-detection-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-transactional-fraud-detection-on-aws
+  description: This Guidance shows how to build a serverless workflow to identify patterns of fraudulent activity within streaming
+    data through both micro and macroanalysis.
+  language: Java
+  topics: []
+  archived: false
+  stars: 5
+  pushed_at: '2024-10-22'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-ultra-low-latency-machine-learning-feature-stores-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-ultra-low-latency-machine-learning-feature-stores-on-aws
+  description: This Guidance shows how you can build an ultra-low latency online feature store using Amazon ElastiCache for
+    Redis, a fully managed Redis service from AWS, and Feast, an open-source store framework
+  language: Python
+  topics:
+  - elasticache
+  - feature
+  - latency
+  - online
+  archived: false
+  stars: 8
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-understanding-your-data-lineage-on-amazon-quickSight
+  url: https://github.com/aws-solutions-library-samples/guidance-for-understanding-your-data-lineage-on-amazon-quickSight
+  description: This Guidance demonstrates how to trace and better understand your data lineage in Amazon QuickSight. This
+    allows you to visualize and analyze the usage and relationships of data sources and datasets. With this new automated
+    architecture, you can reduce the time spent tracing QuickSight data lineage from weeks to minutes.
+  language: null
+  topics: []
+  archived: false
+  stars: 6
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-using-amazon-eks-capabilities-for-workload-orchestration-and-cloud-resource-management
+  url: https://github.com/aws-solutions-library-samples/guidance-for-using-amazon-eks-capabilities-for-workload-orchestration-and-cloud-resource-management
+  description: 'The EKS capabilities  provide managed source Kubernetes solutions that many customers are effectively using
+    today: Argo CD, AWS Controllers for Kubernetes (ACK), and Kube Resource Orchestrator (KRO) that now can be seamlessly
+    integrated with K8s resources running on EKS for increased customer productivity.'
+  language: HCL
+  topics:
+  - aws
+  - awssolutions
+  - devops
+  - eks
+  - eks-capabilities
+  - iac-terraform
+  archived: false
+  stars: 0
+  pushed_at: '2026-05-01'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-using-email-templates-with-amazon-pinpoint-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-using-email-templates-with-amazon-pinpoint-on-aws
+  description: null
+  language: null
+  topics: []
+  archived: true
+  stars: 5
+  pushed_at: '2022-11-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-using-floating-virtual-fixed-ip-address-with-load-balancing-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-using-floating-virtual-fixed-ip-address-with-load-balancing-on-aws
+  description: This guidance demonstrates how to configure and automatically manage private, floating IP in a VPC to achieve
+    high availability while maintaining single IP address.
+  language: TypeScript
+  topics:
+  - failover-ip
+  - ipv4-address
+  - vpc-subnet
+  archived: false
+  stars: 1
+  pushed_at: '2026-01-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-using-google-tag-manager-for-server-side-website-analytics-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-using-google-tag-manager-for-server-side-website-analytics-on-aws
+  description: This Guidance helps you implement server-side tagging to collect event data and perform data analysis in near
+    real-time.
+  language: Python
+  topics: []
+  archived: false
+  stars: 15
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-utility-bill-processing-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-utility-bill-processing-on-aws
+  description: This Guidance shows how to derive sustainability insights from utility bills using artificial intelligence
+    and machine learning (AI/ML).
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-vibe-coding-with-aws-mcp-servers
+  url: https://github.com/aws-solutions-library-samples/guidance-for-vibe-coding-with-aws-mcp-servers
+  description: Hands-on guidance for AI-accelerated AWS development using AWS MCP Servers. Learn to leverage AI coding assistants
+    to enhance your development workflows with AWS best practices.
+  language: Python
+  topics: []
+  archived: false
+  stars: 38
+  pushed_at: '2026-04-21'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-video-analysis-as-a-service-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-video-analysis-as-a-service-on-aws
+  description: This Guidance demonstrates how to implement a scalable video analysis as a service solution on AWS, providing
+    you with powerful tools to manage and analyze video data from large IoT device fleets.
+  language: Java
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2026-01-23'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-video-content-optimization-assistant-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-video-content-optimization-assistant-on-aws
+  description: AI advisor that helps optimize your YouTube channel's performance
+  language: Python
+  topics:
+  - agentcore
+  - aws
+  - video-engagement
+  - youtube
+  archived: false
+  stars: 3
+  pushed_at: '2026-01-28'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-virtual-personal-stylist-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-virtual-personal-stylist-on-aws
+  description: This Guidance demonstrates how an AI-generated virtual personal stylist can provide a convenient and personalized
+    styling experience for retail consumers.
+  language: Python
+  topics: []
+  archived: false
+  stars: 14
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-virtual-try-ons-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-virtual-try-ons-on-aws
+  description: This Guidance demonstrates how retailers can overcome online shopping limitations by implementing a virtual
+    try-on solution on AWS that allows customers to digitally experience products before purchase.
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-03-27'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-visual-search-on-aws
+  url: https://github.com/aws-solutions-library-samples/guidance-for-visual-search-on-aws
+  description: This Guidance shows how to create a visual search capability for ecommerce websites, allowing users to upload
+    product images to find visually similar items and improve product discovery.
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 3
+  pushed_at: '2025-11-18'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-for-workforce-management-using-amazon-bedrock
+  url: https://github.com/aws-solutions-library-samples/guidance-for-workforce-management-using-amazon-bedrock
+  description: This Guidance shows how to enhance workforce management through AI-driven automation and real-time intelligence.
+    It demonstrates how to provide staff with quick access to relevant insights, enabling more informed decision-making
+  language: Python
+  topics: []
+  archived: false
+  stars: 2
+  pushed_at: '2026-02-14'
+  ask_type_candidate: use-case
+  status: indexed
+- name: guidance-of-gaming-messaging-system-with-amazon-dynamodb
+  url: https://github.com/aws-solutions-library-samples/guidance-of-gaming-messaging-system-with-amazon-dynamodb
+  description: This Guidance helps game developers build a scalable, serverless push notification system that addresses the
+    challenge of delivering timely, targeted messages to players across different game events and campaigns. The system connects
+    through WebSocket API Gateway to handle game events in real-time, storing player data securely in DynamoDB.
+  language: Python
+  topics: []
+  archived: false
+  stars: 1
+  pushed_at: '2025-10-27'
+  ask_type_candidate: use-case
+  status: indexed
+- name: live-streaming-on-aws
+  url: https://github.com/aws-solutions-library-samples/live-streaming-on-aws
+  description: The live stream solution is a reference deployment that demonstrates how to deliver highly available live streaming
+    video through an integrated workflow between Elemental Cloud and AWS.
+  language: JavaScript
+  topics:
+  - aws
+  - cloudfront
+  - live-streaming
+  - medialive
+  - mediapackage
+  - mediastore
+  - ott
+  archived: false
+  stars: 300
+  pushed_at: '2026-06-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: live-streaming-on-aws-with-amazon-s3
+  url: https://github.com/aws-solutions-library-samples/live-streaming-on-aws-with-amazon-s3
+  description: Live streaming on AWS with Amazon S3 automatically configures AWS Elemental MediaLive, Amazon S3 and Amazon
+    CloudFront to ingest, encode, package and deliver a single source live stream through the AWS Cloud. The Solution provides
+    3 Encoding profiles to support 1080p through 288p HTTP live streaming (HLS) outputs.
+  language: JavaScript
+  topics:
+  - aws
+  - cloudfront
+  - live-streaming
+  - medialive
+  - ott
+  - s3
+  archived: false
+  stars: 125
+  pushed_at: '2026-06-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: machine-learning-for-telecommunications
+  url: https://github.com/aws-solutions-library-samples/machine-learning-for-telecommunications
+  description: A base solution that helps to generate insights from their data. The solution provides a framework for an end-to-end
+    machine learning process including ad-hoc data exploration, data processing and feature engineering, and modeling training
+    and evaluation. This baseline will provide the foundation for industry specific data to be applied and models created
+    to release industry specific ML solutions.
+  language: Jupyter Notebook
+  topics: []
+  archived: true
+  stars: 34
+  pushed_at: '2024-01-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: multi-region-infrastructure-deployment
+  url: https://github.com/aws-solutions-library-samples/multi-region-infrastructure-deployment
+  description: null
+  language: JavaScript
+  topics: []
+  archived: true
+  stars: 22
+  pushed_at: '2024-01-08'
+  ask_type_candidate: use-case
+  status: indexed
+- name: prebid-server-deployment-on-aws
+  url: https://github.com/aws-solutions-library-samples/prebid-server-deployment-on-aws
+  description: Guidance for Deploying a Prebid Server on AWS helps customers deploy and operate Prebid Server, an open source
+    solution for real-time ad monetization, in their own Amazon Web Services (AWS) environment.
+  language: Python
+  topics: []
+  archived: false
+  stars: 16
+  pushed_at: '2026-06-12'
+  ask_type_candidate: use-case
+  status: indexed
+- name: real-time-analytics-spark-streaming
+  url: https://github.com/aws-solutions-library-samples/real-time-analytics-spark-streaming
+  description: A solution describing data-processing design pattern for streaming data through Kinesis and Spark Streaming
+    at real-time.
+  language: Jupyter Notebook
+  topics: []
+  archived: false
+  stars: 39
+  pushed_at: '2024-06-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: real-time-live-sports-updates-using-aws-appsync
+  url: https://github.com/aws-solutions-library-samples/real-time-live-sports-updates-using-aws-appsync
+  description: The Real-Time Live Sports Updates Using AWS AppSync solution is designed to help media and entertainment customers
+    to deliver real-time live sports updates to web and mobile application via AppSync subscriptions. By leveraging the reference
+    architecture implemented in this solution, M&E companies will be able to deliver sports scores, track live game/match
+    info, send fantasty sports updtates.
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 48
+  pushed_at: '2021-08-30'
+  ask_type_candidate: use-case
+  status: indexed
+- name: sample-smus-aiops
+  url: https://github.com/aws-solutions-library-samples/sample-smus-aiops
+  description: This Guidance demonstrates how to use Amazon SageMaker Unified Studio to create a unified development experience
+    for building, deploying, executing, and monitoring end-to-end workflows across AWS data, analytics, and AI/ML services.
+  language: Python
+  topics: []
+  archived: false
+  stars: 4
+  pushed_at: '2026-04-13'
+  ask_type_candidate: use-case
+  status: indexed
+- name: sample-voice-agent
+  url: https://github.com/aws-solutions-library-samples/sample-voice-agent
+  description: This Guidance provides a sample foundation for building real-time voice AI agents on AWS. It demonstrates how
+    to build a voice assistant that handles phone calls and voice interactions in web and mobile applications via WebRTC.
+  language: Python
+  topics: []
+  archived: false
+  stars: 43
+  pushed_at: '2026-05-15'
+  ask_type_candidate: use-case
+  status: indexed
+- name: scalable-analytics-using-apache-druid-on-aws
+  url: https://github.com/aws-solutions-library-samples/scalable-analytics-using-apache-druid-on-aws
+  description: Scalable analytics using Apache Druid on AWS is a solution offered by AWS that enables customers to quickly
+    and efficiently deploy, operate and manage a cost-effective, highly available, resilient, and fault tolerant hosting environment
+    for Apache Druid analytics databases on AWS.
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 25
+  pushed_at: '2025-07-30'
+  ask_type_candidate: use-case
+  status: indexed
+- name: secure-media-delivery-at-the-edge-on-aws
+  url: https://github.com/aws-solutions-library-samples/secure-media-delivery-at-the-edge-on-aws
+  description: null
+  language: TypeScript
+  topics: []
+  archived: false
+  stars: 24
+  pushed_at: '2026-06-11'
+  ask_type_candidate: use-case
+  status: indexed
+- name: security-automations-for-aws-waf-using-terraform
+  url: https://github.com/aws-solutions-library-samples/security-automations-for-aws-waf-using-terraform
+  description: This Terraform based guidance automatically deploys a single web access control list (web ACL) with a set of
+    AWS WAF rules designed to filter common web-based attacks.
+  language: HCL
+  topics: []
+  archived: false
+  stars: 8
+  pushed_at: '2025-07-09'
+  ask_type_candidate: use-case
+  status: indexed
+- name: serverless-fixity-for-digital-preservation-compliance
+  url: https://github.com/aws-solutions-library-samples/serverless-fixity-for-digital-preservation-compliance
+  description: This Guidance demonstrates how to validate checksums for compliance and audit requirements with an on-demand
+    fixity check process.
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 15
+  pushed_at: '2024-10-20'
+  ask_type_candidate: use-case
+  status: indexed
+- name: video-on-demand-on-aws
+  url: https://github.com/aws-solutions-library-samples/video-on-demand-on-aws
+  description: An automated reference implementation leveraging AWS Step Functions and AWS Media Services to deploy a scalable
+    fault tolerant Video on demand workflow
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 518
+  pushed_at: '2026-06-09'
+  ask_type_candidate: use-case
+  status: indexed
+- name: video-on-demand-on-aws-foundation
+  url: https://github.com/aws-solutions-library-samples/video-on-demand-on-aws-foundation
+  description: How to implement a video-on-demand workflow on AWS leveraging AWS Lambda, AWS Elemental MediaConvert, Amazon
+    s3 and Amazon CloudWatch. Source code for Video on Demand on AWS Foundation solution.
+  language: JavaScript
+  topics: []
+  archived: false
+  stars: 144
+  pushed_at: '2026-06-11'
+  ask_type_candidate: use-case
+  status: indexed

@@ -1,0 +1,44 @@
+id: uc3
+paper_id: aws-ec2-java-video
+name: CloudBench AWS EC2 Java Video
+provider: aws
+primary_service: ec2
+description: >
+  Java video analyzer. Same infra tier as UC2 (B1/L1); heavier app workload.
+repo_url: https://github.com/oodunsi1/cloudbot_uc3
+commit: 531a34371f9499994ea1f5dfd0e9d3ad2251f89a
+level: 1
+ask_type: app-repo
+provider: aws
+primary_service: ec2
+aws_services: [ec2, iam]
+complexity: single_service
+phase: 1
+building_block: B1
+workload_kind: batch_job
+runtime:
+  language: java
+baseline_eligible:
+  - full
+  - iac_only
+  - no_rag
+  - no_repair
+  - no_reuse
+expected_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+validation_contract:
+  expected_status: success
+  run_instructions_summary: >
+    Configure the config.yml file and execute the application using the provided run.sh script.
+  stdout_contains: []
+  probe:
+    component_id: compute
+    probe_type: execution_exit_code
+    expectation: run.sh exits 0 after JDK install and config
+teardown_contract:
+  method: terraform destroy
+  residual_check: no running EC2 instances created by this run remain
+  proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json

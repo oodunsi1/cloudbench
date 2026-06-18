@@ -1,0 +1,46 @@
+id: uc2
+paper_id: aws-ec2-java-image
+name: CloudBench AWS EC2 Java Image
+provider: aws
+primary_service: ec2
+description: >
+  Java application that analyzes images. Requires a JDK on the instance plus git
+  to clone, configured via config.yml before running.
+repo_url: https://github.com/oodunsi1/cloudbot_uc2
+commit: 5ad84efd8d0a69b0e08e121594bda2276c76f4a6
+level: 1
+ask_type: app-repo
+provider: aws
+primary_service: ec2
+aws_services: [ec2, iam]
+complexity: single_service
+phase: 1
+building_block: B1
+workload_kind: batch_job
+runtime:
+  language: java
+baseline_eligible:
+  - full
+  - iac_only
+  - no_rag
+  - no_repair
+  - no_reuse
+expected_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+validation_contract:
+  expected_status: success
+  run_instructions_summary: >
+    Execute the application by configuring the config.yml file and running the script.
+  stdout_contains:
+    - "status: done"
+  probe:
+    component_id: compute
+    probe_type: execution_exit_code
+    expectation: application exits 0 after JDK install and config
+teardown_contract:
+  method: terraform destroy
+  residual_check: no running EC2 instances created by this run remain
+  proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json

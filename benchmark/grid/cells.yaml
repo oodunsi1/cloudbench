@@ -1,0 +1,169 @@
+# CloudBench map — the finite grid of benchmark cases.
+#
+# A "cell" is one spot where a KIND OF WORK meets a BUILDING BLOCK meets a PROVIDER.
+# The benchmark's job is to fill this grid in a sensible order and prove each spot runs.
+#
+#   * Human-readable view of this file:        ../MAP.md
+#   * The engine that fills cells reads this:   `bench generate --cell <id>`
+#
+# status:  covered  = a real app repo exists, pinned, and the case validates
+#          planned  = on the fill list; case stub exists, app not built yet
+#          empty    = drawn on the map but not yet scheduled
+# on_diagonal: part of the current fill order (one spot per rung, easy -> hard).
+
+axes:
+  # --- What people run (the demand side): ~10 kinds, grouped by operational shape. ---
+  work_kinds:
+    - id: service     # long-running services: web apps, APIs, microservices, app backends, game servers
+    - id: batch       # run-to-completion jobs: data/image/video processing, reports
+    - id: scheduled   # scheduled / recurring jobs
+    - id: event       # event-driven / async: queues, pub/sub, serverless triggers
+    - id: streaming   # streaming / real-time
+    - id: stateful    # stateful data systems: databases, caches, object/vector stores
+    - id: etl         # data pipelines / ETL
+    - id: mlai        # ML / AI: training, inference, model serving, RAG, agent runtimes
+    - id: static      # static content / CDN
+    - id: composite   # composite multi-tier apps (combinations of the above)
+  # --- What the cloud offers (the supply side): building blocks, simple to complex. ---
+  building_blocks:
+    - id: B0          # bare compute (EC2, security group, IAM, VPC)
+    - id: B1          # compute + runtime (Java/Node via user_data)
+    - id: B2          # + object storage (S3)
+    - id: B3          # + database / cache (RDS, ElastiCache)
+    - id: B4          # multi-tier + load balancer (ALB)
+    - id: B5          # event-driven serverless (Lambda + SQS/SNS)
+    - id: B6          # infra-only (VPC/subnet/route, no app) — special
+  # --- Which clouds, in order. AWS first; the rest are drawn but empty for now. ---
+  providers: [aws, gcp, azure, alibaba]
+
+# The current fill order: a diagonal across AWS — one spot per rung, easy to hard,
+# each rung a different kind of work. Cheapest path to a cross-section that spans the range.
+fill_order: diagonal
+fill_provider: aws
+
+cells:
+  # ===== COVERED — real, published, pinned =====
+  - id: aws-ec2-wordcount
+    provider: aws
+    building_block: B0
+    work_kind: batch
+    level: 0
+    case: benchmark/cases/uc1.yaml
+    repo: https://github.com/oodunsi1/cloudbot_uc1
+    status: covered
+    on_diagonal: true
+
+  - id: aws-ec2-java-image
+    provider: aws
+    building_block: B1
+    work_kind: batch
+    level: 1
+    case: benchmark/cases/uc2.yaml
+    repo: https://github.com/oodunsi1/cloudbot_uc2
+    status: covered
+    on_diagonal: true
+
+  - id: aws-ec2-java-video
+    provider: aws
+    building_block: B1
+    work_kind: batch
+    level: 1
+    case: benchmark/cases/uc3.yaml
+    repo: https://github.com/oodunsi1/cloudbot_uc3
+    status: covered
+    on_diagonal: false   # a second L1 example; the diagonal uses one spot per rung
+
+  - id: aws-s3-batch
+    provider: aws
+    building_block: B2
+    work_kind: batch
+    level: 2
+    case: benchmark/cases/aws-s3-batch.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-s3-batch
+    recipe: benchmark/repos/recipes/aws-s3-batch.yaml
+    status: covered
+    on_diagonal: true
+
+  # ===== PLANNED — next on the diagonal; case stubs exist, apps not built yet =====
+  - id: aws-rds-api
+    provider: aws
+    building_block: B3
+    work_kind: service
+    level: 3
+    case: benchmark/cases/aws-rds-api.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-rds-api
+    recipe: benchmark/repos/recipes/aws-rds-api.yaml
+    status: planned
+    app_generated: true  # built locally by `bench generate`; awaiting review + publish to become covered
+    on_diagonal: true
+    next: true           # the cell the engine fills first to prove itself
+
+  - id: aws-alb-three-tier
+    provider: aws
+    building_block: B4
+    work_kind: composite
+    level: 4
+    case: benchmark/cases/aws-alb-three-tier.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-alb-three-tier
+    status: planned
+    on_diagonal: true
+
+  - id: aws-lambda-queue
+    provider: aws
+    building_block: B5
+    work_kind: event
+    level: 5
+    case: benchmark/cases/aws-lambda-queue.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-lambda-queue
+    status: planned
+    on_diagonal: true
+
+  # ===== EMPTY — drawn on the map so coverage is honest; the other six kinds of work
+  #       on AWS, not yet scheduled. Each becomes its own future diagonal. =====
+  - id: aws-scheduled-cron
+    provider: aws
+    building_block: B1
+    work_kind: scheduled
+    level: 1
+    status: empty
+    on_diagonal: false
+  - id: aws-streaming-kinesis
+    provider: aws
+    building_block: B5
+    work_kind: streaming
+    level: 5
+    status: empty
+    on_diagonal: false
+  - id: aws-stateful-store
+    provider: aws
+    building_block: B3
+    work_kind: stateful
+    level: 3
+    status: empty
+    on_diagonal: false
+  - id: aws-etl-pipeline
+    provider: aws
+    building_block: B3
+    work_kind: etl
+    level: 3
+    status: empty
+    on_diagonal: false
+  - id: aws-mlai-inference
+    provider: aws
+    building_block: B3
+    work_kind: mlai
+    level: 3
+    status: empty
+    on_diagonal: false
+  - id: aws-static-cdn
+    provider: aws
+    building_block: B2
+    work_kind: static
+    level: 2
+    status: empty
+    on_diagonal: false
+
+# Other clouds (gcp, azure, alibaba): the whole grid above repeats per provider with the
+# same kinds of work. Left unenumerated until AWS coverage is established (provider order
+# in axes.providers). The generator can mirror a covered AWS cell to another provider by
+# swapping `provider` + the building-block service names.

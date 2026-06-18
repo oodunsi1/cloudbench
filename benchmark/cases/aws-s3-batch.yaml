@@ -1,0 +1,45 @@
+id: aws-s3-batch
+paper_id: aws-s3-batch
+name: CloudBench AWS S3 Batch
+description: >
+  B2 building block — compute plus S3 read/write. A run-to-completion batch job: reads
+  input.txt from an S3 bucket, counts words, and writes output/result.json back to the bucket.
+  The repo contains no IaC; provisioning the bucket + compute + IAM is the system-under-test's job.
+repo_url: https://github.com/oodunsi1/cloudbench-aws-s3-batch
+commit: 5fc325677623fd82c392571294bc69915e2e3767
+level: 2
+ask_type: app-repo
+provider: aws
+primary_service: s3
+aws_services: [ec2, s3, iam]
+complexity: composed
+phase: 2
+building_block: B2
+workload_kind: batch_job
+runtime:
+  language: python
+baseline_eligible:
+  - full
+  - no_rag
+  - no_repair
+expected_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+  - s3
+validation_contract:
+  expected_status: success
+  run_instructions_summary: >
+    Set CLOUDBENCH_BUCKET to the provisioned bucket, then run ./run.sh (installs
+    requirements and runs process.py). Verify the S3 output object exists.
+  stdout_contains:
+    - s3://
+  probe:
+    component_id: s3
+    probe_type: object_exists
+    expectation: output/result.json exists in the bucket
+teardown_contract:
+  method: terraform destroy
+  residual_check: no S3 buckets or EC2 instances from this run remain
+  proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json

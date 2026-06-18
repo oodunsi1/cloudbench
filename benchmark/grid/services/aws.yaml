@@ -1,0 +1,2595 @@
+# CloudBench service catalog — the SUPPLY side of the map (auto-generated).
+# Built from the AWS SDK service list by `bench catalog`; refresh with `bench catalog --refresh`.
+# Each service is a corpus entry: target_repo is the run-as-is repo it will get; status is
+# empty | generated | covered (covered/generated rows cross-link to a cell). Human view:
+# ../../SERVICE_CATALOG.md
+provider: aws
+source: botocore (AWS SDK service models)
+generated_at_utc: '2026-06-13'
+category_groups:
+- analytics
+- application-integration
+- blockchain
+- business-applications
+- cloud-financial-management
+- compute
+- containers
+- customer-enablement
+- database
+- developer-tools
+- end-user-computing
+- frontend-web-mobile
+- game-development
+- iot
+- machine-learning
+- management-governance
+- media-services
+- migration-transfer
+- networking-content-delivery
+- quantum-technologies
+- satellite
+- security-identity-compliance
+- storage
+- uncategorised
+counts:
+  total: 426
+  empty: 423
+  covered: 2
+  generated: 1
+services:
+- id: accessanalyzer
+  name: Access Analyzer
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-accessanalyzer
+  status: empty
+  cell: null
+- id: account
+  name: AWS Account
+  category: uncategorised
+  target_repo: cloudbench-aws-account
+  status: empty
+  cell: null
+- id: acm
+  name: AWS Certificate Manager
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-acm
+  status: empty
+  cell: null
+- id: acm-pca
+  name: AWS Certificate Manager Private Certificate Authority
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-acm-pca
+  status: empty
+  cell: null
+- id: aiops
+  name: AWS AI Ops
+  category: uncategorised
+  target_repo: cloudbench-aws-aiops
+  status: empty
+  cell: null
+- id: amp
+  name: Amazon Prometheus Service
+  category: uncategorised
+  target_repo: cloudbench-aws-amp
+  status: empty
+  cell: null
+- id: amplify
+  name: AWS Amplify
+  category: frontend-web-mobile
+  target_repo: cloudbench-aws-amplify
+  status: empty
+  cell: null
+- id: amplifybackend
+  name: AmplifyBackend
+  category: frontend-web-mobile
+  target_repo: cloudbench-aws-amplifybackend
+  status: empty
+  cell: null
+- id: amplifyuibuilder
+  name: AWS Amplify UI Builder
+  category: frontend-web-mobile
+  target_repo: cloudbench-aws-amplifyuibuilder
+  status: empty
+  cell: null
+- id: apigateway
+  name: Amazon API Gateway
+  category: networking-content-delivery
+  target_repo: cloudbench-aws-apigateway
+  status: empty
+  cell: null
+- id: apigatewaymanagementapi
+  name: AmazonApiGatewayManagementApi
+  category: uncategorised
+  target_repo: cloudbench-aws-apigatewaymanagementapi
+  status: empty
+  cell: null
+- id: apigatewayv2
+  name: AmazonApiGatewayV2
+  category: networking-content-delivery
+  target_repo: cloudbench-aws-apigatewayv2
+  status: empty
+  cell: null
+- id: appconfig
+  name: Amazon AppConfig
+  category: uncategorised
+  target_repo: cloudbench-aws-appconfig
+  status: empty
+  cell: null
+- id: appconfigdata
+  name: AWS AppConfig Data
+  category: uncategorised
+  target_repo: cloudbench-aws-appconfigdata
+  status: empty
+  cell: null
+- id: appfabric
+  name: AppFabric
+  category: uncategorised
+  target_repo: cloudbench-aws-appfabric
+  status: empty
+  cell: null
+- id: appflow
+  name: Amazon Appflow
+  category: application-integration
+  target_repo: cloudbench-aws-appflow
+  status: empty
+  cell: null
+- id: appintegrations
+  name: Amazon AppIntegrations Service
+  category: uncategorised
+  target_repo: cloudbench-aws-appintegrations
+  status: empty
+  cell: null
+- id: application-autoscaling
+  name: Application Auto Scaling
+  category: uncategorised
+  target_repo: cloudbench-aws-application-autoscaling
+  status: empty
+  cell: null
+- id: application-insights
+  name: Amazon CloudWatch Application Insights
+  category: management-governance
+  target_repo: cloudbench-aws-application-insights
+  status: empty
+  cell: null
+- id: application-signals
+  name: Amazon CloudWatch Application Signals
+  category: uncategorised
+  target_repo: cloudbench-aws-application-signals
+  status: empty
+  cell: null
+- id: applicationcostprofiler
+  name: AWS Application Cost Profiler
+  category: uncategorised
+  target_repo: cloudbench-aws-applicationcostprofiler
+  status: empty
+  cell: null
+- id: appmesh
+  name: AWS App Mesh
+  category: uncategorised
+  target_repo: cloudbench-aws-appmesh
+  status: empty
+  cell: null
+- id: apprunner
+  name: AWS App Runner
+  category: compute
+  target_repo: cloudbench-aws-apprunner
+  status: empty
+  cell: null
+- id: appstream
+  name: Amazon AppStream
+  category: end-user-computing
+  target_repo: cloudbench-aws-appstream
+  status: empty
+  cell: null
+- id: appsync
+  name: AWS AppSync
+  category: frontend-web-mobile
+  target_repo: cloudbench-aws-appsync
+  status: empty
+  cell: null
+- id: arc-region-switch
+  name: ARC - Region switch
+  category: uncategorised
+  target_repo: cloudbench-aws-arc-region-switch
+  status: empty
+  cell: null
+- id: arc-zonal-shift
+  name: AWS ARC - Zonal Shift
+  category: uncategorised
+  target_repo: cloudbench-aws-arc-zonal-shift
+  status: empty
+  cell: null
+- id: artifact
+  name: AWS Artifact
+  category: uncategorised
+  target_repo: cloudbench-aws-artifact
+  status: empty
+  cell: null
+- id: athena
+  name: Amazon Athena
+  category: analytics
+  target_repo: cloudbench-aws-athena
+  status: empty
+  cell: null
+- id: auditmanager
+  name: AWS Audit Manager
+  category: uncategorised
+  target_repo: cloudbench-aws-auditmanager
+  status: empty
+  cell: null
+- id: autoscaling
+  name: Auto Scaling
+  category: compute
+  target_repo: cloudbench-aws-autoscaling
+  status: empty
+  cell: null
+- id: autoscaling-plans
+  name: AWS Auto Scaling Plans
+  category: uncategorised
+  target_repo: cloudbench-aws-autoscaling-plans
+  status: empty
+  cell: null
+- id: b2bi
+  name: AWS B2B Data Interchange
+  category: uncategorised
+  target_repo: cloudbench-aws-b2bi
+  status: empty
+  cell: null
+- id: backup
+  name: AWS Backup
+  category: storage
+  target_repo: cloudbench-aws-backup
+  status: empty
+  cell: null
+- id: backup-gateway
+  name: AWS Backup Gateway
+  category: uncategorised
+  target_repo: cloudbench-aws-backup-gateway
+  status: empty
+  cell: null
+- id: backupsearch
+  name: AWS Backup Search
+  category: uncategorised
+  target_repo: cloudbench-aws-backupsearch
+  status: empty
+  cell: null
+- id: batch
+  name: AWS Batch
+  category: compute
+  target_repo: cloudbench-aws-batch
+  status: empty
+  cell: null
+- id: bcm-dashboards
+  name: AWS Billing and Cost Management Dashboards
+  category: uncategorised
+  target_repo: cloudbench-aws-bcm-dashboards
+  status: empty
+  cell: null
+- id: bcm-data-exports
+  name: AWS Billing and Cost Management Data Exports
+  category: uncategorised
+  target_repo: cloudbench-aws-bcm-data-exports
+  status: empty
+  cell: null
+- id: bcm-pricing-calculator
+  name: AWS Billing and Cost Management Pricing Calculator
+  category: uncategorised
+  target_repo: cloudbench-aws-bcm-pricing-calculator
+  status: empty
+  cell: null
+- id: bcm-recommended-actions
+  name: AWS Billing and Cost Management Recommended Actions
+  category: uncategorised
+  target_repo: cloudbench-aws-bcm-recommended-actions
+  status: empty
+  cell: null
+- id: bedrock
+  name: Amazon Bedrock
+  category: machine-learning
+  target_repo: cloudbench-aws-bedrock
+  status: empty
+  cell: null
+- id: bedrock-agent
+  name: Agents for Amazon Bedrock
+  category: machine-learning
+  target_repo: cloudbench-aws-bedrock-agent
+  status: empty
+  cell: null
+- id: bedrock-agent-runtime
+  name: Agents for Amazon Bedrock Runtime
+  category: uncategorised
+  target_repo: cloudbench-aws-bedrock-agent-runtime
+  status: empty
+  cell: null
+- id: bedrock-agentcore
+  name: Amazon Bedrock AgentCore
+  category: uncategorised
+  target_repo: cloudbench-aws-bedrock-agentcore
+  status: empty
+  cell: null
+- id: bedrock-agentcore-control
+  name: Amazon Bedrock AgentCore Control
+  category: uncategorised
+  target_repo: cloudbench-aws-bedrock-agentcore-control
+  status: empty
+  cell: null
+- id: bedrock-data-automation
+  name: Data Automation for Amazon Bedrock
+  category: uncategorised
+  target_repo: cloudbench-aws-bedrock-data-automation
+  status: empty
+  cell: null
+- id: bedrock-data-automation-runtime
+  name: Runtime for Amazon Bedrock Data Automation
+  category: uncategorised
+  target_repo: cloudbench-aws-bedrock-data-automation-runtime
+  status: empty
+  cell: null
+- id: bedrock-runtime
+  name: Amazon Bedrock Runtime
+  category: machine-learning
+  target_repo: cloudbench-aws-bedrock-runtime
+  status: empty
+  cell: null
+- id: billing
+  name: AWS Billing
+  category: uncategorised
+  target_repo: cloudbench-aws-billing
+  status: empty
+  cell: null
+- id: billingconductor
+  name: AWSBillingConductor
+  category: cloud-financial-management
+  target_repo: cloudbench-aws-billingconductor
+  status: empty
+  cell: null
+- id: braket
+  name: Braket
+  category: quantum-technologies
+  target_repo: cloudbench-aws-braket
+  status: empty
+  cell: null
+- id: budgets
+  name: AWS Budgets
+  category: cloud-financial-management
+  target_repo: cloudbench-aws-budgets
+  status: empty
+  cell: null
+- id: ce
+  name: AWS Cost Explorer Service
+  category: cloud-financial-management
+  target_repo: cloudbench-aws-ce
+  status: empty
+  cell: null
+- id: chatbot
+  name: AWS Chatbot
+  category: uncategorised
+  target_repo: cloudbench-aws-chatbot
+  status: empty
+  cell: null
+- id: chime
+  name: Amazon Chime
+  category: business-applications
+  target_repo: cloudbench-aws-chime
+  status: empty
+  cell: null
+- id: chime-sdk-identity
+  name: Amazon Chime SDK Identity
+  category: uncategorised
+  target_repo: cloudbench-aws-chime-sdk-identity
+  status: empty
+  cell: null
+- id: chime-sdk-media-pipelines
+  name: Amazon Chime SDK Media Pipelines
+  category: uncategorised
+  target_repo: cloudbench-aws-chime-sdk-media-pipelines
+  status: empty
+  cell: null
+- id: chime-sdk-meetings
+  name: Amazon Chime SDK Meetings
+  category: uncategorised
+  target_repo: cloudbench-aws-chime-sdk-meetings
+  status: empty
+  cell: null
+- id: chime-sdk-messaging
+  name: Amazon Chime SDK Messaging
+  category: uncategorised
+  target_repo: cloudbench-aws-chime-sdk-messaging
+  status: empty
+  cell: null
+- id: chime-sdk-voice
+  name: Amazon Chime SDK Voice
+  category: uncategorised
+  target_repo: cloudbench-aws-chime-sdk-voice
+  status: empty
+  cell: null
+- id: cleanrooms
+  name: AWS Clean Rooms Service
+  category: analytics
+  target_repo: cloudbench-aws-cleanrooms
+  status: empty
+  cell: null
+- id: cleanroomsml
+  name: AWS Clean Rooms ML
+  category: uncategorised
+  target_repo: cloudbench-aws-cleanroomsml
+  status: empty
+  cell: null
+- id: cloud9
+  name: AWS Cloud9
+  category: developer-tools
+  target_repo: cloudbench-aws-cloud9
+  status: empty
+  cell: null
+- id: cloudcontrol
+  name: AWS Cloud Control API
+  category: uncategorised
+  target_repo: cloudbench-aws-cloudcontrol
+  status: empty
+  cell: null
+- id: clouddirectory
+  name: Amazon CloudDirectory
+  category: uncategorised
+  target_repo: cloudbench-aws-clouddirectory
+  status: empty
+  cell: null
+- id: cloudformation
+  name: AWS CloudFormation
+  category: management-governance
+  target_repo: cloudbench-aws-cloudformation
+  status: empty
+  cell: null
+- id: cloudfront
+  name: Amazon CloudFront
+  category: networking-content-delivery
+  target_repo: cloudbench-aws-cloudfront
+  status: empty
+  cell: null
+- id: cloudfront-keyvaluestore
+  name: Amazon CloudFront KeyValueStore
+  category: uncategorised
+  target_repo: cloudbench-aws-cloudfront-keyvaluestore
+  status: empty
+  cell: null
+- id: cloudhsm
+  name: Amazon CloudHSM
+  category: uncategorised
+  target_repo: cloudbench-aws-cloudhsm
+  status: empty
+  cell: null
+- id: cloudhsmv2
+  name: AWS CloudHSM V2
+  category: uncategorised
+  target_repo: cloudbench-aws-cloudhsmv2
+  status: empty
+  cell: null
+- id: cloudsearch
+  name: Amazon CloudSearch
+  category: uncategorised
+  target_repo: cloudbench-aws-cloudsearch
+  status: empty
+  cell: null
+- id: cloudsearchdomain
+  name: Amazon CloudSearch Domain
+  category: uncategorised
+  target_repo: cloudbench-aws-cloudsearchdomain
+  status: empty
+  cell: null
+- id: cloudtrail
+  name: AWS CloudTrail
+  category: management-governance
+  target_repo: cloudbench-aws-cloudtrail
+  status: empty
+  cell: null
+- id: cloudtrail-data
+  name: AWS CloudTrail Data Service
+  category: uncategorised
+  target_repo: cloudbench-aws-cloudtrail-data
+  status: empty
+  cell: null
+- id: cloudwatch
+  name: Amazon CloudWatch
+  category: management-governance
+  target_repo: cloudbench-aws-cloudwatch
+  status: empty
+  cell: null
+- id: codeartifact
+  name: CodeArtifact
+  category: developer-tools
+  target_repo: cloudbench-aws-codeartifact
+  status: empty
+  cell: null
+- id: codebuild
+  name: AWS CodeBuild
+  category: developer-tools
+  target_repo: cloudbench-aws-codebuild
+  status: empty
+  cell: null
+- id: codecatalyst
+  name: Amazon CodeCatalyst
+  category: developer-tools
+  target_repo: cloudbench-aws-codecatalyst
+  status: empty
+  cell: null
+- id: codecommit
+  name: AWS CodeCommit
+  category: developer-tools
+  target_repo: cloudbench-aws-codecommit
+  status: empty
+  cell: null
+- id: codeconnections
+  name: AWS CodeConnections
+  category: uncategorised
+  target_repo: cloudbench-aws-codeconnections
+  status: empty
+  cell: null
+- id: codedeploy
+  name: AWS CodeDeploy
+  category: developer-tools
+  target_repo: cloudbench-aws-codedeploy
+  status: empty
+  cell: null
+- id: codeguru-reviewer
+  name: Amazon CodeGuru Reviewer
+  category: developer-tools
+  target_repo: cloudbench-aws-codeguru-reviewer
+  status: empty
+  cell: null
+- id: codeguru-security
+  name: Amazon CodeGuru Security
+  category: uncategorised
+  target_repo: cloudbench-aws-codeguru-security
+  status: empty
+  cell: null
+- id: codeguruprofiler
+  name: Amazon CodeGuru Profiler
+  category: developer-tools
+  target_repo: cloudbench-aws-codeguruprofiler
+  status: empty
+  cell: null
+- id: codepipeline
+  name: AWS CodePipeline
+  category: developer-tools
+  target_repo: cloudbench-aws-codepipeline
+  status: empty
+  cell: null
+- id: codestar-connections
+  name: AWS CodeStar connections
+  category: uncategorised
+  target_repo: cloudbench-aws-codestar-connections
+  status: empty
+  cell: null
+- id: codestar-notifications
+  name: AWS CodeStar Notifications
+  category: uncategorised
+  target_repo: cloudbench-aws-codestar-notifications
+  status: empty
+  cell: null
+- id: cognito-identity
+  name: Amazon Cognito Identity
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-cognito-identity
+  status: empty
+  cell: null
+- id: cognito-idp
+  name: Amazon Cognito Identity Provider
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-cognito-idp
+  status: empty
+  cell: null
+- id: cognito-sync
+  name: Amazon Cognito Sync
+  category: uncategorised
+  target_repo: cloudbench-aws-cognito-sync
+  status: empty
+  cell: null
+- id: comprehend
+  name: Amazon Comprehend
+  category: machine-learning
+  target_repo: cloudbench-aws-comprehend
+  status: empty
+  cell: null
+- id: comprehendmedical
+  name: AWS Comprehend Medical
+  category: uncategorised
+  target_repo: cloudbench-aws-comprehendmedical
+  status: empty
+  cell: null
+- id: compute-optimizer
+  name: AWS Compute Optimizer
+  category: management-governance
+  target_repo: cloudbench-aws-compute-optimizer
+  status: empty
+  cell: null
+- id: compute-optimizer-automation
+  name: Compute Optimizer Automation
+  category: uncategorised
+  target_repo: cloudbench-aws-compute-optimizer-automation
+  status: empty
+  cell: null
+- id: config
+  name: AWS Config
+  category: management-governance
+  target_repo: cloudbench-aws-config
+  status: empty
+  cell: null
+- id: connect
+  name: Amazon Connect Service
+  category: business-applications
+  target_repo: cloudbench-aws-connect
+  status: empty
+  cell: null
+- id: connect-contact-lens
+  name: Amazon Connect Contact Lens
+  category: uncategorised
+  target_repo: cloudbench-aws-connect-contact-lens
+  status: empty
+  cell: null
+- id: connectcampaigns
+  name: AmazonConnectCampaignService
+  category: uncategorised
+  target_repo: cloudbench-aws-connectcampaigns
+  status: empty
+  cell: null
+- id: connectcampaignsv2
+  name: AmazonConnectCampaignServiceV2
+  category: uncategorised
+  target_repo: cloudbench-aws-connectcampaignsv2
+  status: empty
+  cell: null
+- id: connectcases
+  name: Amazon Connect Cases
+  category: uncategorised
+  target_repo: cloudbench-aws-connectcases
+  status: empty
+  cell: null
+- id: connecthealth
+  name: Connect Health
+  category: uncategorised
+  target_repo: cloudbench-aws-connecthealth
+  status: empty
+  cell: null
+- id: connectparticipant
+  name: Amazon Connect Participant Service
+  category: uncategorised
+  target_repo: cloudbench-aws-connectparticipant
+  status: empty
+  cell: null
+- id: controlcatalog
+  name: AWS Control Catalog
+  category: uncategorised
+  target_repo: cloudbench-aws-controlcatalog
+  status: empty
+  cell: null
+- id: controltower
+  name: AWS Control Tower
+  category: management-governance
+  target_repo: cloudbench-aws-controltower
+  status: empty
+  cell: null
+- id: cost-optimization-hub
+  name: Cost Optimization Hub
+  category: uncategorised
+  target_repo: cloudbench-aws-cost-optimization-hub
+  status: empty
+  cell: null
+- id: cur
+  name: AWS Cost and Usage Report Service
+  category: cloud-financial-management
+  target_repo: cloudbench-aws-cur
+  status: empty
+  cell: null
+- id: customer-profiles
+  name: Amazon Connect Customer Profiles
+  category: uncategorised
+  target_repo: cloudbench-aws-customer-profiles
+  status: empty
+  cell: null
+- id: databrew
+  name: AWS Glue DataBrew
+  category: uncategorised
+  target_repo: cloudbench-aws-databrew
+  status: empty
+  cell: null
+- id: dataexchange
+  name: AWS Data Exchange
+  category: analytics
+  target_repo: cloudbench-aws-dataexchange
+  status: empty
+  cell: null
+- id: datapipeline
+  name: AWS Data Pipeline
+  category: uncategorised
+  target_repo: cloudbench-aws-datapipeline
+  status: empty
+  cell: null
+- id: datasync
+  name: AWS DataSync
+  category: migration-transfer
+  target_repo: cloudbench-aws-datasync
+  status: empty
+  cell: null
+- id: datazone
+  name: Amazon DataZone
+  category: analytics
+  target_repo: cloudbench-aws-datazone
+  status: empty
+  cell: null
+- id: dax
+  name: Amazon DynamoDB Accelerator (DAX)
+  category: database
+  target_repo: cloudbench-aws-dax
+  status: empty
+  cell: null
+- id: deadline
+  name: AWSDeadlineCloud
+  category: uncategorised
+  target_repo: cloudbench-aws-deadline
+  status: empty
+  cell: null
+- id: detective
+  name: Amazon Detective
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-detective
+  status: empty
+  cell: null
+- id: devicefarm
+  name: AWS Device Farm
+  category: frontend-web-mobile
+  target_repo: cloudbench-aws-devicefarm
+  status: empty
+  cell: null
+- id: devops-agent
+  name: AWS DevOps Agent Service
+  category: uncategorised
+  target_repo: cloudbench-aws-devops-agent
+  status: empty
+  cell: null
+- id: devops-guru
+  name: Amazon DevOps Guru
+  category: uncategorised
+  target_repo: cloudbench-aws-devops-guru
+  status: empty
+  cell: null
+- id: directconnect
+  name: AWS Direct Connect
+  category: networking-content-delivery
+  target_repo: cloudbench-aws-directconnect
+  status: empty
+  cell: null
+- id: discovery
+  name: AWS Application Discovery Service
+  category: uncategorised
+  target_repo: cloudbench-aws-discovery
+  status: empty
+  cell: null
+- id: dlm
+  name: Amazon Data Lifecycle Manager
+  category: uncategorised
+  target_repo: cloudbench-aws-dlm
+  status: empty
+  cell: null
+- id: dms
+  name: AWS Database Migration Service
+  category: migration-transfer
+  target_repo: cloudbench-aws-dms
+  status: empty
+  cell: null
+- id: docdb
+  name: Amazon DocumentDB with MongoDB compatibility
+  category: database
+  target_repo: cloudbench-aws-docdb
+  status: empty
+  cell: null
+- id: docdb-elastic
+  name: Amazon DocumentDB Elastic Clusters
+  category: uncategorised
+  target_repo: cloudbench-aws-docdb-elastic
+  status: empty
+  cell: null
+- id: drs
+  name: Elastic Disaster Recovery Service
+  category: uncategorised
+  target_repo: cloudbench-aws-drs
+  status: empty
+  cell: null
+- id: ds
+  name: AWS Directory Service
+  category: uncategorised
+  target_repo: cloudbench-aws-ds
+  status: empty
+  cell: null
+- id: ds-data
+  name: AWS Directory Service Data
+  category: uncategorised
+  target_repo: cloudbench-aws-ds-data
+  status: empty
+  cell: null
+- id: dsql
+  name: Amazon Aurora DSQL
+  category: uncategorised
+  target_repo: cloudbench-aws-dsql
+  status: empty
+  cell: null
+- id: dynamodb
+  name: Amazon DynamoDB
+  category: database
+  target_repo: cloudbench-aws-dynamodb
+  status: empty
+  cell: null
+- id: dynamodbstreams
+  name: Amazon DynamoDB Streams
+  category: uncategorised
+  target_repo: cloudbench-aws-dynamodbstreams
+  status: empty
+  cell: null
+- id: ebs
+  name: Amazon Elastic Block Store
+  category: uncategorised
+  target_repo: cloudbench-aws-ebs
+  status: empty
+  cell: null
+- id: ec2
+  name: Amazon Elastic Compute Cloud
+  category: compute
+  target_repo: cloudbench-aws-ec2
+  status: covered
+  cell: aws-ec2-wordcount
+- id: ec2-instance-connect
+  name: AWS EC2 Instance Connect
+  category: compute
+  target_repo: cloudbench-aws-ec2-instance-connect
+  status: empty
+  cell: null
+- id: ecr
+  name: Amazon Elastic Container Registry
+  category: containers
+  target_repo: cloudbench-aws-ecr
+  status: empty
+  cell: null
+- id: ecr-public
+  name: Amazon Elastic Container Registry Public
+  category: containers
+  target_repo: cloudbench-aws-ecr-public
+  status: empty
+  cell: null
+- id: ecs
+  name: Amazon EC2 Container Service
+  category: containers
+  target_repo: cloudbench-aws-ecs
+  status: empty
+  cell: null
+- id: efs
+  name: Amazon Elastic File System
+  category: storage
+  target_repo: cloudbench-aws-efs
+  status: empty
+  cell: null
+- id: eks
+  name: Amazon Elastic Kubernetes Service
+  category: containers
+  target_repo: cloudbench-aws-eks
+  status: empty
+  cell: null
+- id: eks-auth
+  name: Amazon EKS Auth
+  category: uncategorised
+  target_repo: cloudbench-aws-eks-auth
+  status: empty
+  cell: null
+- id: elasticache
+  name: Amazon ElastiCache
+  category: database
+  target_repo: cloudbench-aws-elasticache
+  status: empty
+  cell: null
+- id: elasticbeanstalk
+  name: AWS Elastic Beanstalk
+  category: compute
+  target_repo: cloudbench-aws-elasticbeanstalk
+  status: empty
+  cell: null
+- id: elb
+  name: Elastic Load Balancing
+  category: networking-content-delivery
+  target_repo: cloudbench-aws-elb
+  status: empty
+  cell: null
+- id: elbv2
+  name: Elastic Load Balancing
+  category: networking-content-delivery
+  target_repo: cloudbench-aws-elbv2
+  status: empty
+  cell: null
+- id: elementalinference
+  name: AWS Elemental Inference
+  category: uncategorised
+  target_repo: cloudbench-aws-elementalinference
+  status: empty
+  cell: null
+- id: emr
+  name: Amazon EMR
+  category: analytics
+  target_repo: cloudbench-aws-emr
+  status: empty
+  cell: null
+- id: emr-containers
+  name: Amazon EMR Containers
+  category: uncategorised
+  target_repo: cloudbench-aws-emr-containers
+  status: empty
+  cell: null
+- id: emr-serverless
+  name: EMR Serverless
+  category: uncategorised
+  target_repo: cloudbench-aws-emr-serverless
+  status: empty
+  cell: null
+- id: entityresolution
+  name: AWS EntityResolution
+  category: uncategorised
+  target_repo: cloudbench-aws-entityresolution
+  status: empty
+  cell: null
+- id: es
+  name: Amazon Elasticsearch Service
+  category: analytics
+  target_repo: cloudbench-aws-es
+  status: empty
+  cell: null
+- id: events
+  name: Amazon EventBridge
+  category: application-integration
+  target_repo: cloudbench-aws-events
+  status: empty
+  cell: null
+- id: evs
+  name: Amazon Elastic VMware Service
+  category: uncategorised
+  target_repo: cloudbench-aws-evs
+  status: empty
+  cell: null
+- id: finspace
+  name: FinSpace User Environment Management service
+  category: uncategorised
+  target_repo: cloudbench-aws-finspace
+  status: empty
+  cell: null
+- id: finspace-data
+  name: FinSpace Public API
+  category: uncategorised
+  target_repo: cloudbench-aws-finspace-data
+  status: empty
+  cell: null
+- id: firehose
+  name: Amazon Kinesis Firehose
+  category: analytics
+  target_repo: cloudbench-aws-firehose
+  status: empty
+  cell: null
+- id: fis
+  name: AWS Fault Injection Simulator
+  category: uncategorised
+  target_repo: cloudbench-aws-fis
+  status: empty
+  cell: null
+- id: fms
+  name: Firewall Management Service
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-fms
+  status: empty
+  cell: null
+- id: forecast
+  name: Amazon Forecast Service
+  category: machine-learning
+  target_repo: cloudbench-aws-forecast
+  status: empty
+  cell: null
+- id: forecastquery
+  name: Amazon Forecast Query Service
+  category: uncategorised
+  target_repo: cloudbench-aws-forecastquery
+  status: empty
+  cell: null
+- id: frauddetector
+  name: Amazon Fraud Detector
+  category: uncategorised
+  target_repo: cloudbench-aws-frauddetector
+  status: empty
+  cell: null
+- id: freetier
+  name: AWS Free Tier
+  category: cloud-financial-management
+  target_repo: cloudbench-aws-freetier
+  status: empty
+  cell: null
+- id: fsx
+  name: Amazon FSx
+  category: storage
+  target_repo: cloudbench-aws-fsx
+  status: empty
+  cell: null
+- id: gamelift
+  name: Amazon GameLift
+  category: game-development
+  target_repo: cloudbench-aws-gamelift
+  status: empty
+  cell: null
+- id: gameliftstreams
+  name: Amazon GameLift Streams
+  category: uncategorised
+  target_repo: cloudbench-aws-gameliftstreams
+  status: empty
+  cell: null
+- id: geo-maps
+  name: Amazon Location Service Maps V2
+  category: uncategorised
+  target_repo: cloudbench-aws-geo-maps
+  status: empty
+  cell: null
+- id: geo-places
+  name: Amazon Location Service Places V2
+  category: uncategorised
+  target_repo: cloudbench-aws-geo-places
+  status: empty
+  cell: null
+- id: geo-routes
+  name: Amazon Location Service Routes V2
+  category: uncategorised
+  target_repo: cloudbench-aws-geo-routes
+  status: empty
+  cell: null
+- id: glacier
+  name: Amazon Glacier
+  category: storage
+  target_repo: cloudbench-aws-glacier
+  status: empty
+  cell: null
+- id: globalaccelerator
+  name: AWS Global Accelerator
+  category: networking-content-delivery
+  target_repo: cloudbench-aws-globalaccelerator
+  status: empty
+  cell: null
+- id: glue
+  name: AWS Glue
+  category: analytics
+  target_repo: cloudbench-aws-glue
+  status: empty
+  cell: null
+- id: grafana
+  name: Amazon Managed Grafana
+  category: uncategorised
+  target_repo: cloudbench-aws-grafana
+  status: empty
+  cell: null
+- id: greengrass
+  name: AWS Greengrass
+  category: uncategorised
+  target_repo: cloudbench-aws-greengrass
+  status: empty
+  cell: null
+- id: greengrassv2
+  name: AWS IoT Greengrass V2
+  category: iot
+  target_repo: cloudbench-aws-greengrassv2
+  status: empty
+  cell: null
+- id: groundstation
+  name: AWS Ground Station
+  category: satellite
+  target_repo: cloudbench-aws-groundstation
+  status: empty
+  cell: null
+- id: guardduty
+  name: Amazon GuardDuty
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-guardduty
+  status: empty
+  cell: null
+- id: health
+  name: AWS Health APIs and Notifications
+  category: management-governance
+  target_repo: cloudbench-aws-health
+  status: empty
+  cell: null
+- id: healthlake
+  name: Amazon HealthLake
+  category: uncategorised
+  target_repo: cloudbench-aws-healthlake
+  status: empty
+  cell: null
+- id: iam
+  name: AWS Identity and Access Management
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-iam
+  status: empty
+  cell: null
+- id: identitystore
+  name: AWS SSO Identity Store
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-identitystore
+  status: empty
+  cell: null
+- id: imagebuilder
+  name: EC2 Image Builder
+  category: compute
+  target_repo: cloudbench-aws-imagebuilder
+  status: empty
+  cell: null
+- id: importexport
+  name: AWS Import/Export
+  category: uncategorised
+  target_repo: cloudbench-aws-importexport
+  status: empty
+  cell: null
+- id: inspector
+  name: Amazon Inspector
+  category: uncategorised
+  target_repo: cloudbench-aws-inspector
+  status: empty
+  cell: null
+- id: inspector-scan
+  name: Inspector Scan
+  category: uncategorised
+  target_repo: cloudbench-aws-inspector-scan
+  status: empty
+  cell: null
+- id: inspector2
+  name: Inspector2
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-inspector2
+  status: empty
+  cell: null
+- id: interconnect
+  name: Interconnect
+  category: uncategorised
+  target_repo: cloudbench-aws-interconnect
+  status: empty
+  cell: null
+- id: internetmonitor
+  name: Amazon CloudWatch Internet Monitor
+  category: uncategorised
+  target_repo: cloudbench-aws-internetmonitor
+  status: empty
+  cell: null
+- id: invoicing
+  name: AWS Invoicing
+  category: uncategorised
+  target_repo: cloudbench-aws-invoicing
+  status: empty
+  cell: null
+- id: iot
+  name: AWS IoT
+  category: iot
+  target_repo: cloudbench-aws-iot
+  status: empty
+  cell: null
+- id: iot-data
+  name: AWS IoT Data Plane
+  category: iot
+  target_repo: cloudbench-aws-iot-data
+  status: empty
+  cell: null
+- id: iot-jobs-data
+  name: AWS IoT Jobs Data Plane
+  category: uncategorised
+  target_repo: cloudbench-aws-iot-jobs-data
+  status: empty
+  cell: null
+- id: iot-managed-integrations
+  name: Managed integrations for AWS IoT Device Management
+  category: uncategorised
+  target_repo: cloudbench-aws-iot-managed-integrations
+  status: empty
+  cell: null
+- id: iotdeviceadvisor
+  name: AWS IoT Core Device Advisor
+  category: uncategorised
+  target_repo: cloudbench-aws-iotdeviceadvisor
+  status: empty
+  cell: null
+- id: iotevents
+  name: AWS IoT Events
+  category: iot
+  target_repo: cloudbench-aws-iotevents
+  status: empty
+  cell: null
+- id: iotevents-data
+  name: AWS IoT Events Data
+  category: uncategorised
+  target_repo: cloudbench-aws-iotevents-data
+  status: empty
+  cell: null
+- id: iotfleetwise
+  name: AWS IoT FleetWise
+  category: iot
+  target_repo: cloudbench-aws-iotfleetwise
+  status: empty
+  cell: null
+- id: iotsecuretunneling
+  name: AWS IoT Secure Tunneling
+  category: uncategorised
+  target_repo: cloudbench-aws-iotsecuretunneling
+  status: empty
+  cell: null
+- id: iotsitewise
+  name: AWS IoT SiteWise
+  category: iot
+  target_repo: cloudbench-aws-iotsitewise
+  status: empty
+  cell: null
+- id: iotthingsgraph
+  name: AWS IoT Things Graph
+  category: uncategorised
+  target_repo: cloudbench-aws-iotthingsgraph
+  status: empty
+  cell: null
+- id: iottwinmaker
+  name: AWS IoT TwinMaker
+  category: iot
+  target_repo: cloudbench-aws-iottwinmaker
+  status: empty
+  cell: null
+- id: iotwireless
+  name: AWS IoT Wireless
+  category: iot
+  target_repo: cloudbench-aws-iotwireless
+  status: empty
+  cell: null
+- id: ivs
+  name: Amazon Interactive Video Service
+  category: media-services
+  target_repo: cloudbench-aws-ivs
+  status: empty
+  cell: null
+- id: ivs-realtime
+  name: Amazon Interactive Video Service RealTime
+  category: uncategorised
+  target_repo: cloudbench-aws-ivs-realtime
+  status: empty
+  cell: null
+- id: ivschat
+  name: Amazon Interactive Video Service Chat
+  category: media-services
+  target_repo: cloudbench-aws-ivschat
+  status: empty
+  cell: null
+- id: kafka
+  name: Managed Streaming for Kafka
+  category: uncategorised
+  target_repo: cloudbench-aws-kafka
+  status: empty
+  cell: null
+- id: kafkaconnect
+  name: Managed Streaming for Kafka Connect
+  category: uncategorised
+  target_repo: cloudbench-aws-kafkaconnect
+  status: empty
+  cell: null
+- id: kendra
+  name: AWSKendraFrontendService
+  category: machine-learning
+  target_repo: cloudbench-aws-kendra
+  status: empty
+  cell: null
+- id: kendra-ranking
+  name: Amazon Kendra Intelligent Ranking
+  category: uncategorised
+  target_repo: cloudbench-aws-kendra-ranking
+  status: empty
+  cell: null
+- id: keyspaces
+  name: Amazon Keyspaces
+  category: database
+  target_repo: cloudbench-aws-keyspaces
+  status: empty
+  cell: null
+- id: keyspacesstreams
+  name: Amazon Keyspaces Streams
+  category: uncategorised
+  target_repo: cloudbench-aws-keyspacesstreams
+  status: empty
+  cell: null
+- id: kinesis
+  name: Amazon Kinesis
+  category: analytics
+  target_repo: cloudbench-aws-kinesis
+  status: empty
+  cell: null
+- id: kinesis-video-archived-media
+  name: Amazon Kinesis Video Streams Archived Media
+  category: uncategorised
+  target_repo: cloudbench-aws-kinesis-video-archived-media
+  status: empty
+  cell: null
+- id: kinesis-video-media
+  name: Amazon Kinesis Video Streams Media
+  category: uncategorised
+  target_repo: cloudbench-aws-kinesis-video-media
+  status: empty
+  cell: null
+- id: kinesis-video-signaling
+  name: Amazon Kinesis Video Signaling Channels
+  category: uncategorised
+  target_repo: cloudbench-aws-kinesis-video-signaling
+  status: empty
+  cell: null
+- id: kinesis-video-webrtc-storage
+  name: Amazon Kinesis Video WebRTC Storage
+  category: uncategorised
+  target_repo: cloudbench-aws-kinesis-video-webrtc-storage
+  status: empty
+  cell: null
+- id: kinesisanalytics
+  name: Amazon Kinesis Analytics
+  category: analytics
+  target_repo: cloudbench-aws-kinesisanalytics
+  status: empty
+  cell: null
+- id: kinesisanalyticsv2
+  name: Amazon Kinesis Analytics
+  category: analytics
+  target_repo: cloudbench-aws-kinesisanalyticsv2
+  status: empty
+  cell: null
+- id: kinesisvideo
+  name: Amazon Kinesis Video Streams
+  category: media-services
+  target_repo: cloudbench-aws-kinesisvideo
+  status: empty
+  cell: null
+- id: kms
+  name: AWS Key Management Service
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-kms
+  status: empty
+  cell: null
+- id: lakeformation
+  name: AWS Lake Formation
+  category: analytics
+  target_repo: cloudbench-aws-lakeformation
+  status: empty
+  cell: null
+- id: lambda
+  name: AWS Lambda
+  category: compute
+  target_repo: cloudbench-aws-lambda
+  status: empty
+  cell: null
+- id: launch-wizard
+  name: AWS Launch Wizard
+  category: uncategorised
+  target_repo: cloudbench-aws-launch-wizard
+  status: empty
+  cell: null
+- id: lex-models
+  name: Amazon Lex Model Building Service
+  category: uncategorised
+  target_repo: cloudbench-aws-lex-models
+  status: empty
+  cell: null
+- id: lex-runtime
+  name: Amazon Lex Runtime Service
+  category: uncategorised
+  target_repo: cloudbench-aws-lex-runtime
+  status: empty
+  cell: null
+- id: lexv2-models
+  name: Amazon Lex Model Building V2
+  category: machine-learning
+  target_repo: cloudbench-aws-lexv2-models
+  status: empty
+  cell: null
+- id: lexv2-runtime
+  name: Amazon Lex Runtime V2
+  category: machine-learning
+  target_repo: cloudbench-aws-lexv2-runtime
+  status: empty
+  cell: null
+- id: license-manager
+  name: AWS License Manager
+  category: management-governance
+  target_repo: cloudbench-aws-license-manager
+  status: empty
+  cell: null
+- id: license-manager-linux-subscriptions
+  name: AWS License Manager Linux Subscriptions
+  category: uncategorised
+  target_repo: cloudbench-aws-license-manager-linux-subscriptions
+  status: empty
+  cell: null
+- id: license-manager-user-subscriptions
+  name: AWS License Manager User Subscriptions
+  category: uncategorised
+  target_repo: cloudbench-aws-license-manager-user-subscriptions
+  status: empty
+  cell: null
+- id: lightsail
+  name: Amazon Lightsail
+  category: compute
+  target_repo: cloudbench-aws-lightsail
+  status: empty
+  cell: null
+- id: location
+  name: Amazon Location Service
+  category: frontend-web-mobile
+  target_repo: cloudbench-aws-location
+  status: empty
+  cell: null
+- id: logs
+  name: Amazon CloudWatch Logs
+  category: management-governance
+  target_repo: cloudbench-aws-logs
+  status: empty
+  cell: null
+- id: lookoutequipment
+  name: Amazon Lookout for Equipment
+  category: uncategorised
+  target_repo: cloudbench-aws-lookoutequipment
+  status: empty
+  cell: null
+- id: m2
+  name: AWSMainframeModernization
+  category: uncategorised
+  target_repo: cloudbench-aws-m2
+  status: empty
+  cell: null
+- id: machinelearning
+  name: Amazon Machine Learning
+  category: uncategorised
+  target_repo: cloudbench-aws-machinelearning
+  status: empty
+  cell: null
+- id: macie2
+  name: Amazon Macie 2
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-macie2
+  status: empty
+  cell: null
+- id: mailmanager
+  name: MailManager
+  category: uncategorised
+  target_repo: cloudbench-aws-mailmanager
+  status: empty
+  cell: null
+- id: managedblockchain
+  name: Amazon Managed Blockchain
+  category: blockchain
+  target_repo: cloudbench-aws-managedblockchain
+  status: empty
+  cell: null
+- id: managedblockchain-query
+  name: Amazon Managed Blockchain Query
+  category: uncategorised
+  target_repo: cloudbench-aws-managedblockchain-query
+  status: empty
+  cell: null
+- id: marketplace-agreement
+  name: AWS Marketplace Agreement Service
+  category: uncategorised
+  target_repo: cloudbench-aws-marketplace-agreement
+  status: empty
+  cell: null
+- id: marketplace-catalog
+  name: AWS Marketplace Catalog Service
+  category: uncategorised
+  target_repo: cloudbench-aws-marketplace-catalog
+  status: empty
+  cell: null
+- id: marketplace-deployment
+  name: AWS Marketplace Deployment Service
+  category: uncategorised
+  target_repo: cloudbench-aws-marketplace-deployment
+  status: empty
+  cell: null
+- id: marketplace-discovery
+  name: AWS Marketplace Discovery
+  category: uncategorised
+  target_repo: cloudbench-aws-marketplace-discovery
+  status: empty
+  cell: null
+- id: marketplace-entitlement
+  name: AWS Marketplace Entitlement Service
+  category: uncategorised
+  target_repo: cloudbench-aws-marketplace-entitlement
+  status: empty
+  cell: null
+- id: marketplace-reporting
+  name: AWS Marketplace Reporting Service
+  category: uncategorised
+  target_repo: cloudbench-aws-marketplace-reporting
+  status: empty
+  cell: null
+- id: marketplacecommerceanalytics
+  name: AWS Marketplace Commerce Analytics
+  category: uncategorised
+  target_repo: cloudbench-aws-marketplacecommerceanalytics
+  status: empty
+  cell: null
+- id: mediaconnect
+  name: AWS MediaConnect
+  category: uncategorised
+  target_repo: cloudbench-aws-mediaconnect
+  status: empty
+  cell: null
+- id: mediaconvert
+  name: AWS Elemental MediaConvert
+  category: media-services
+  target_repo: cloudbench-aws-mediaconvert
+  status: empty
+  cell: null
+- id: medialive
+  name: AWS Elemental MediaLive
+  category: media-services
+  target_repo: cloudbench-aws-medialive
+  status: empty
+  cell: null
+- id: mediapackage
+  name: AWS Elemental MediaPackage
+  category: media-services
+  target_repo: cloudbench-aws-mediapackage
+  status: empty
+  cell: null
+- id: mediapackage-vod
+  name: AWS Elemental MediaPackage VOD
+  category: uncategorised
+  target_repo: cloudbench-aws-mediapackage-vod
+  status: empty
+  cell: null
+- id: mediapackagev2
+  name: AWS Elemental MediaPackage v2
+  category: uncategorised
+  target_repo: cloudbench-aws-mediapackagev2
+  status: empty
+  cell: null
+- id: mediastore
+  name: AWS Elemental MediaStore
+  category: media-services
+  target_repo: cloudbench-aws-mediastore
+  status: empty
+  cell: null
+- id: mediastore-data
+  name: AWS Elemental MediaStore Data Plane
+  category: uncategorised
+  target_repo: cloudbench-aws-mediastore-data
+  status: empty
+  cell: null
+- id: mediatailor
+  name: AWS MediaTailor
+  category: media-services
+  target_repo: cloudbench-aws-mediatailor
+  status: empty
+  cell: null
+- id: medical-imaging
+  name: AWS Health Imaging
+  category: uncategorised
+  target_repo: cloudbench-aws-medical-imaging
+  status: empty
+  cell: null
+- id: memorydb
+  name: Amazon MemoryDB
+  category: database
+  target_repo: cloudbench-aws-memorydb
+  status: empty
+  cell: null
+- id: meteringmarketplace
+  name: AWSMarketplace Metering
+  category: uncategorised
+  target_repo: cloudbench-aws-meteringmarketplace
+  status: empty
+  cell: null
+- id: mgh
+  name: AWS Migration Hub
+  category: uncategorised
+  target_repo: cloudbench-aws-mgh
+  status: empty
+  cell: null
+- id: mgn
+  name: Application Migration Service
+  category: migration-transfer
+  target_repo: cloudbench-aws-mgn
+  status: empty
+  cell: null
+- id: migration-hub-refactor-spaces
+  name: AWS Migration Hub Refactor Spaces
+  category: uncategorised
+  target_repo: cloudbench-aws-migration-hub-refactor-spaces
+  status: empty
+  cell: null
+- id: migrationhub-config
+  name: AWS Migration Hub Config
+  category: uncategorised
+  target_repo: cloudbench-aws-migrationhub-config
+  status: empty
+  cell: null
+- id: migrationhuborchestrator
+  name: AWS Migration Hub Orchestrator
+  category: migration-transfer
+  target_repo: cloudbench-aws-migrationhuborchestrator
+  status: empty
+  cell: null
+- id: migrationhubstrategy
+  name: Migration Hub Strategy Recommendations
+  category: uncategorised
+  target_repo: cloudbench-aws-migrationhubstrategy
+  status: empty
+  cell: null
+- id: mpa
+  name: AWS Multi-party Approval
+  category: uncategorised
+  target_repo: cloudbench-aws-mpa
+  status: empty
+  cell: null
+- id: mq
+  name: AmazonMQ
+  category: application-integration
+  target_repo: cloudbench-aws-mq
+  status: empty
+  cell: null
+- id: mturk
+  name: Amazon Mechanical Turk
+  category: uncategorised
+  target_repo: cloudbench-aws-mturk
+  status: empty
+  cell: null
+- id: mwaa
+  name: AmazonMWAA
+  category: uncategorised
+  target_repo: cloudbench-aws-mwaa
+  status: empty
+  cell: null
+- id: mwaa-serverless
+  name: AmazonMWAAServerless
+  category: uncategorised
+  target_repo: cloudbench-aws-mwaa-serverless
+  status: empty
+  cell: null
+- id: neptune
+  name: Amazon Neptune
+  category: database
+  target_repo: cloudbench-aws-neptune
+  status: empty
+  cell: null
+- id: neptune-graph
+  name: Amazon Neptune Graph
+  category: uncategorised
+  target_repo: cloudbench-aws-neptune-graph
+  status: empty
+  cell: null
+- id: neptunedata
+  name: Amazon NeptuneData
+  category: uncategorised
+  target_repo: cloudbench-aws-neptunedata
+  status: empty
+  cell: null
+- id: network-firewall
+  name: AWS Network Firewall
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-network-firewall
+  status: empty
+  cell: null
+- id: networkflowmonitor
+  name: Network Flow Monitor
+  category: uncategorised
+  target_repo: cloudbench-aws-networkflowmonitor
+  status: empty
+  cell: null
+- id: networkmanager
+  name: AWS Network Manager
+  category: networking-content-delivery
+  target_repo: cloudbench-aws-networkmanager
+  status: empty
+  cell: null
+- id: networkmonitor
+  name: Amazon CloudWatch Network Monitor
+  category: uncategorised
+  target_repo: cloudbench-aws-networkmonitor
+  status: empty
+  cell: null
+- id: notifications
+  name: AWS User Notifications
+  category: uncategorised
+  target_repo: cloudbench-aws-notifications
+  status: empty
+  cell: null
+- id: notificationscontacts
+  name: AWS User Notifications Contacts
+  category: uncategorised
+  target_repo: cloudbench-aws-notificationscontacts
+  status: empty
+  cell: null
+- id: nova-act
+  name: Nova Act Service
+  category: uncategorised
+  target_repo: cloudbench-aws-nova-act
+  status: empty
+  cell: null
+- id: oam
+  name: CloudWatch Observability Access Manager
+  category: uncategorised
+  target_repo: cloudbench-aws-oam
+  status: empty
+  cell: null
+- id: observabilityadmin
+  name: CloudWatch Observability Admin Service
+  category: uncategorised
+  target_repo: cloudbench-aws-observabilityadmin
+  status: empty
+  cell: null
+- id: odb
+  name: odb
+  category: uncategorised
+  target_repo: cloudbench-aws-odb
+  status: empty
+  cell: null
+- id: omics
+  name: Amazon Omics
+  category: uncategorised
+  target_repo: cloudbench-aws-omics
+  status: empty
+  cell: null
+- id: opensearch
+  name: Amazon OpenSearch Service
+  category: analytics
+  target_repo: cloudbench-aws-opensearch
+  status: empty
+  cell: null
+- id: opensearchserverless
+  name: OpenSearch Service Serverless
+  category: uncategorised
+  target_repo: cloudbench-aws-opensearchserverless
+  status: empty
+  cell: null
+- id: organizations
+  name: AWS Organizations
+  category: management-governance
+  target_repo: cloudbench-aws-organizations
+  status: empty
+  cell: null
+- id: osis
+  name: Amazon OpenSearch Ingestion
+  category: uncategorised
+  target_repo: cloudbench-aws-osis
+  status: empty
+  cell: null
+- id: outposts
+  name: AWS Outposts
+  category: compute
+  target_repo: cloudbench-aws-outposts
+  status: empty
+  cell: null
+- id: panorama
+  name: AWS Panorama
+  category: uncategorised
+  target_repo: cloudbench-aws-panorama
+  status: empty
+  cell: null
+- id: partnercentral-account
+  name: Partner Central Account API
+  category: uncategorised
+  target_repo: cloudbench-aws-partnercentral-account
+  status: empty
+  cell: null
+- id: partnercentral-benefits
+  name: Partner Central Benefits API
+  category: uncategorised
+  target_repo: cloudbench-aws-partnercentral-benefits
+  status: empty
+  cell: null
+- id: partnercentral-channel
+  name: Partner Central Channel API
+  category: uncategorised
+  target_repo: cloudbench-aws-partnercentral-channel
+  status: empty
+  cell: null
+- id: partnercentral-selling
+  name: Partner Central Selling API
+  category: uncategorised
+  target_repo: cloudbench-aws-partnercentral-selling
+  status: empty
+  cell: null
+- id: payment-cryptography
+  name: Payment Cryptography Control Plane
+  category: uncategorised
+  target_repo: cloudbench-aws-payment-cryptography
+  status: empty
+  cell: null
+- id: payment-cryptography-data
+  name: Payment Cryptography Data Plane
+  category: uncategorised
+  target_repo: cloudbench-aws-payment-cryptography-data
+  status: empty
+  cell: null
+- id: pca-connector-ad
+  name: PcaConnectorAd
+  category: uncategorised
+  target_repo: cloudbench-aws-pca-connector-ad
+  status: empty
+  cell: null
+- id: pca-connector-scep
+  name: Private CA Connector for SCEP
+  category: uncategorised
+  target_repo: cloudbench-aws-pca-connector-scep
+  status: empty
+  cell: null
+- id: pcs
+  name: AWS Parallel Computing Service
+  category: uncategorised
+  target_repo: cloudbench-aws-pcs
+  status: empty
+  cell: null
+- id: personalize
+  name: Amazon Personalize
+  category: machine-learning
+  target_repo: cloudbench-aws-personalize
+  status: empty
+  cell: null
+- id: personalize-events
+  name: Amazon Personalize Events
+  category: uncategorised
+  target_repo: cloudbench-aws-personalize-events
+  status: empty
+  cell: null
+- id: personalize-runtime
+  name: Amazon Personalize Runtime
+  category: uncategorised
+  target_repo: cloudbench-aws-personalize-runtime
+  status: empty
+  cell: null
+- id: pi
+  name: AWS Performance Insights
+  category: uncategorised
+  target_repo: cloudbench-aws-pi
+  status: empty
+  cell: null
+- id: pinpoint
+  name: Amazon Pinpoint
+  category: uncategorised
+  target_repo: cloudbench-aws-pinpoint
+  status: empty
+  cell: null
+- id: pinpoint-email
+  name: Amazon Pinpoint Email Service
+  category: uncategorised
+  target_repo: cloudbench-aws-pinpoint-email
+  status: empty
+  cell: null
+- id: pinpoint-sms-voice
+  name: Amazon Pinpoint SMS and Voice Service
+  category: uncategorised
+  target_repo: cloudbench-aws-pinpoint-sms-voice
+  status: empty
+  cell: null
+- id: pinpoint-sms-voice-v2
+  name: Amazon Pinpoint SMS Voice V2
+  category: uncategorised
+  target_repo: cloudbench-aws-pinpoint-sms-voice-v2
+  status: empty
+  cell: null
+- id: pipes
+  name: Amazon EventBridge Pipes
+  category: application-integration
+  target_repo: cloudbench-aws-pipes
+  status: empty
+  cell: null
+- id: polly
+  name: Amazon Polly
+  category: machine-learning
+  target_repo: cloudbench-aws-polly
+  status: empty
+  cell: null
+- id: pricing
+  name: AWS Price List Service
+  category: uncategorised
+  target_repo: cloudbench-aws-pricing
+  status: empty
+  cell: null
+- id: proton
+  name: AWS Proton
+  category: uncategorised
+  target_repo: cloudbench-aws-proton
+  status: empty
+  cell: null
+- id: qapps
+  name: QApps
+  category: uncategorised
+  target_repo: cloudbench-aws-qapps
+  status: empty
+  cell: null
+- id: qbusiness
+  name: QBusiness
+  category: machine-learning
+  target_repo: cloudbench-aws-qbusiness
+  status: empty
+  cell: null
+- id: qconnect
+  name: Amazon Q Connect
+  category: uncategorised
+  target_repo: cloudbench-aws-qconnect
+  status: empty
+  cell: null
+- id: quicksight
+  name: Amazon QuickSight
+  category: analytics
+  target_repo: cloudbench-aws-quicksight
+  status: empty
+  cell: null
+- id: ram
+  name: AWS Resource Access Manager
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-ram
+  status: empty
+  cell: null
+- id: rbin
+  name: Amazon Recycle Bin
+  category: uncategorised
+  target_repo: cloudbench-aws-rbin
+  status: empty
+  cell: null
+- id: rds
+  name: Amazon Relational Database Service
+  category: database
+  target_repo: cloudbench-aws-rds
+  status: generated
+  cell: aws-rds-api
+- id: rds-data
+  name: AWS RDS DataService
+  category: database
+  target_repo: cloudbench-aws-rds-data
+  status: empty
+  cell: null
+- id: redshift
+  name: Amazon Redshift
+  category: database
+  target_repo: cloudbench-aws-redshift
+  status: empty
+  cell: null
+- id: redshift-data
+  name: Redshift Data API Service
+  category: database
+  target_repo: cloudbench-aws-redshift-data
+  status: empty
+  cell: null
+- id: redshift-serverless
+  name: Redshift Serverless
+  category: uncategorised
+  target_repo: cloudbench-aws-redshift-serverless
+  status: empty
+  cell: null
+- id: rekognition
+  name: Amazon Rekognition
+  category: machine-learning
+  target_repo: cloudbench-aws-rekognition
+  status: empty
+  cell: null
+- id: repostspace
+  name: AWS re:Post Private
+  category: uncategorised
+  target_repo: cloudbench-aws-repostspace
+  status: empty
+  cell: null
+- id: resiliencehub
+  name: AWS Resilience Hub
+  category: uncategorised
+  target_repo: cloudbench-aws-resiliencehub
+  status: empty
+  cell: null
+- id: resiliencehubv2
+  name: AWS Resilience Hub V2
+  category: uncategorised
+  target_repo: cloudbench-aws-resiliencehubv2
+  status: empty
+  cell: null
+- id: resource-explorer-2
+  name: AWS Resource Explorer
+  category: uncategorised
+  target_repo: cloudbench-aws-resource-explorer-2
+  status: empty
+  cell: null
+- id: resource-groups
+  name: AWS Resource Groups
+  category: management-governance
+  target_repo: cloudbench-aws-resource-groups
+  status: empty
+  cell: null
+- id: resourcegroupstaggingapi
+  name: AWS Resource Groups Tagging API
+  category: uncategorised
+  target_repo: cloudbench-aws-resourcegroupstaggingapi
+  status: empty
+  cell: null
+- id: rolesanywhere
+  name: IAM Roles Anywhere
+  category: uncategorised
+  target_repo: cloudbench-aws-rolesanywhere
+  status: empty
+  cell: null
+- id: route53
+  name: Amazon Route 53
+  category: networking-content-delivery
+  target_repo: cloudbench-aws-route53
+  status: empty
+  cell: null
+- id: route53-recovery-cluster
+  name: Route53 Recovery Cluster
+  category: uncategorised
+  target_repo: cloudbench-aws-route53-recovery-cluster
+  status: empty
+  cell: null
+- id: route53-recovery-control-config
+  name: AWS Route53 Recovery Control Config
+  category: uncategorised
+  target_repo: cloudbench-aws-route53-recovery-control-config
+  status: empty
+  cell: null
+- id: route53-recovery-readiness
+  name: AWS Route53 Recovery Readiness
+  category: uncategorised
+  target_repo: cloudbench-aws-route53-recovery-readiness
+  status: empty
+  cell: null
+- id: route53domains
+  name: Amazon Route 53 Domains
+  category: networking-content-delivery
+  target_repo: cloudbench-aws-route53domains
+  status: empty
+  cell: null
+- id: route53globalresolver
+  name: Amazon Route 53 Global Resolver
+  category: uncategorised
+  target_repo: cloudbench-aws-route53globalresolver
+  status: empty
+  cell: null
+- id: route53profiles
+  name: Route 53 Profiles
+  category: uncategorised
+  target_repo: cloudbench-aws-route53profiles
+  status: empty
+  cell: null
+- id: route53resolver
+  name: Amazon Route 53 Resolver
+  category: uncategorised
+  target_repo: cloudbench-aws-route53resolver
+  status: empty
+  cell: null
+- id: rtbfabric
+  name: RTBFabric
+  category: uncategorised
+  target_repo: cloudbench-aws-rtbfabric
+  status: empty
+  cell: null
+- id: rum
+  name: CloudWatch RUM
+  category: uncategorised
+  target_repo: cloudbench-aws-rum
+  status: empty
+  cell: null
+- id: s3
+  name: Amazon Simple Storage Service
+  category: storage
+  target_repo: cloudbench-aws-s3
+  status: covered
+  cell: aws-s3-batch
+- id: s3control
+  name: AWS S3 Control
+  category: storage
+  target_repo: cloudbench-aws-s3control
+  status: empty
+  cell: null
+- id: s3files
+  name: Amazon S3 Files
+  category: uncategorised
+  target_repo: cloudbench-aws-s3files
+  status: empty
+  cell: null
+- id: s3outposts
+  name: Amazon S3 on Outposts
+  category: storage
+  target_repo: cloudbench-aws-s3outposts
+  status: empty
+  cell: null
+- id: s3tables
+  name: Amazon S3 Tables
+  category: uncategorised
+  target_repo: cloudbench-aws-s3tables
+  status: empty
+  cell: null
+- id: s3vectors
+  name: Amazon S3 Vectors
+  category: uncategorised
+  target_repo: cloudbench-aws-s3vectors
+  status: empty
+  cell: null
+- id: sagemaker
+  name: Amazon SageMaker Service
+  category: machine-learning
+  target_repo: cloudbench-aws-sagemaker
+  status: empty
+  cell: null
+- id: sagemaker-a2i-runtime
+  name: Amazon Augmented AI Runtime
+  category: uncategorised
+  target_repo: cloudbench-aws-sagemaker-a2i-runtime
+  status: empty
+  cell: null
+- id: sagemaker-edge
+  name: Amazon Sagemaker Edge Manager
+  category: uncategorised
+  target_repo: cloudbench-aws-sagemaker-edge
+  status: empty
+  cell: null
+- id: sagemaker-featurestore-runtime
+  name: Amazon SageMaker Feature Store Runtime
+  category: uncategorised
+  target_repo: cloudbench-aws-sagemaker-featurestore-runtime
+  status: empty
+  cell: null
+- id: sagemaker-geospatial
+  name: Amazon SageMaker geospatial capabilities
+  category: uncategorised
+  target_repo: cloudbench-aws-sagemaker-geospatial
+  status: empty
+  cell: null
+- id: sagemaker-metrics
+  name: Amazon SageMaker Metrics Service
+  category: uncategorised
+  target_repo: cloudbench-aws-sagemaker-metrics
+  status: empty
+  cell: null
+- id: sagemaker-runtime
+  name: Amazon SageMaker Runtime
+  category: machine-learning
+  target_repo: cloudbench-aws-sagemaker-runtime
+  status: empty
+  cell: null
+- id: sagemakerjobruntime
+  name: Sagemaker Job Runtime Service
+  category: uncategorised
+  target_repo: cloudbench-aws-sagemakerjobruntime
+  status: empty
+  cell: null
+- id: savingsplans
+  name: AWS Savings Plans
+  category: uncategorised
+  target_repo: cloudbench-aws-savingsplans
+  status: empty
+  cell: null
+- id: scheduler
+  name: Amazon EventBridge Scheduler
+  category: application-integration
+  target_repo: cloudbench-aws-scheduler
+  status: empty
+  cell: null
+- id: schemas
+  name: Schemas
+  category: uncategorised
+  target_repo: cloudbench-aws-schemas
+  status: empty
+  cell: null
+- id: sdb
+  name: Amazon SimpleDB
+  category: uncategorised
+  target_repo: cloudbench-aws-sdb
+  status: empty
+  cell: null
+- id: secretsmanager
+  name: AWS Secrets Manager
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-secretsmanager
+  status: empty
+  cell: null
+- id: security-ir
+  name: Security Incident Response
+  category: uncategorised
+  target_repo: cloudbench-aws-security-ir
+  status: empty
+  cell: null
+- id: securityagent
+  name: AWS Security Agent
+  category: uncategorised
+  target_repo: cloudbench-aws-securityagent
+  status: empty
+  cell: null
+- id: securityhub
+  name: AWS SecurityHub
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-securityhub
+  status: empty
+  cell: null
+- id: securitylake
+  name: Amazon Security Lake
+  category: uncategorised
+  target_repo: cloudbench-aws-securitylake
+  status: empty
+  cell: null
+- id: serverlessrepo
+  name: AWSServerlessApplicationRepository
+  category: compute
+  target_repo: cloudbench-aws-serverlessrepo
+  status: empty
+  cell: null
+- id: service-quotas
+  name: Service Quotas
+  category: uncategorised
+  target_repo: cloudbench-aws-service-quotas
+  status: empty
+  cell: null
+- id: servicecatalog
+  name: AWS Service Catalog
+  category: management-governance
+  target_repo: cloudbench-aws-servicecatalog
+  status: empty
+  cell: null
+- id: servicecatalog-appregistry
+  name: AWS Service Catalog App Registry
+  category: uncategorised
+  target_repo: cloudbench-aws-servicecatalog-appregistry
+  status: empty
+  cell: null
+- id: servicediscovery
+  name: AWS Cloud Map
+  category: containers
+  target_repo: cloudbench-aws-servicediscovery
+  status: empty
+  cell: null
+- id: ses
+  name: Amazon Simple Email Service
+  category: business-applications
+  target_repo: cloudbench-aws-ses
+  status: empty
+  cell: null
+- id: sesv2
+  name: Amazon Simple Email Service
+  category: business-applications
+  target_repo: cloudbench-aws-sesv2
+  status: empty
+  cell: null
+- id: shield
+  name: AWS Shield
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-shield
+  status: empty
+  cell: null
+- id: signer
+  name: AWS Signer
+  category: uncategorised
+  target_repo: cloudbench-aws-signer
+  status: empty
+  cell: null
+- id: signer-data
+  name: AWS Signer Data Plane
+  category: uncategorised
+  target_repo: cloudbench-aws-signer-data
+  status: empty
+  cell: null
+- id: signin
+  name: AWS Sign-In Service
+  category: uncategorised
+  target_repo: cloudbench-aws-signin
+  status: empty
+  cell: null
+- id: simpledbv2
+  name: Amazon SimpleDB v2
+  category: uncategorised
+  target_repo: cloudbench-aws-simpledbv2
+  status: empty
+  cell: null
+- id: simspaceweaver
+  name: AWS SimSpace Weaver
+  category: uncategorised
+  target_repo: cloudbench-aws-simspaceweaver
+  status: empty
+  cell: null
+- id: sms-voice
+  name: Amazon Pinpoint SMS and Voice Service
+  category: uncategorised
+  target_repo: cloudbench-aws-sms-voice
+  status: empty
+  cell: null
+- id: snow-device-management
+  name: AWS Snow Device Management
+  category: uncategorised
+  target_repo: cloudbench-aws-snow-device-management
+  status: empty
+  cell: null
+- id: snowball
+  name: Amazon Import/Export Snowball
+  category: migration-transfer
+  target_repo: cloudbench-aws-snowball
+  status: empty
+  cell: null
+- id: sns
+  name: Amazon Simple Notification Service
+  category: application-integration
+  target_repo: cloudbench-aws-sns
+  status: empty
+  cell: null
+- id: socialmessaging
+  name: AWS End User Messaging Social
+  category: uncategorised
+  target_repo: cloudbench-aws-socialmessaging
+  status: empty
+  cell: null
+- id: sqs
+  name: Amazon Simple Queue Service
+  category: application-integration
+  target_repo: cloudbench-aws-sqs
+  status: empty
+  cell: null
+- id: ssm
+  name: Amazon Simple Systems Manager (SSM)
+  category: management-governance
+  target_repo: cloudbench-aws-ssm
+  status: empty
+  cell: null
+- id: ssm-contacts
+  name: AWS Systems Manager Incident Manager Contacts
+  category: management-governance
+  target_repo: cloudbench-aws-ssm-contacts
+  status: empty
+  cell: null
+- id: ssm-guiconnect
+  name: AWS SSM-GUIConnect
+  category: uncategorised
+  target_repo: cloudbench-aws-ssm-guiconnect
+  status: empty
+  cell: null
+- id: ssm-incidents
+  name: AWS Systems Manager Incident Manager
+  category: management-governance
+  target_repo: cloudbench-aws-ssm-incidents
+  status: empty
+  cell: null
+- id: ssm-quicksetup
+  name: AWS Systems Manager QuickSetup
+  category: uncategorised
+  target_repo: cloudbench-aws-ssm-quicksetup
+  status: empty
+  cell: null
+- id: ssm-sap
+  name: AWS Systems Manager for SAP
+  category: uncategorised
+  target_repo: cloudbench-aws-ssm-sap
+  status: empty
+  cell: null
+- id: sso
+  name: AWS Single Sign-On
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-sso
+  status: empty
+  cell: null
+- id: sso-admin
+  name: AWS Single Sign-On Admin
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-sso-admin
+  status: empty
+  cell: null
+- id: sso-oidc
+  name: AWS SSO OIDC
+  category: uncategorised
+  target_repo: cloudbench-aws-sso-oidc
+  status: empty
+  cell: null
+- id: stepfunctions
+  name: AWS Step Functions
+  category: application-integration
+  target_repo: cloudbench-aws-stepfunctions
+  status: empty
+  cell: null
+- id: storagegateway
+  name: AWS Storage Gateway
+  category: storage
+  target_repo: cloudbench-aws-storagegateway
+  status: empty
+  cell: null
+- id: sts
+  name: AWS Security Token Service
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-sts
+  status: empty
+  cell: null
+- id: supplychain
+  name: AWS Supply Chain
+  category: business-applications
+  target_repo: cloudbench-aws-supplychain
+  status: empty
+  cell: null
+- id: support
+  name: AWS Support
+  category: customer-enablement
+  target_repo: cloudbench-aws-support
+  status: empty
+  cell: null
+- id: support-app
+  name: AWS Support App
+  category: uncategorised
+  target_repo: cloudbench-aws-support-app
+  status: empty
+  cell: null
+- id: sustainability
+  name: AWS Sustainability
+  category: uncategorised
+  target_repo: cloudbench-aws-sustainability
+  status: empty
+  cell: null
+- id: swf
+  name: Amazon Simple Workflow Service
+  category: application-integration
+  target_repo: cloudbench-aws-swf
+  status: empty
+  cell: null
+- id: synthetics
+  name: Synthetics
+  category: uncategorised
+  target_repo: cloudbench-aws-synthetics
+  status: empty
+  cell: null
+- id: taxsettings
+  name: Tax Settings
+  category: uncategorised
+  target_repo: cloudbench-aws-taxsettings
+  status: empty
+  cell: null
+- id: textract
+  name: Amazon Textract
+  category: machine-learning
+  target_repo: cloudbench-aws-textract
+  status: empty
+  cell: null
+- id: timestream-influxdb
+  name: Timestream InfluxDB
+  category: uncategorised
+  target_repo: cloudbench-aws-timestream-influxdb
+  status: empty
+  cell: null
+- id: timestream-query
+  name: Amazon Timestream Query
+  category: database
+  target_repo: cloudbench-aws-timestream-query
+  status: empty
+  cell: null
+- id: timestream-write
+  name: Amazon Timestream Write
+  category: database
+  target_repo: cloudbench-aws-timestream-write
+  status: empty
+  cell: null
+- id: tnb
+  name: AWS Telco Network Builder
+  category: uncategorised
+  target_repo: cloudbench-aws-tnb
+  status: empty
+  cell: null
+- id: transcribe
+  name: Amazon Transcribe Service
+  category: machine-learning
+  target_repo: cloudbench-aws-transcribe
+  status: empty
+  cell: null
+- id: transfer
+  name: AWS Transfer Family
+  category: migration-transfer
+  target_repo: cloudbench-aws-transfer
+  status: empty
+  cell: null
+- id: translate
+  name: Amazon Translate
+  category: machine-learning
+  target_repo: cloudbench-aws-translate
+  status: empty
+  cell: null
+- id: trustedadvisor
+  name: TrustedAdvisor Public API
+  category: uncategorised
+  target_repo: cloudbench-aws-trustedadvisor
+  status: empty
+  cell: null
+- id: uxc
+  name: AWS User Experience Customization
+  category: uncategorised
+  target_repo: cloudbench-aws-uxc
+  status: empty
+  cell: null
+- id: verifiedpermissions
+  name: Amazon Verified Permissions
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-verifiedpermissions
+  status: empty
+  cell: null
+- id: voice-id
+  name: Amazon Voice ID
+  category: uncategorised
+  target_repo: cloudbench-aws-voice-id
+  status: empty
+  cell: null
+- id: vpc-lattice
+  name: Amazon VPC Lattice
+  category: networking-content-delivery
+  target_repo: cloudbench-aws-vpc-lattice
+  status: empty
+  cell: null
+- id: waf
+  name: AWS WAF
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-waf
+  status: empty
+  cell: null
+- id: waf-regional
+  name: AWS WAF Regional
+  category: uncategorised
+  target_repo: cloudbench-aws-waf-regional
+  status: empty
+  cell: null
+- id: wafv2
+  name: AWS WAFV2
+  category: security-identity-compliance
+  target_repo: cloudbench-aws-wafv2
+  status: empty
+  cell: null
+- id: wellarchitected
+  name: AWS Well-Architected Tool
+  category: uncategorised
+  target_repo: cloudbench-aws-wellarchitected
+  status: empty
+  cell: null
+- id: wickr
+  name: AWS Wickr Admin API
+  category: uncategorised
+  target_repo: cloudbench-aws-wickr
+  status: empty
+  cell: null
+- id: wisdom
+  name: Amazon Connect Wisdom Service
+  category: uncategorised
+  target_repo: cloudbench-aws-wisdom
+  status: empty
+  cell: null
+- id: workdocs
+  name: Amazon WorkDocs
+  category: uncategorised
+  target_repo: cloudbench-aws-workdocs
+  status: empty
+  cell: null
+- id: workmail
+  name: Amazon WorkMail
+  category: business-applications
+  target_repo: cloudbench-aws-workmail
+  status: empty
+  cell: null
+- id: workmailmessageflow
+  name: Amazon WorkMail Message Flow
+  category: uncategorised
+  target_repo: cloudbench-aws-workmailmessageflow
+  status: empty
+  cell: null
+- id: workspaces
+  name: Amazon WorkSpaces
+  category: end-user-computing
+  target_repo: cloudbench-aws-workspaces
+  status: empty
+  cell: null
+- id: workspaces-instances
+  name: Amazon Workspaces Instances
+  category: uncategorised
+  target_repo: cloudbench-aws-workspaces-instances
+  status: empty
+  cell: null
+- id: workspaces-thin-client
+  name: Amazon WorkSpaces Thin Client
+  category: uncategorised
+  target_repo: cloudbench-aws-workspaces-thin-client
+  status: empty
+  cell: null
+- id: workspaces-web
+  name: Amazon WorkSpaces Web
+  category: end-user-computing
+  target_repo: cloudbench-aws-workspaces-web
+  status: empty
+  cell: null
+- id: xray
+  name: AWS X-Ray
+  category: developer-tools
+  target_repo: cloudbench-aws-xray
+  status: empty
+  cell: null

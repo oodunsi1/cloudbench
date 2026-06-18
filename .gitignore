@@ -1,0 +1,30 @@
+# CloudBench public repo — keep internal/private and rebuildable content out.
+# (Public scope = the benchmark spec, the cases, and the harness. Strategy notes,
+#  the paper draft, and the literature corpus stay private for now.)
+
+# Environments / caches / rebuildable
+.venv/
+**/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+**/.pytest_cache/
+*.egg-info/
+**/*.egg-info/
+.DS_Store
+score.json
+
+# Internal / private (never publish)
+benchmark/_INTERNAL_VISION.md
+**/_INTERNAL*
+paper/
+literature/
+experiments/
+Benchmark-Related Direction.md
+HANDOFF.md
+AGENTS.md
+CLAUDE.md
+.cursor/
+
+# Working / generated app repos (each published as its own per-case repo)
+gen_out/

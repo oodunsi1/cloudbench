@@ -1,0 +1,45 @@
+id: uc1
+paper_id: aws-ec2-wordcount
+name: CloudBench AWS EC2 Wordcount
+provider: aws
+primary_service: ec2
+description: >
+  Reads a text input and emits word counts. Simplest case: a single stateless
+  compute node that clones the repo and runs run.sh. No stateful dependencies.
+repo_url: https://github.com/oodunsi1/cloudbot_uc1
+commit: 0b6a307ac4fa7ad096f35ecf1472510a4362cfe1
+level: 0
+ask_type: app-repo
+provider: aws
+primary_service: ec2
+aws_services: [ec2, iam]
+complexity: single_service
+phase: 1
+building_block: B0
+workload_kind: batch_job
+runtime:
+  language: shell
+baseline_eligible:
+  - full
+  - iac_only
+  - no_rag
+  - no_repair
+  - no_reuse
+expected_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+validation_contract:
+  expected_status: success
+  run_instructions_summary: >
+    Make the run.sh script executable and then execute it.
+  stdout_contains: []
+  probe:
+    component_id: compute
+    probe_type: execution_exit_code
+    expectation: run.sh exits 0
+teardown_contract:
+  method: terraform destroy
+  residual_check: no running EC2 instances created by this run remain
+  proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json

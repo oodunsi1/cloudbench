@@ -1,0 +1,63 @@
+# Recipe — the blueprint for one benchmark cell.
+#
+# The engine (`bench generate --cell aws-s3-batch`) reads this, copies the template files into a
+# fresh app repo, builds the case file from the fields below, validates the case, and logs the run.
+# This is the GOLDEN recipe: the worked example every other recipe is modelled on.
+
+cell: aws-s3-batch                 # must match a cell id in ../../grid/cells.yaml
+archetype: batch-object-storage    # the reusable shape: a batch job that reads/writes object storage
+
+# --- Identity (follows ../../NAMING.md: cloudbench-{provider}-{service}-{slug}) ---
+display_name: CloudBench AWS S3 Batch
+repo_name: cloudbench-aws-s3-batch
+provider: aws
+primary_service: s3
+building_block: B2
+work_kind: batch_job               # a valid RepoSpec workload_kind
+level: 2
+ask_type: app-repo                 # how the task is posed (see ../../ASK_TYPES.md)
+runtime:
+  language: python
+description: >
+  B2 building block — compute plus S3 read/write. A run-to-completion batch job: reads input.txt
+  from an S3 bucket, counts words, and writes output/result.json back to the bucket. The repo
+  contains no IaC; provisioning the bucket + compute + IAM is the system-under-test's job.
+
+# --- What the app needs from the cloud (becomes expected_service_families in the case) ---
+needs_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+  - s3
+aws_services: [ec2, s3, iam]
+
+# --- How we know it worked / how to tear it down (becomes the case contracts) ---
+success_check:
+  run_instructions: >
+    Set CLOUDBENCH_BUCKET to the provisioned bucket, then run ./run.sh.
+  stdout_contains: ["s3://"]
+  probe:
+    component_id: s3
+    probe_type: object_exists
+    expectation: output/result.json exists in the bucket
+teardown_check:
+  method: terraform destroy
+  residual_check: no S3 buckets or EC2 instances from this run remain
+
+# --- The app files to write (templates live in ../templates/aws-s3-batch/) ---
+# v1 copies templates verbatim; the recipe's fields above carry everything that varies per cell.
+app_files:
+  - README.md
+  - requirements.txt
+  - process.py
+  - config.yml
+  - run.sh           # made executable on write
+  - test_process.py
+  - .gitignore
+
+# --- Rules every app of this archetype must obey ---
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo — the app relies on the instance's IAM role.
+  - The bucket name is injected at runtime (env var), never hard-coded.

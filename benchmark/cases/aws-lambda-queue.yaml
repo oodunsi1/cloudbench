@@ -1,0 +1,37 @@
+id: aws-lambda-queue
+paper_id: aws-lambda-queue
+name: CloudBench AWS Lambda Queue
+description: B5 — event-driven serverless. Repo not yet published.
+repo_url: https://github.com/oodunsi1/cloudbench-aws-lambda-queue
+commit: unpinned
+level: 5
+ask_type: app-repo
+provider: aws
+primary_service: lambda
+aws_services: [lambda, sqs, s3, iam]
+complexity: application
+phase: 2
+building_block: B5
+workload_kind: worker
+runtime:
+  language: python
+baseline_eligible:
+  - full
+expected_service_families:
+  - lambda
+  - sqs
+  - s3
+  - iam_role
+validation_contract:
+  expected_status: success
+  run_instructions_summary: Upload test object; verify SQS/Lambda logs.
+  stdout_contains: []
+  probe:
+    component_id: lambda
+    probe_type: log_contains
+    expectation: CloudWatch shows processed message
+teardown_contract:
+  method: terraform destroy
+  residual_check: no Lambda, SQS, or buckets from this run remain
+  proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json
+_status: planned

@@ -1,0 +1,53 @@
+# Recipe — the "web service + database" cell (the next rung on the diagonal).
+# Second worked example, modelled on the golden aws-s3-batch recipe. See ../RECIPE.md.
+
+cell: aws-rds-api
+archetype: web-service-database     # a long-running HTTP service backed by a SQL database
+
+display_name: CloudBench AWS RDS API
+repo_name: cloudbench-aws-rds-api
+provider: aws
+primary_service: rds
+building_block: B3
+work_kind: api_service              # a valid RepoSpec workload_kind
+level: 3
+ask_type: app-repo                 # how the task is posed (see ../../ASK_TYPES.md)
+runtime:
+  language: python
+description: >
+  B3 building block — compute plus a managed PostgreSQL database. A long-running web service:
+  GET /health returns 200, and a small items API reads/writes rows in PostgreSQL via DATABASE_URL.
+  The repo contains no IaC; provisioning the instance + database + security group is the
+  system-under-test's job.
+
+needs_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - rds
+aws_services: [ec2, rds, iam]
+
+success_check:
+  run_instructions: >
+    Set DATABASE_URL to the provisioned database, then run ./run.sh. Probe GET /health for 200.
+  stdout_contains: []
+  probe:
+    component_id: api
+    probe_type: http_status
+    expectation: GET /health -> 200
+teardown_check:
+  method: terraform destroy
+  residual_check: no RDS instances or EC2 instances from this run remain
+
+app_files:
+  - README.md
+  - requirements.txt
+  - app.py
+  - db/init.sql
+  - run.sh           # made executable on write
+  - test_app.py
+  - .gitignore
+
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo — the database URL is injected at runtime (DATABASE_URL).
