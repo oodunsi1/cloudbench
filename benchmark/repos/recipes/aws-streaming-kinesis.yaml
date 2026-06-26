@@ -1,0 +1,51 @@
+# Recipe — the blueprint for the aws-streaming-kinesis cell (work-kind: streaming, building block B5).
+
+cell: aws-streaming-kinesis
+archetype: kinesis-consumer
+
+display_name: CloudBench AWS Kinesis Stream Consumer
+repo_name: cloudbench-aws-streaming-kinesis
+provider: aws
+primary_service: kinesis
+building_block: B5
+work_kind: worker                        # a valid RepoSpec workload_kind (the grid axis label is "streaming")
+level: 5
+ask_type: app-repo
+runtime:
+  language: python
+description: >
+  B5 streaming / real-time. A worker that consumes records from a Kinesis data stream and processes
+  each one, emitting CLOUDBENCH_STREAM_OK. The repo has no IaC; provisioning the stream, compute, and
+  IAM read access is the system-under-test's job.
+
+needs_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+  - kinesis
+aws_services: [ec2, kinesis, iam]
+
+success_check:
+  run_instructions: >
+    Set CLOUDBENCH_STREAM to the provisioned stream name, then run ./run.sh.
+  stdout_contains: ["CLOUDBENCH_STREAM_OK"]
+  probe:
+    component_id: kinesis
+    probe_type: execution_exit_code
+    expectation: the consumer connects to the stream, reads records, exits 0, and emits CLOUDBENCH_STREAM_OK
+teardown_check:
+  method: terraform destroy
+  residual_check: no EC2 instances or Kinesis streams from this run remain
+
+app_files:
+  - README.md
+  - consumer.py
+  - requirements.txt
+  - run.sh           # made executable on write
+  - .gitignore
+
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo; the app uses the instance IAM role.
+  - The marker CLOUDBENCH_STREAM_OK must be emitted verbatim.

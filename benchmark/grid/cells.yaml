@@ -93,10 +93,8 @@ cells:
     case: benchmark/cases/aws-rds-api.yaml
     repo: https://github.com/oodunsi1/cloudbench-aws-rds-api
     recipe: benchmark/repos/recipes/aws-rds-api.yaml
-    status: planned
-    app_generated: true  # built locally by `bench generate`; awaiting review + publish to become covered
+    status: covered
     on_diagonal: true
-    next: true           # the cell the engine fills first to prove itself
 
   - id: aws-alb-three-tier
     provider: aws
@@ -105,7 +103,8 @@ cells:
     level: 4
     case: benchmark/cases/aws-alb-three-tier.yaml
     repo: https://github.com/oodunsi1/cloudbench-aws-alb-three-tier
-    status: planned
+    recipe: benchmark/repos/recipes/aws-alb-three-tier.yaml
+    status: covered
     on_diagonal: true
 
   - id: aws-lambda-queue
@@ -136,7 +135,10 @@ cells:
     building_block: B5
     work_kind: streaming
     level: 5
-    status: empty
+    case: benchmark/cases/aws-streaming-kinesis.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-streaming-kinesis
+    recipe: benchmark/repos/recipes/aws-streaming-kinesis.yaml
+    status: covered
     on_diagonal: false
   - id: aws-stateful-store
     provider: aws
@@ -153,14 +155,20 @@ cells:
     building_block: B3
     work_kind: etl
     level: 3
-    status: empty
+    case: benchmark/cases/aws-etl-pipeline.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-etl-pipeline
+    recipe: benchmark/repos/recipes/aws-etl-pipeline.yaml
+    status: covered
     on_diagonal: false
   - id: aws-mlai-inference
     provider: aws
     building_block: B3
     work_kind: mlai
     level: 3
-    status: empty
+    case: benchmark/cases/aws-mlai-inference.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-mlai-inference
+    recipe: benchmark/repos/recipes/aws-mlai-inference.yaml
+    status: covered
     on_diagonal: false
   - id: aws-static-cdn
     provider: aws

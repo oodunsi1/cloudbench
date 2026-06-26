@@ -1,0 +1,56 @@
+# Recipe — the blueprint for the aws-mlai-inference cell (work-kind: mlai, building block B3).
+# `bench generate --cell aws-mlai-inference` reads this, copies the inference-service template into a
+# fresh app repo, builds the case file, validates it, and logs the run.
+
+cell: aws-mlai-inference
+archetype: inference-service            # the reusable shape: an ML inference API serving a model
+
+display_name: CloudBench AWS ML Inference Service
+repo_name: cloudbench-aws-mlai-inference
+provider: aws
+primary_service: ec2
+building_block: B3
+work_kind: api_service                  # a valid RepoSpec workload_kind (the grid axis label is "mlai")
+level: 3
+ask_type: app-repo
+runtime:
+  language: python
+  framework: flask
+description: >
+  B3 compute + a model store. A small ML inference service (Flask): POST /predict returns a prediction
+  from a model loaded from object storage (CLOUDBENCH_MODEL_URI), GET /health returns the marker
+  CLOUDBENCH_MLAI_OK. The repo has no IaC; provisioning compute + the S3 model bucket + IAM is the
+  system-under-test's job.
+
+needs_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+  - s3
+aws_services: [ec2, s3, iam]
+
+success_check:
+  run_instructions: >
+    Set CLOUDBENCH_MODEL_URI to the model's s3:// location, then run ./run.sh; the service serves
+    /predict and /health.
+  stdout_contains: ["CLOUDBENCH_MLAI_OK"]
+  probe:
+    component_id: compute
+    probe_type: http_status
+    expectation: GET /health returns 200 with the CLOUDBENCH_MLAI_OK marker and /predict returns a prediction
+teardown_check:
+  method: terraform destroy
+  residual_check: no EC2 instances or S3 buckets from this run remain
+
+app_files:
+  - README.md
+  - app.py
+  - requirements.txt
+  - run.sh           # made executable on write
+  - .gitignore
+
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo; the app uses the instance IAM role to read the model from S3.
+  - The marker CLOUDBENCH_MLAI_OK must be served verbatim.

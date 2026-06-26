@@ -1,0 +1,39 @@
+id: aws-streaming-kinesis
+paper_id: aws-streaming-kinesis
+name: CloudBench AWS Kinesis Stream Consumer
+description: B5 streaming / real-time. A worker that consumes records from a Kinesis data stream and processes
+  each one, emitting CLOUDBENCH_STREAM_OK. The repo has no IaC; provisioning the stream, compute, and
+  IAM read access is the system-under-test's job.
+repo_url: https://github.com/oodunsi1/cloudbench-aws-streaming-kinesis
+commit: eaf2756d818e2c797aad762169ff001debb5fe49
+level: 5
+provider: aws
+primary_service: kinesis
+aws_services:
+- ec2
+- kinesis
+- iam
+building_block: B5
+workload_kind: worker
+ask_type: app-repo
+runtime:
+  language: python
+expected_service_families:
+- compute
+- security_group
+- iam_role
+- iam_instance_profile
+- kinesis
+validation_contract:
+  expected_status: success
+  run_instructions_summary: Set CLOUDBENCH_STREAM to the provisioned stream name, then run ./run.sh.
+  stdout_contains:
+  - CLOUDBENCH_STREAM_OK
+  probe:
+    component_id: kinesis
+    probe_type: execution_exit_code
+    expectation: the consumer connects to the stream, reads records, exits 0, and emits CLOUDBENCH_STREAM_OK
+teardown_contract:
+  method: terraform destroy
+  residual_check: no EC2 instances or Kinesis streams from this run remain
+  proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json

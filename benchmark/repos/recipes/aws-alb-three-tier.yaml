@@ -1,0 +1,58 @@
+# Recipe — the blueprint for the aws-alb-three-tier cell (work-kind: composite, building block B4).
+# Reuses the web-service-database app, but the case expects a load-balanced multi-tier deployment
+# (ALB in front of the app tier, backed by a database) — the composite/multi-tier rung.
+
+cell: aws-alb-three-tier
+archetype: web-service-database
+
+display_name: CloudBench AWS ALB Three-Tier App
+repo_name: cloudbench-aws-alb-three-tier
+provider: aws
+primary_service: alb
+building_block: B4
+work_kind: api_service                   # a valid RepoSpec workload_kind (the grid axis label is "composite")
+level: 4
+ask_type: app-repo
+runtime:
+  language: python
+  framework: flask
+description: >
+  B4 multi-tier with a load balancer. A Flask web service backed by PostgreSQL, expected to be deployed
+  behind an Application Load Balancer (the three tiers: ALB -> app -> database). The repo has no IaC;
+  provisioning the ALB, the app compute, the RDS database, and the IAM/networking is the
+  system-under-test's job.
+
+needs_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+  - alb
+  - rds
+aws_services: [ec2, alb, rds, iam]
+
+success_check:
+  run_instructions: >
+    Set DATABASE_URL to the provisioned database, deploy the app behind the ALB, then hit the ALB DNS.
+  stdout_contains: ["Running on"]
+  probe:
+    component_id: alb
+    probe_type: http_status
+    expectation: the ALB DNS returns 200 from /health, and /items reads/writes rows through the database
+teardown_check:
+  method: terraform destroy
+  residual_check: no load balancers, EC2 instances, or RDS instances from this run remain
+
+app_files:
+  - README.md
+  - requirements.txt
+  - app.py
+  - db/init.sql
+  - run.sh           # made executable on write
+  - test_app.py
+  - .gitignore
+
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo; configuration (DATABASE_URL) is injected at runtime.
+  - The app must be reachable through the load balancer, not directly.

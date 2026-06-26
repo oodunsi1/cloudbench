@@ -1,38 +1,44 @@
 id: aws-alb-three-tier
 paper_id: aws-alb-three-tier
-name: CloudBench AWS ALB Three-Tier
-description: B4 — ALB, EC2, RDS. Repo not yet published.
+name: CloudBench AWS ALB Three-Tier App
+description: 'B4 multi-tier with a load balancer. A Flask web service backed by PostgreSQL, expected to
+  be deployed behind an Application Load Balancer (the three tiers: ALB -> app -> database). The repo
+  has no IaC; provisioning the ALB, the app compute, the RDS database, and the IAM/networking is the system-under-test''s
+  job.'
 repo_url: https://github.com/oodunsi1/cloudbench-aws-alb-three-tier
-commit: unpinned
+commit: 2e66cfbc4313cf5ca99aad835b9f0217fc780558
 level: 4
-ask_type: app-repo
 provider: aws
 primary_service: alb
-aws_services: [alb, ec2, rds, iam]
-complexity: application
-phase: 2
+aws_services:
+- ec2
+- alb
+- rds
+- iam
 building_block: B4
 workload_kind: api_service
+ask_type: app-repo
 runtime:
   language: python
-baseline_eligible:
-  - full
+  framework: flask
 expected_service_families:
-  - compute
-  - alb
-  - rds
-  - security_group
-  - iam_role
+- compute
+- security_group
+- iam_role
+- iam_instance_profile
+- alb
+- rds
 validation_contract:
   expected_status: success
-  run_instructions_summary: ALB health check green; API returns JSON.
-  stdout_contains: []
+  run_instructions_summary: Set DATABASE_URL to the provisioned database, deploy the app behind the ALB,
+    then hit the ALB DNS.
+  stdout_contains:
+  - Running on
   probe:
     component_id: alb
     probe_type: http_status
-    expectation: GET /api/status -> 200
+    expectation: the ALB DNS returns 200 from /health, and /items reads/writes rows through the database
 teardown_contract:
   method: terraform destroy
-  residual_check: no ALB, RDS, or EC2 from this run remain
+  residual_check: no load balancers, EC2 instances, or RDS instances from this run remain
   proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json
-_status: planned
