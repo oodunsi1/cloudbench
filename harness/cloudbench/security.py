@@ -85,6 +85,26 @@ def _ports_in(body: str) -> List[int]:
     return out
 
 
+def _sg_rules(rtype: str, body: str) -> List[str]:
+    """The individual rule bodies to check — one per ingress/egress sub-block for an
+    aws_security_group, or the whole body for a standalone aws_security_group_rule. Per-rule so a
+    properly-restricted DB rule is not blamed for a sibling public app-port rule in the same group
+    (the whole-block check used to false-positive on that)."""
+    if rtype == "aws_security_group_rule":
+        return [body]
+    rules: List[str] = []
+    for m in re.finditer(r"\b(?:ingress|egress)\s*\{", body):
+        depth, i, n = 1, m.end(), len(body)
+        while i < n and depth:
+            if body[i] == "{":
+                depth += 1
+            elif body[i] == "}":
+                depth -= 1
+            i += 1
+        rules.append(body[m.end():i - 1])
+    return rules or [body]
+
+
 def scan_builtin(terraform_dir: Path) -> List[Finding]:
     """Run the built-in rule set over every .tf file in the dir."""
     findings: List[Finding] = []
@@ -102,15 +122,17 @@ def scan_builtin(terraform_dir: Path) -> List[Finding]:
         # Per-resource rules.
         for rtype, rname, body in _iter_resource_blocks(text):
             ref = f"{rtype}.{rname}"
-            if rtype in ("aws_security_group", "aws_security_group_rule") and _open_to_world(body):
-                ports = [p for p in _ports_in(body) if p in _SENSITIVE_PORTS]
-                if ports:
-                    names = ", ".join(f"{p} ({_SENSITIVE_PORTS[p]})" for p in sorted(set(ports)))
-                    findings.append(Finding("open-sensitive-port", "critical", ref,
-                                            f"Security group opens sensitive port(s) {names} to 0.0.0.0/0."))
-                else:
-                    findings.append(Finding("open-ingress", "high", ref,
-                                            "Security group allows ingress from 0.0.0.0/0 (the whole internet)."))
+            if rtype in ("aws_security_group", "aws_security_group_rule"):
+                open_rules = [r for r in _sg_rules(rtype, body) if _open_to_world(r)]
+                if open_rules:
+                    sens = sorted({p for r in open_rules for p in _ports_in(r) if p in _SENSITIVE_PORTS})
+                    if sens:
+                        names = ", ".join(f"{p} ({_SENSITIVE_PORTS[p]})" for p in sens)
+                        findings.append(Finding("open-sensitive-port", "critical", ref,
+                                                f"Security group opens sensitive port(s) {names} to 0.0.0.0/0."))
+                    else:
+                        findings.append(Finding("open-ingress", "high", ref,
+                                                "Security group allows ingress from 0.0.0.0/0 (the whole internet)."))
             if rtype == "aws_s3_bucket" and re.search(r'acl\s*=\s*"public-read', body):
                 findings.append(Finding("public-s3-bucket", "high", ref,
                                         "S3 bucket ACL is public-read/public-read-write."))
