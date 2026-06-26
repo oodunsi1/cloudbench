@@ -1,0 +1,55 @@
+# Recipe — the blueprint for the aws-static-cdn cell (work-kind: static, building block B2).
+# `bench generate --cell aws-static-cdn` reads this, copies the static-site template into a fresh app
+# repo, builds the case file, validates it, and logs the run.
+
+cell: aws-static-cdn
+archetype: static-site                 # the reusable shape: a static website served from object storage
+
+# --- Identity (follows ../../NAMING.md: cloudbench-{provider}-{service}-{slug}) ---
+display_name: CloudBench AWS Static Site
+repo_name: cloudbench-aws-static-cdn
+provider: aws
+primary_service: s3
+building_block: B2
+work_kind: static_site                 # a valid RepoSpec workload_kind (the grid axis label is "static")
+level: 2
+ask_type: app-repo
+runtime:
+  language: html
+description: >
+  B2 static content — a static website served from object storage, no application server. The repo is
+  a plain static site (index.html + style.css) with no IaC; provisioning the S3 bucket (static website
+  hosting with public read, optionally fronted by CloudFront) and uploading the files is the
+  system-under-test's job.
+
+# --- What the app needs from the cloud (becomes expected_service_families in the case) ---
+needs_service_families:
+  - s3
+aws_services: [s3]
+
+# --- How we know it worked / how to tear it down (becomes the case contracts) ---
+success_check:
+  run_instructions: >
+    Set SITE_URL to the provisioned static-site endpoint, then run ./run.sh.
+  stdout_contains: ["static site OK"]
+  probe:
+    component_id: s3
+    probe_type: http_status
+    expectation: the site URL returns 200 and serves index.html with the CLOUDBENCH_STATIC_OK marker
+teardown_check:
+  method: terraform destroy
+  residual_check: no S3 buckets or CloudFront distributions from this run remain
+
+# --- The app files to write (templates live in ../templates/static-site/) ---
+app_files:
+  - README.md
+  - index.html
+  - style.css
+  - run.sh           # made executable on write
+  - .gitignore
+
+# --- Rules every app of this archetype must obey ---
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo.
+  - The site content is static; the marker CLOUDBENCH_STATIC_OK must be served verbatim.

@@ -1,0 +1,52 @@
+# Recipe — the blueprint for the aws-scheduled-cron cell (work-kind: scheduled, building block B1).
+# `bench generate --cell aws-scheduled-cron` reads this, copies the scheduled-job template into a fresh
+# app repo, builds the case file, validates it, and logs the run.
+
+cell: aws-scheduled-cron
+archetype: scheduled-job               # the reusable shape: a small recurring job
+
+display_name: CloudBench AWS Scheduled Cron Job
+repo_name: cloudbench-aws-scheduled-cron
+provider: aws
+primary_service: ec2
+building_block: B1
+work_kind: worker                      # a valid RepoSpec workload_kind (the grid axis label is "scheduled")
+level: 1
+ask_type: app-repo
+runtime:
+  language: python
+description: >
+  B1 compute + runtime, run on a schedule. A small recurring job: each run appends a heartbeat line
+  (marker CLOUDBENCH_CRON_OK + a UTC timestamp) to output/heartbeat.log. The repo has no IaC;
+  provisioning compute and scheduling the job (cron / systemd timer / EventBridge) is the
+  system-under-test's job.
+
+needs_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+aws_services: [ec2, iam]
+
+success_check:
+  run_instructions: >
+    A scheduled tick runs ./run.sh, which executes job.py.
+  stdout_contains: ["CLOUDBENCH_CRON_OK"]
+  probe:
+    component_id: compute
+    probe_type: execution_exit_code
+    expectation: a scheduled tick runs the job, exits 0, and emits the CLOUDBENCH_CRON_OK marker
+teardown_check:
+  method: terraform destroy
+  residual_check: no EC2 instances or schedules from this run remain
+
+app_files:
+  - README.md
+  - job.py
+  - run.sh           # made executable on write
+  - .gitignore
+
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning and scheduling are the system-under-test's job.
+  - No credentials in the repo.
+  - The job must emit the marker CLOUDBENCH_CRON_OK verbatim on each run.
