@@ -1,0 +1,43 @@
+# Recipe — gcp-static-site (work-kind: static, building block B2, provider: gcp).
+# Reuses the provider-agnostic static-site app; the case is provider=gcp (Cloud Storage static hosting).
+
+cell: gcp-static-site
+archetype: static-site
+display_name: CloudBench GCP Static Site
+repo_name: cloudbench-gcp-static-site
+provider: gcp
+primary_service: gcs
+building_block: B2
+work_kind: static_site
+level: 2
+ask_type: app-repo
+runtime:
+  language: html
+description: >
+  B2 static content on Google Cloud — a static website served from object storage (Cloud Storage), no
+  application server. The repo is a plain static site with no IaC; provisioning the bucket and serving
+  it (Cloud Storage static hosting, optionally behind Cloud CDN) is the system-under-test's job.
+needs_service_families:
+  - s3            # object storage — the provider-agnostic family label (GCS maps to it)
+gcp_services: [storage]
+success_check:
+  run_instructions: >
+    Set SITE_URL to the provisioned static-site endpoint, then run ./run.sh.
+  stdout_contains: ["static site OK"]
+  probe:
+    component_id: storage
+    probe_type: http_status
+    expectation: the site URL returns 200 and serves index.html with the CLOUDBENCH_STATIC_OK marker
+teardown_check:
+  method: terraform destroy
+  residual_check: no Cloud Storage buckets from this run remain
+app_files:
+  - README.md
+  - index.html
+  - style.css
+  - run.sh
+  - .gitignore
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo.
+  - The marker CLOUDBENCH_STATIC_OK must be served verbatim.
