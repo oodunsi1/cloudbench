@@ -204,3 +204,19 @@ def test_l2_plan_failure(tmp_path: Path, wordcount_case: dict, monkeypatch) -> N
     monkeypatch.setattr(score_mod.subprocess, "run", fake)
     res = score_mod.score_l2(wordcount_case, tmp_path, allow_cloud=True)
     assert res.plan_ok is False and res.passed is False and res.errors
+
+
+def test_multicloud_family_map(tmp_path: Path) -> None:
+    """The scorer is provider-neutral: the family map credits GCP and Azure resources, not just AWS."""
+    from cloudbench.graph import families_from_terraform
+
+    (tmp_path / "gcp.tf").write_text(
+        'resource "google_compute_instance" "v" {}\n'
+        'resource "google_storage_bucket" "b" {}\n'
+        'resource "google_sql_database_instance" "d" {}\n', encoding="utf-8")
+    assert {"compute", "s3", "rds"} <= families_from_terraform(tmp_path)
+
+    (tmp_path / "az.tf").write_text(
+        'resource "azurerm_linux_virtual_machine" "v" {}\n'
+        'resource "azurerm_storage_account" "s" {}\n', encoding="utf-8")
+    assert {"compute", "s3"} <= families_from_terraform(tmp_path)
