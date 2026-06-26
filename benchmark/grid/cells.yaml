@@ -215,6 +215,17 @@ cells:
     status: covered
     on_diagonal: false
 
+  - id: azure-static-site
+    provider: azure
+    building_block: B2
+    work_kind: static
+    level: 2
+    case: benchmark/cases/azure-static-site.yaml
+    repo: https://github.com/oodunsi1/cloudbench-azure-static-site
+    recipe: benchmark/repos/recipes/azure-static-site.yaml
+    status: covered
+    on_diagonal: false
+
 # Other clouds (gcp, azure, alibaba): the whole grid above repeats per provider with the
 # same kinds of work. Left unenumerated until AWS coverage is established (provider order
 # in axes.providers). The generator can mirror a covered AWS cell to another provider by

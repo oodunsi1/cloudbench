@@ -1,0 +1,32 @@
+id: azure-static-site
+paper_id: azure-static-site
+name: CloudBench Azure Static Site
+description: B2 static content on Microsoft Azure — a static website served from object storage (a Storage
+  Account static website / Blob), no application server. The repo is a plain static site with no IaC;
+  provisioning the storage account and serving it is the system-under-test's job.
+repo_url: https://github.com/oodunsi1/cloudbench-azure-static-site
+commit: cc483156a20cf3c19decc5c110b8496262bd8f85
+level: 2
+provider: azure
+primary_service: blob_storage
+aws_services: []
+building_block: B2
+workload_kind: static_site
+ask_type: app-repo
+runtime:
+  language: html
+expected_service_families:
+- s3
+validation_contract:
+  expected_status: success
+  run_instructions_summary: Set SITE_URL to the provisioned static-site endpoint, then run ./run.sh.
+  stdout_contains:
+  - static site OK
+  probe:
+    component_id: storage
+    probe_type: http_status
+    expectation: the site URL returns 200 and serves index.html with the CLOUDBENCH_STATIC_OK marker
+teardown_contract:
+  method: terraform destroy
+  residual_check: no storage accounts from this run remain
+  proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json
