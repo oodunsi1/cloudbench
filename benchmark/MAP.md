@@ -64,17 +64,18 @@ building blocks it needs to run. This table makes that link explicit (the machin
 | Kind of work | B0 bare | B1 +runtime | B2 +storage | B3 +database | B4 +load balancer | B5 serverless |
 |---|---|---|---|---|---|---|
 | **batch** | ✅ wordcount | ✅ java image/video | ✅ s3-batch | | | |
-| **service** | | | | ⏳ rds-api | | |
-| **composite** | | | | | 📋 alb-three-tier | |
-| **event** | | | | | | 📋 lambda-queue |
-| **scheduled** | | ▫ natural home | | | | |
-| **static** | | | ▫ natural home | | | |
-| **stateful** | | | | ▫ natural home | | |
-| **etl** | | | | ▫ natural home | | |
-| **mlai** | | | | ▫ natural home | | |
-| **streaming** | | | | | | ▫ natural home |
+| **service** | | | | ✅ rds-api | | |
+| **composite** | | | | | ✅ alb-three-tier | |
+| **event** | | | | | | ✅ lambda-queue |
+| **scheduled** | | ✅ scheduled-cron | | | | |
+| **static** | | | ✅ static-cdn | | | |
+| **stateful** | | | | ✅ stateful-store | | |
+| **etl** | | | | ✅ etl-pipeline | | |
+| **mlai** | | | | ✅ mlai-inference | | |
+| **streaming** | | | | | | ✅ streaming-kinesis |
 
-Legend: ✅ filled · ⏳ next · 📋 planned · ▫ natural home, not yet scheduled.
+Legend: ✅ filled (real, published, pinned) · ⏳ next · 📋 planned · ▫ natural home, not yet scheduled.
+**All ten kinds of work now have at least one covered case** (the first full pass of the demand axis).
 
 Why each kind lands where it does:
 
@@ -103,9 +104,9 @@ a cross-section that spans the whole range.
 | L0 | bare compute | batch | `uc1` (aws-ec2-wordcount) | ✅ real + pinned |
 | L1 | + runtime | batch (image/video) | `uc2`, `uc3` | ✅ real + pinned |
 | L2 | + object storage | batch + storage | `aws-s3-batch` | ✅ published |
-| L3 | + database | long-running service / API | `aws-rds-api` | 🛠️ generated locally — awaiting publish |
-| L4 | + load balancer | composite multi-tier | `aws-alb-three-tier` | 📋 planned |
-| L5 | serverless events | event-driven | `aws-lambda-queue` | 📋 planned |
+| L3 | + database | long-running service / API | `aws-rds-api` | ✅ published + pinned |
+| L4 | + load balancer | composite multi-tier | `aws-alb-three-tier` | ✅ published + pinned |
+| L5 | serverless events | event-driven | `aws-lambda-queue` | ✅ published + pinned |
 
 ## Where coverage stands (AWS)
 
@@ -114,20 +115,20 @@ Reading: ✅ filled · ⏳ next · 📋 planned · ▫ empty (drawn, not schedul
 | Kind of work ↓ \ Block → | B0 | B1 | B2 | B3 | B4 | B5 |
 |---|----|----|----|----|----|----|
 | batch | ✅ | ✅ | ✅ | | | |
-| service | | | | ⏳ | | |
-| composite | | | | | 📋 | |
-| event | | | | | | 📋 |
-| scheduled | | ▫ | | | | |
-| static | | | ▫ | | | |
-| stateful | | | | ▫ | | |
-| etl | | | | ▫ | | |
-| mlai | | | | ▫ | | |
-| streaming | | | | | | ▫ |
+| service | | | | ✅ | | |
+| composite | | | | | ✅ | |
+| event | | | | | | ✅ |
+| scheduled | | ✅ | | | | |
+| static | | | ✅ | | | |
+| stateful | | | | ✅ | | |
+| etl | | | | ✅ | | |
+| mlai | | | | ✅ | | |
+| streaming | | | | | | ✅ |
 
-**Count: 4 spots filled** (uc1, uc2, uc3, aws-s3-batch) · **aws-rds-api generated locally** by the
-engine (app + case ready, not yet published/pinned) · **2 more planned on the diagonal**
-(aws-alb-three-tier → aws-lambda-queue) · the other six kinds of work on AWS are drawn but empty ·
-Google / Microsoft / Alibaba are the same grid again, not started.
+**Count: 13 spots filled across all 10 kinds of work** — every demand-axis kind now has at least one
+real, published, pinned, validating case on AWS (batch ×4 at B0–B2; service, stateful, etl, mlai at B3;
+static at B2; scheduled at B1; composite at B4; event, streaming at B5). The first full pass of the
+demand axis is complete. Google / Microsoft / Alibaba are the same grid again, not started.
 
 **Service-catalog coverage:** 3 of 426 AWS services are the focus of a runnable repo so far — `ec2`
 (uc1–uc3), `s3` (aws-s3-batch), `rds` (aws-rds-api). See [`SERVICE_CATALOG.md`](SERVICE_CATALOG.md).
