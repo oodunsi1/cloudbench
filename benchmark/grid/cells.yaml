@@ -142,7 +142,10 @@ cells:
     building_block: B3
     work_kind: stateful
     level: 3
-    status: empty
+    case: benchmark/cases/aws-stateful-store.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-stateful-store
+    recipe: benchmark/repos/recipes/aws-stateful-store.yaml
+    status: covered
     on_diagonal: false
   - id: aws-etl-pipeline
     provider: aws
