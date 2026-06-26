@@ -11,6 +11,7 @@ import yaml
 
 from cloudbench.catalog import build_catalog, catalog_path, refresh, write_catalog
 from cloudbench.gen import find_root, generate
+from cloudbench.leaderboard import build_leaderboard, load_submissions
 from cloudbench.score import score_l1, score_l2, write_score_report
 from cloudbench.validate_ext import validate_cloudbench_case
 
@@ -90,6 +91,22 @@ def cmd_catalog(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_leaderboard(args: argparse.Namespace) -> int:
+    root = Path(args.root).resolve() if args.root else find_root()
+    sub_dir = Path(args.submissions) if args.submissions else root / "experiments" / "leaderboard" / "submissions"
+    submissions = load_submissions(sub_dir)
+    if not submissions:
+        print(f"No submissions in {sub_dir}", file=sys.stderr)
+        return 1
+    board = build_leaderboard(submissions)
+    out = Path(args.output) if args.output else root / "experiments" / "leaderboard" / "LEADERBOARD.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(board["markdown"], encoding="utf-8")
+    print(f"Wrote {out} ({len(board['rows'])} system(s))", file=sys.stderr)
+    print(board["markdown"])
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="bench", description="CloudBench harness")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -127,6 +144,13 @@ def main(argv: list[str] | None = None) -> int:
     c.add_argument("--refresh", action="store_true", help="Rebuild and diff vs the stored catalog (the watcher)")
     c.add_argument("--dry-run", action="store_true", help="Build and summarise without writing the file")
     c.set_defaults(func=cmd_catalog)
+
+    lb = sub.add_parser("leaderboard", help="Build the leaderboard table from submission JSONs")
+    lb.add_argument("build", nargs="?", default="build", help=argparse.SUPPRESS)
+    lb.add_argument("--submissions", help="Dir of submission JSONs (default: experiments/leaderboard/submissions)")
+    lb.add_argument("--output", "-o", help="Where to write LEADERBOARD.md")
+    lb.add_argument("--root", help="CloudBench root (default: auto-detect from cwd)")
+    lb.set_defaults(func=cmd_leaderboard)
 
     args = ap.parse_args(argv)
     return args.func(args)
