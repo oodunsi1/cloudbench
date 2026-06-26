@@ -181,6 +181,28 @@ cells:
     status: covered
     on_diagonal: false
 
+  # ===== DEPTH — more than one case per kind (off-diagonal) =====
+  - id: aws-ec2-webapi
+    provider: aws
+    building_block: B1
+    work_kind: service
+    level: 1
+    case: benchmark/cases/aws-ec2-webapi.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-ec2-webapi
+    recipe: benchmark/repos/recipes/aws-ec2-webapi.yaml
+    status: covered
+    on_diagonal: false
+  - id: aws-elasticache-service
+    provider: aws
+    building_block: B3
+    work_kind: service
+    level: 3
+    case: benchmark/cases/aws-elasticache-service.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-elasticache-service
+    recipe: benchmark/repos/recipes/aws-elasticache-service.yaml
+    status: covered
+    on_diagonal: false
+
   # ===== GCP — the provider axis begins (the same grid, another cloud) =====
   - id: gcp-static-site
     provider: gcp

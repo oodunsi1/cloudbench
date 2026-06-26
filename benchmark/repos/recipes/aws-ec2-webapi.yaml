@@ -1,0 +1,45 @@
+# Recipe — aws-ec2-webapi (work-kind: service, building block B1). A second 'service' case (depth):
+# a stateless web API at a cheaper rung than the database-backed aws-rds-api (B3).
+cell: aws-ec2-webapi
+archetype: web-service
+display_name: CloudBench AWS Stateless Web API
+repo_name: cloudbench-aws-ec2-webapi
+provider: aws
+primary_service: ec2
+building_block: B1
+work_kind: api_service
+level: 1
+ask_type: app-repo
+runtime:
+  language: python
+  framework: flask
+description: >
+  B1 compute + runtime. A small stateless HTTP service (Flask): GET /health returns CLOUDBENCH_WEBAPI_OK,
+  POST /echo echoes its body. No database. The repo has no IaC; provisioning compute and exposing the
+  service is the system-under-test's job.
+needs_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+aws_services: [ec2, iam]
+success_check:
+  run_instructions: >
+    Provision compute, run ./run.sh, expose the app port, then GET /health.
+  stdout_contains: ["CLOUDBENCH_WEBAPI_OK"]
+  probe:
+    component_id: compute
+    probe_type: http_status
+    expectation: GET /health returns 200 with the CLOUDBENCH_WEBAPI_OK marker
+teardown_check:
+  method: terraform destroy
+  residual_check: no EC2 instances from this run remain
+app_files:
+  - README.md
+  - app.py
+  - requirements.txt
+  - run.sh
+  - .gitignore
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo. The marker CLOUDBENCH_WEBAPI_OK must be served verbatim.

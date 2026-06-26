@@ -1,0 +1,44 @@
+cell: aws-elasticache-service
+archetype: cache-service
+display_name: CloudBench AWS Cache-Backed Service
+repo_name: cloudbench-aws-elasticache-service
+provider: aws
+primary_service: elasticache
+building_block: B3
+work_kind: api_service
+level: 3
+ask_type: app-repo
+runtime:
+  language: python
+  framework: flask
+description: >
+  B3 compute + a managed cache. A Flask service backed by a Redis cache (ElastiCache): set/get round-trip
+  values, /health returns CLOUDBENCH_CACHE_OK. No IaC; provisioning compute + the cache is the
+  system-under-test's job. A second B3 service exercising the cache tier (vs aws-rds-api's database).
+needs_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+  - cache
+aws_services: [ec2, elasticache, iam]
+success_check:
+  run_instructions: >
+    Set CLOUDBENCH_REDIS_HOST to the provisioned cache endpoint, run ./run.sh, then GET /health.
+  stdout_contains: ["CLOUDBENCH_CACHE_OK"]
+  probe:
+    component_id: cache
+    probe_type: http_status
+    expectation: GET /health returns 200 with CLOUDBENCH_CACHE_OK and set/get round-trips through the cache
+teardown_check:
+  method: terraform destroy
+  residual_check: no EC2 instances or ElastiCache clusters from this run remain
+app_files:
+  - README.md
+  - app.py
+  - requirements.txt
+  - run.sh
+  - .gitignore
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo. The marker CLOUDBENCH_CACHE_OK must be served verbatim.
