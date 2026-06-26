@@ -1,0 +1,52 @@
+# Recipe — the blueprint for the aws-etl-pipeline cell (work-kind: etl, building block B3).
+
+cell: aws-etl-pipeline
+archetype: etl-pipeline
+
+display_name: CloudBench AWS ETL Pipeline
+repo_name: cloudbench-aws-etl-pipeline
+provider: aws
+primary_service: s3
+building_block: B3
+work_kind: batch_job                    # a valid RepoSpec workload_kind (the grid axis label is "etl")
+level: 3
+ask_type: app-repo
+runtime:
+  language: python
+description: >
+  B3 data pipeline. Extract records from object storage (S3), transform (aggregate per category), load
+  the result into a key-value store (DynamoDB). Emits CLOUDBENCH_ETL_OK. The repo has no IaC;
+  provisioning compute, the source bucket, and the sink table is the system-under-test's job.
+
+needs_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+  - s3
+  - dynamodb
+aws_services: [ec2, s3, dynamodb, iam]
+
+success_check:
+  run_instructions: >
+    Set CLOUDBENCH_INPUT_URI (s3://...) and CLOUDBENCH_TABLE, then run ./run.sh.
+  stdout_contains: ["CLOUDBENCH_ETL_OK"]
+  probe:
+    component_id: dynamodb
+    probe_type: execution_exit_code
+    expectation: the pipeline extracts, aggregates, loads to DynamoDB, exits 0, and emits CLOUDBENCH_ETL_OK
+teardown_check:
+  method: terraform destroy
+  residual_check: no EC2 instances, S3 buckets, or DynamoDB tables from this run remain
+
+app_files:
+  - README.md
+  - pipeline.py
+  - requirements.txt
+  - run.sh           # made executable on write
+  - .gitignore
+
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo; the app uses the instance IAM role.
+  - The marker CLOUDBENCH_ETL_OK must be emitted verbatim.

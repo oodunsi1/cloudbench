@@ -1,0 +1,41 @@
+id: aws-etl-pipeline
+paper_id: aws-etl-pipeline
+name: CloudBench AWS ETL Pipeline
+description: B3 data pipeline. Extract records from object storage (S3), transform (aggregate per category),
+  load the result into a key-value store (DynamoDB). Emits CLOUDBENCH_ETL_OK. The repo has no IaC; provisioning
+  compute, the source bucket, and the sink table is the system-under-test's job.
+repo_url: https://github.com/oodunsi1/cloudbench-aws-etl-pipeline
+commit: 12642f23b57419014c702386154127a250da4496
+level: 3
+provider: aws
+primary_service: s3
+aws_services:
+- ec2
+- s3
+- dynamodb
+- iam
+building_block: B3
+workload_kind: batch_job
+ask_type: app-repo
+runtime:
+  language: python
+expected_service_families:
+- compute
+- security_group
+- iam_role
+- iam_instance_profile
+- s3
+- dynamodb
+validation_contract:
+  expected_status: success
+  run_instructions_summary: Set CLOUDBENCH_INPUT_URI (s3://...) and CLOUDBENCH_TABLE, then run ./run.sh.
+  stdout_contains:
+  - CLOUDBENCH_ETL_OK
+  probe:
+    component_id: dynamodb
+    probe_type: execution_exit_code
+    expectation: the pipeline extracts, aggregates, loads to DynamoDB, exits 0, and emits CLOUDBENCH_ETL_OK
+teardown_contract:
+  method: terraform destroy
+  residual_check: no EC2 instances, S3 buckets, or DynamoDB tables from this run remain
+  proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json
