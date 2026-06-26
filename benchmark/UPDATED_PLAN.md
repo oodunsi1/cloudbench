@@ -62,7 +62,7 @@ Cloud services stack like LEGO. If a model cannot create **one EC2 instance**, i
 **Decision: one GitHub repo per benchmark case** (how real teams work).
 
 - `cloudbot-benchmarking` = specs, paper, harness (this folder)
-- `cloudbot_uc1`, `cloudbot_uc2`, … = one app each
+- `cloudbench-aws-ec2-wordcount`, `cloudbench-aws-ec2-java-image`, … = one app each
 - Future cases: `cloudbench-bb-s3-batch`, etc.
 
 We are **not** putting multiple apps in one repo for v1. Consolidation can come later if needed.

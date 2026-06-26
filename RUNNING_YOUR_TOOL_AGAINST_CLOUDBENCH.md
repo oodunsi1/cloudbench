@@ -55,7 +55,7 @@ that matter to you:
 
 ```bash
 cd harness
-python -m cloudbench.cli validate ../benchmark/cases/uc1.yaml
+python -m cloudbench.cli validate ../benchmark/cases/aws-ec2-wordcount.yaml
 ```
 
 ### 3. Run your tool
@@ -68,7 +68,7 @@ any cloud account for the free tier.
 
 ```bash
 cd harness
-python -m cloudbench.cli score ../benchmark/cases/uc1.yaml --tier L1 \
+python -m cloudbench.cli score ../benchmark/cases/aws-ec2-wordcount.yaml --tier L1 \
   --terraform-dir /path/to/your/generated/terraform \
   -o my_score.json
 ```

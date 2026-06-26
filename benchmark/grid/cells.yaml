@@ -48,8 +48,8 @@ cells:
     building_block: B0
     work_kind: batch
     level: 0
-    case: benchmark/cases/uc1.yaml
-    repo: https://github.com/oodunsi1/cloudbot_uc1
+    case: benchmark/cases/aws-ec2-wordcount.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-ec2-wordcount
     status: covered
     on_diagonal: true
 
@@ -58,8 +58,8 @@ cells:
     building_block: B1
     work_kind: batch
     level: 1
-    case: benchmark/cases/uc2.yaml
-    repo: https://github.com/oodunsi1/cloudbot_uc2
+    case: benchmark/cases/aws-ec2-java-image.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-ec2-java-image
     status: covered
     on_diagonal: true
 
@@ -68,8 +68,8 @@ cells:
     building_block: B1
     work_kind: batch
     level: 1
-    case: benchmark/cases/uc3.yaml
-    repo: https://github.com/oodunsi1/cloudbot_uc3
+    case: benchmark/cases/aws-ec2-java-video.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-ec2-java-video
     status: covered
     on_diagonal: false   # a second L1 example; the diagonal uses one spot per rung
 

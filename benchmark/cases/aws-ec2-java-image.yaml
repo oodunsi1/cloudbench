@@ -1,4 +1,4 @@
-id: uc2
+id: aws-ec2-java-image
 paper_id: aws-ec2-java-image
 name: CloudBench AWS EC2 Java Image
 provider: aws
@@ -6,7 +6,7 @@ primary_service: ec2
 description: >
   Java application that analyzes images. Requires a JDK on the instance plus git
   to clone, configured via config.yml before running.
-repo_url: https://github.com/oodunsi1/cloudbot_uc2
+repo_url: https://github.com/oodunsi1/cloudbench-aws-ec2-java-image
 commit: 5ad84efd8d0a69b0e08e121594bda2276c76f4a6
 level: 1
 ask_type: app-repo

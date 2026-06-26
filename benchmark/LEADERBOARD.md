@@ -50,7 +50,7 @@ Each submission is one JSON file (example shape):
 Produce per-case scores with:
 
 ```bash
-bench score benchmark/cases/uc1.yaml --tier L1 \
+bench score benchmark/cases/aws-ec2-wordcount.yaml --tier L1 \
   --archspec path/to/archspec.json \
   --terraform-dir path/to/terraform/ \
   -o experiments/leaderboard/runs/uc1-gpt4o.json

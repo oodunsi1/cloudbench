@@ -30,9 +30,9 @@ Two axes:
 
 | Case | Block | Level | Repo |
 |---|---|---|---|
-| uc1 | B0 | 0 | `oodunsi1/cloudbot_uc1` |
-| uc2 | B1 | 1 | `oodunsi1/cloudbot_uc2` |
-| uc3 | B1 | 1 | `oodunsi1/cloudbot_uc3` |
+| uc1 | B0 | 0 | `oodunsi1/cloudbench-aws-ec2-wordcount` |
+| uc2 | B1 | 1 | `oodunsi1/cloudbench-aws-ec2-java-image` |
+| uc3 | B1 | 1 | `oodunsi1/cloudbench-aws-ec2-java-video` |
 | aws-s3-batch (published) | B2 | 2 | `cloudbench-aws-s3-batch` |
 | aws-rds-api (generated, awaiting publish) | B3 | 3 | `cloudbench-aws-rds-api` |
 | aws-alb-three-tier (planned) | B4 | 4 | `cloudbench-aws-alb-three-tier` |
