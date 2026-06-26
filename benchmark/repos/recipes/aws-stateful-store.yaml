@@ -1,0 +1,53 @@
+# Recipe — the blueprint for the aws-stateful-store cell (work-kind: stateful, building block B3).
+# `bench generate --cell aws-stateful-store` reads this, copies the keyvalue-store template into a
+# fresh app repo, builds the case file, validates it, and logs the run.
+
+cell: aws-stateful-store
+archetype: keyvalue-store               # the reusable shape: a worker that round-trips a key-value store
+
+display_name: CloudBench AWS Stateful Key-Value Store
+repo_name: cloudbench-aws-stateful-store
+provider: aws
+primary_service: dynamodb
+building_block: B3
+work_kind: worker                       # a valid RepoSpec workload_kind (the grid axis label is "stateful")
+level: 3
+ask_type: app-repo
+runtime:
+  language: python
+description: >
+  B3 compute + a managed data store. A small stateful worker: it writes a record to a key-value store
+  (DynamoDB) and reads it back to prove persistence (marker CLOUDBENCH_STATEFUL_OK). The repo has no
+  IaC; provisioning compute, the DynamoDB table, and the IAM access is the system-under-test's job.
+
+needs_service_families:
+  - compute
+  - security_group
+  - iam_role
+  - iam_instance_profile
+  - dynamodb
+aws_services: [ec2, dynamodb, iam]
+
+success_check:
+  run_instructions: >
+    Set CLOUDBENCH_TABLE to the provisioned DynamoDB table, then run ./run.sh.
+  stdout_contains: ["CLOUDBENCH_STATEFUL_OK"]
+  probe:
+    component_id: dynamodb
+    probe_type: execution_exit_code
+    expectation: the worker writes and reads back a record, exits 0, and emits CLOUDBENCH_STATEFUL_OK
+teardown_check:
+  method: terraform destroy
+  residual_check: no EC2 instances or DynamoDB tables from this run remain
+
+app_files:
+  - README.md
+  - app.py
+  - requirements.txt
+  - run.sh           # made executable on write
+  - .gitignore
+
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo; the app uses the instance IAM role.
+  - The table name is injected at runtime (CLOUDBENCH_TABLE); the marker must be emitted verbatim.

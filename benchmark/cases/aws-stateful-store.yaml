@@ -1,0 +1,39 @@
+id: aws-stateful-store
+paper_id: aws-stateful-store
+name: CloudBench AWS Stateful Key-Value Store
+description: 'B3 compute + a managed data store. A small stateful worker: it writes a record to a key-value
+  store (DynamoDB) and reads it back to prove persistence (marker CLOUDBENCH_STATEFUL_OK). The repo has
+  no IaC; provisioning compute, the DynamoDB table, and the IAM access is the system-under-test''s job.'
+repo_url: https://github.com/oodunsi1/cloudbench-aws-stateful-store
+commit: a2c3b3e78dd0919a2d7cdd33c6f68e31e376e3a4
+level: 3
+provider: aws
+primary_service: dynamodb
+aws_services:
+- ec2
+- dynamodb
+- iam
+building_block: B3
+workload_kind: worker
+ask_type: app-repo
+runtime:
+  language: python
+expected_service_families:
+- compute
+- security_group
+- iam_role
+- iam_instance_profile
+- dynamodb
+validation_contract:
+  expected_status: success
+  run_instructions_summary: Set CLOUDBENCH_TABLE to the provisioned DynamoDB table, then run ./run.sh.
+  stdout_contains:
+  - CLOUDBENCH_STATEFUL_OK
+  probe:
+    component_id: dynamodb
+    probe_type: execution_exit_code
+    expectation: the worker writes and reads back a record, exits 0, and emits CLOUDBENCH_STATEFUL_OK
+teardown_contract:
+  method: terraform destroy
+  residual_check: no EC2 instances or DynamoDB tables from this run remain
+  proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json
