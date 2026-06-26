@@ -125,7 +125,10 @@ cells:
     building_block: B1
     work_kind: scheduled
     level: 1
-    status: empty
+    case: benchmark/cases/aws-scheduled-cron.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-scheduled-cron
+    recipe: benchmark/repos/recipes/aws-scheduled-cron.yaml
+    status: covered
     on_diagonal: false
   - id: aws-streaming-kinesis
     provider: aws
@@ -160,7 +163,10 @@ cells:
     building_block: B2
     work_kind: static
     level: 2
-    status: empty
+    case: benchmark/cases/aws-static-cdn.yaml
+    repo: https://github.com/oodunsi1/cloudbench-aws-static-cdn
+    recipe: benchmark/repos/recipes/aws-static-cdn.yaml
+    status: covered
     on_diagonal: false
 
 # Other clouds (gcp, azure, alibaba): the whole grid above repeats per provider with the

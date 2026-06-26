@@ -1,0 +1,34 @@
+id: aws-static-cdn
+paper_id: aws-static-cdn
+name: CloudBench AWS Static Site
+description: B2 static content — a static website served from object storage, no application server. The
+  repo is a plain static site (index.html + style.css) with no IaC; provisioning the S3 bucket (static
+  website hosting with public read, optionally fronted by CloudFront) and uploading the files is the system-under-test's
+  job.
+repo_url: https://github.com/oodunsi1/cloudbench-aws-static-cdn
+commit: 74c5480ad371bd9e34bc3b5865cf9f5273959c98
+level: 2
+provider: aws
+primary_service: s3
+aws_services:
+- s3
+building_block: B2
+workload_kind: static_site
+ask_type: app-repo
+runtime:
+  language: html
+expected_service_families:
+- s3
+validation_contract:
+  expected_status: success
+  run_instructions_summary: Set SITE_URL to the provisioned static-site endpoint, then run ./run.sh.
+  stdout_contains:
+  - static site OK
+  probe:
+    component_id: s3
+    probe_type: http_status
+    expectation: the site URL returns 200 and serves index.html with the CLOUDBENCH_STATIC_OK marker
+teardown_contract:
+  method: terraform destroy
+  residual_check: no S3 buckets or CloudFront distributions from this run remain
+  proof_artifact: terraform_runs/<slug>/<timestamp>/deployment_proof.json
