@@ -1,4 +1,4 @@
-id: uc1
+id: aws-ec2-wordcount
 paper_id: aws-ec2-wordcount
 name: CloudBench AWS EC2 Wordcount
 provider: aws
@@ -6,7 +6,7 @@ primary_service: ec2
 description: >
   Reads a text input and emits word counts. Simplest case: a single stateless
   compute node that clones the repo and runs run.sh. No stateful dependencies.
-repo_url: https://github.com/oodunsi1/cloudbot_uc1
+repo_url: https://github.com/oodunsi1/cloudbench-aws-ec2-wordcount
 commit: 0b6a307ac4fa7ad096f35ecf1472510a4362cfe1
 level: 0
 ask_type: app-repo

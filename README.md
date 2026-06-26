@@ -27,9 +27,9 @@ the system under test. Cases climb a difficulty ladder of cloud **building block
 
 | Case | Block | What it adds | Workload | Status | App repo |
 |------|-------|--------------|----------|--------|----------|
-| `uc1` | B0 | bare compute | batch job | ✅ pinned | [cloudbot_uc1](https://github.com/oodunsi1/cloudbot_uc1) |
-| `uc2` | B1 | + language runtime | batch job | ✅ pinned | [cloudbot_uc2](https://github.com/oodunsi1/cloudbot_uc2) |
-| `uc3` | B1 | + language runtime | batch job | ✅ pinned | [cloudbot_uc3](https://github.com/oodunsi1/cloudbot_uc3) |
+| `uc1` | B0 | bare compute | batch job | ✅ pinned | [cloudbench-aws-ec2-wordcount](https://github.com/oodunsi1/cloudbench-aws-ec2-wordcount) |
+| `uc2` | B1 | + language runtime | batch job | ✅ pinned | [cloudbench-aws-ec2-java-image](https://github.com/oodunsi1/cloudbench-aws-ec2-java-image) |
+| `uc3` | B1 | + language runtime | batch job | ✅ pinned | [cloudbench-aws-ec2-java-video](https://github.com/oodunsi1/cloudbench-aws-ec2-java-video) |
 | `aws-s3-batch` | B2 | + object storage (S3) | batch job | ✅ pinned | [cloudbench-aws-s3-batch](https://github.com/oodunsi1/cloudbench-aws-s3-batch) |
 | `aws-rds-api` | B3 | + managed database (RDS) | web service | ✅ pinned | [cloudbench-aws-rds-api](https://github.com/oodunsi1/cloudbench-aws-rds-api) |
 | `aws-alb-three-tier` | B4 | + load balancer | web service | 🛠 planned | — |
@@ -68,7 +68,7 @@ cd harness && pip install -e ".[dev]"
 bench validate ../benchmark/cases/aws-rds-api.yaml --require-pinned
 
 # Score L1 artifacts from a run (no cloud apply)
-bench score ../benchmark/cases/uc1.yaml --tier L1 \
+bench score ../benchmark/cases/aws-ec2-wordcount.yaml --tier L1 \
   --archspec /path/to/archspec.json \
   --terraform-dir /path/to/terraform_runs/<slug>/<ts> \
   -o score.json

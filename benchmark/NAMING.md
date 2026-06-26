@@ -34,9 +34,9 @@ Names should read like a product label: **what cloud**, **what service**, **what
 
 | Block | Display name | Case id | Repo (target) | Legacy repo (v0) |
 |-------|--------------|---------|---------------|------------------|
-| B0 | CloudBench AWS EC2 Wordcount | `aws-ec2-wordcount` | `cloudbench-aws-ec2-wordcount` | `cloudbot_uc1` |
-| B1 | CloudBench AWS EC2 Java Image | `aws-ec2-java-image` | `cloudbench-aws-ec2-java-image` | `cloudbot_uc2` |
-| B1 | CloudBench AWS EC2 Java Video | `aws-ec2-java-video` | `cloudbench-aws-ec2-java-video` | `cloudbot_uc3` |
+| B0 | CloudBench AWS EC2 Wordcount | `aws-ec2-wordcount` | `cloudbench-aws-ec2-wordcount` | `cloudbench-aws-ec2-wordcount` |
+| B1 | CloudBench AWS EC2 Java Image | `aws-ec2-java-image` | `cloudbench-aws-ec2-java-image` | `cloudbench-aws-ec2-java-image` |
+| B1 | CloudBench AWS EC2 Java Video | `aws-ec2-java-video` | `cloudbench-aws-ec2-java-video` | `cloudbench-aws-ec2-java-video` |
 | B2 | CloudBench AWS S3 Batch | `aws-s3-batch` | `cloudbench-aws-s3-batch` | (planned) |
 | B3 | CloudBench AWS RDS API | `aws-rds-api` | `cloudbench-aws-rds-api` | (planned) |
 | B4 | CloudBench AWS ALB Three-Tier | `aws-alb-three-tier` | `cloudbench-aws-alb-three-tier` | (planned) |

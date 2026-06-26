@@ -55,6 +55,37 @@ today is `app-repo`. The **use-case** rung draws on AWS's own solution repos
 So every benchmark case is **one spot** where a *kind of work* meets a *building block* meets a
 *cloud* — handed over at a given *ask-type*.
 
+## How the two lists connect (kind of work to building block)
+
+The two lists above are not independent. Each kind of work has a **natural rung**: the smallest set of
+building blocks it needs to run. This table makes that link explicit (the machine-readable source is
+[`grid/cells.yaml`](grid/cells.yaml)).
+
+| Kind of work | B0 bare | B1 +runtime | B2 +storage | B3 +database | B4 +load balancer | B5 serverless |
+|---|---|---|---|---|---|---|
+| **batch** | ✅ wordcount | ✅ java image/video | ✅ s3-batch | | | |
+| **service** | | | | ⏳ rds-api | | |
+| **composite** | | | | | 📋 alb-three-tier | |
+| **event** | | | | | | 📋 lambda-queue |
+| **scheduled** | | ▫ natural home | | | | |
+| **static** | | | ▫ natural home | | | |
+| **stateful** | | | | ▫ natural home | | |
+| **etl** | | | | ▫ natural home | | |
+| **mlai** | | | | ▫ natural home | | |
+| **streaming** | | | | | | ▫ natural home |
+
+Legend: ✅ filled · ⏳ next · 📋 planned · ▫ natural home, not yet scheduled.
+
+Why each kind lands where it does:
+
+1. **batch** needs only a server, then a runtime, then object storage, so it climbs B0, B1, B2.
+2. **service** (a request-answering API) needs a database behind it, so its home is B3.
+3. **composite** (a multi-tier app) needs a load balancer to route between tiers, so its home is B4.
+4. **event** work (a trigger fires, then work runs) maps to serverless functions plus a queue, so B5.
+
+The diagonal fill order below is one step down-and-across this table: a different kind of work on each
+higher rung, so a few cases span the whole range.
+
 ## One map, two jobs
 
 There is a single finite map. **This benchmark is the scorecard** — it proves each spot actually
