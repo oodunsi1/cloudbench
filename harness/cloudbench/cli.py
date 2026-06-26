@@ -11,7 +11,8 @@ import yaml
 
 from cloudbench.catalog import build_catalog, catalog_path, refresh, write_catalog
 from cloudbench.gen import find_root, generate
-from cloudbench.score import score_l1, write_score_report
+from cloudbench.leaderboard import build_leaderboard, load_submissions
+from cloudbench.score import score_l1, score_l2, write_score_report
 from cloudbench.validate_ext import validate_cloudbench_case
 
 
@@ -32,22 +33,30 @@ def cmd_validate(args: argparse.Namespace) -> int:
 def cmd_score(args: argparse.Namespace) -> int:
     case = _load_case(Path(args.case))
     tier = args.tier.upper()
-    if tier != "L1":
-        print(f"Tier {tier} not implemented yet (L3/L4 require cloud approval).", file=sys.stderr)
+    tf = Path(args.terraform_dir) if args.terraform_dir else None
+    if tier == "L1":
+        result = score_l1(
+            case,
+            repospec_path=Path(args.repospec) if args.repospec else None,
+            archspec_path=Path(args.archspec) if args.archspec else None,
+            terraform_dir=tf,
+            skip_terraform_validate=args.skip_terraform_validate,
+            run_security=not args.no_security,
+        )
+    elif tier == "L2":
+        result = score_l2(case, tf, allow_cloud=args.allow_cloud)
+    else:
+        # L3 (deploy) and L4 (workload) run real infrastructure — done in the gated deploy harness
+        # (CloudBot paper repo), not the public scorer.
+        print(f"Tier {tier} runs real infrastructure; use the gated deploy harness, not this scorer.",
+              file=sys.stderr)
         return 2
-    result = score_l1(
-        case,
-        repospec_path=Path(args.repospec) if args.repospec else None,
-        archspec_path=Path(args.archspec) if args.archspec else None,
-        terraform_dir=Path(args.terraform_dir) if args.terraform_dir else None,
-        skip_terraform_validate=args.skip_terraform_validate,
-    )
     out = Path(args.output) if args.output else None
     if out:
         write_score_report(result, out)
         print(f"Wrote {out}", file=sys.stderr)
     print(json.dumps(result.to_dict(), indent=2))
-    return 0 if result.passed else 1
+    return 0 if result.passed else (0 if result.passed is None else 1)
 
 
 def cmd_generate(args: argparse.Namespace) -> int:
@@ -82,6 +91,22 @@ def cmd_catalog(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_leaderboard(args: argparse.Namespace) -> int:
+    root = Path(args.root).resolve() if args.root else find_root()
+    sub_dir = Path(args.submissions) if args.submissions else root / "experiments" / "leaderboard" / "submissions"
+    submissions = load_submissions(sub_dir)
+    if not submissions:
+        print(f"No submissions in {sub_dir}", file=sys.stderr)
+        return 1
+    board = build_leaderboard(submissions)
+    out = Path(args.output) if args.output else root / "experiments" / "leaderboard" / "LEADERBOARD.md"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(board["markdown"], encoding="utf-8")
+    print(f"Wrote {out} ({len(board['rows'])} system(s))", file=sys.stderr)
+    print(board["markdown"])
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="bench", description="CloudBench harness")
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -99,6 +124,9 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("--terraform-dir", help="Path to terraform run directory")
     s.add_argument("--output", "-o", help="Write JSON score report to path")
     s.add_argument("--skip-terraform-validate", action="store_true")
+    s.add_argument("--no-security", action="store_true", help="Skip the artifact-tier security lint (L1)")
+    s.add_argument("--allow-cloud", action="store_true",
+                   help="L2 only: run terraform plan even when AWS creds are not auto-detected (read-only)")
     s.set_defaults(func=cmd_score)
 
     g = sub.add_parser("generate", help="Fill one map cell: scaffold app repo + case from its recipe")
@@ -116,6 +144,13 @@ def main(argv: list[str] | None = None) -> int:
     c.add_argument("--refresh", action="store_true", help="Rebuild and diff vs the stored catalog (the watcher)")
     c.add_argument("--dry-run", action="store_true", help="Build and summarise without writing the file")
     c.set_defaults(func=cmd_catalog)
+
+    lb = sub.add_parser("leaderboard", help="Build the leaderboard table from submission JSONs")
+    lb.add_argument("build", nargs="?", default="build", help=argparse.SUPPRESS)
+    lb.add_argument("--submissions", help="Dir of submission JSONs (default: experiments/leaderboard/submissions)")
+    lb.add_argument("--output", "-o", help="Where to write LEADERBOARD.md")
+    lb.add_argument("--root", help="CloudBench root (default: auto-detect from cwd)")
+    lb.set_defaults(func=cmd_leaderboard)
 
     args = ap.parse_args(argv)
     return args.func(args)
