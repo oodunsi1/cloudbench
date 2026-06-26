@@ -115,7 +115,8 @@ cells:
     level: 5
     case: benchmark/cases/aws-lambda-queue.yaml
     repo: https://github.com/oodunsi1/cloudbench-aws-lambda-queue
-    status: planned
+    recipe: benchmark/repos/recipes/aws-lambda-queue.yaml
+    status: covered
     on_diagonal: true
 
   # ===== EMPTY — drawn on the map so coverage is honest; the other six kinds of work

@@ -1,0 +1,50 @@
+# Recipe — the blueprint for the aws-lambda-queue cell (work-kind: event, building block B5).
+# `bench generate --cell aws-lambda-queue` reads this, copies the lambda-sqs-handler template into a
+# fresh app repo, builds the case file, validates it, and logs the run.
+
+cell: aws-lambda-queue
+archetype: lambda-sqs-handler           # the reusable shape: a Lambda triggered by an SQS queue
+
+display_name: CloudBench AWS Lambda Queue Worker
+repo_name: cloudbench-aws-lambda-queue
+provider: aws
+primary_service: lambda
+building_block: B5
+work_kind: worker                       # a valid RepoSpec workload_kind (the grid axis label is "event")
+level: 5
+ask_type: app-repo
+runtime:
+  language: python
+description: >
+  B5 event-driven serverless. An AWS Lambda handler triggered by SQS: for each message it does a tiny
+  unit of work and emits the marker CLOUDBENCH_EVENT_OK. The repo has no IaC; provisioning the SQS
+  queue, packaging the Lambda, and wiring the event source + IAM is the system-under-test's job.
+
+needs_service_families:
+  - lambda
+  - sqs
+  - iam_role
+aws_services: [lambda, sqs, iam]
+
+success_check:
+  run_instructions: >
+    Send a message to the provisioned queue; the Lambda is invoked and processes it.
+    Locally, `python handler.py` runs a smoke test with a synthetic SQS event.
+  stdout_contains: ["CLOUDBENCH_EVENT_OK"]
+  probe:
+    component_id: lambda
+    probe_type: log_contains
+    expectation: a queued message triggers the Lambda, which emits CLOUDBENCH_EVENT_OK
+teardown_check:
+  method: terraform destroy
+  residual_check: no Lambda functions or SQS queues from this run remain
+
+app_files:
+  - README.md
+  - handler.py
+  - .gitignore
+
+constraints:
+  - No infrastructure-as-code in the app repo — provisioning is the system-under-test's job.
+  - No credentials in the repo; the Lambda uses its execution role.
+  - The handler entry point is handler.handler; the marker CLOUDBENCH_EVENT_OK must be emitted verbatim.
