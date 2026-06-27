@@ -108,14 +108,14 @@ a cross-section that spans the whole range.
 | L4 | + load balancer | composite multi-tier | `aws-alb-three-tier` | ✅ published + pinned |
 | L5 | serverless events | event-driven | `aws-lambda-queue` | ✅ published + pinned |
 
-## Where coverage stands (AWS)
+## Where coverage stands
 
 Reading: ✅ filled · ⏳ next · 📋 planned · ▫ empty (drawn, not scheduled) · — not a natural fit.
 
 | Kind of work ↓ \ Block → | B0 | B1 | B2 | B3 | B4 | B5 |
 |---|----|----|----|----|----|----|
 | batch | ✅ | ✅ | ✅ | | | |
-| service | | | | ✅ | | |
+| service | | ✅ | | ✅✅ | | |
 | composite | | | | | ✅ | |
 | event | | | | | | ✅ |
 | scheduled | | ✅ | | | | |
@@ -125,13 +125,18 @@ Reading: ✅ filled · ⏳ next · 📋 planned · ▫ empty (drawn, not schedul
 | mlai | | | | ✅ | | |
 | streaming | | | | | | ✅ |
 
-**Count: 13 spots filled across all 10 kinds of work** — every demand-axis kind now has at least one
-real, published, pinned, validating case on AWS (batch ×4 at B0–B2; service, stateful, etl, mlai at B3;
-static at B2; scheduled at B1; composite at B4; event, streaming at B5). The first full pass of the
-demand axis is complete. Google / Microsoft / Alibaba are the same grid again, not started.
+**Count: 17 cases across all 10 kinds of work, on 3 clouds.** Every demand-axis kind has at least one
+real, published, pinned, validating case. The first full pass of the demand axis is complete, and we have
+started adding **depth** (more than one case per kind) and **breadth** (more than one cloud):
+- **Depth — service ×3**: `aws-rds-api` (B3, database-backed), `aws-ec2-webapi` (B1, stateless), and
+  `aws-elasticache-service` (B3, cache-backed — exercises the cache family).
+- **Breadth — 3 providers**: AWS (the 14 above), plus `gcp-static-site` (Google) and `azure-static-site`
+  (Azure). The provider axis now spans AWS / Google / Microsoft; Alibaba not started.
 
-**Service-catalog coverage:** 3 of 426 AWS services are the focus of a runnable repo so far — `ec2`
-(uc1–uc3), `s3` (aws-s3-batch), `rds` (aws-rds-api). See [`SERVICE_CATALOG.md`](SERVICE_CATALOG.md).
+**Service-catalog coverage:** 6 of 426 AWS services are the focus of a runnable repo so far — `ec2`
+(uc1–uc3, webapi), `s3` (aws-s3-batch, static-cdn), `rds` (aws-rds-api), `elasticache`
+(aws-elasticache-service), `kinesis` (aws-streaming-kinesis), `lambda`+`sqs` (aws-lambda-queue). See
+[`SERVICE_CATALOG.md`](SERVICE_CATALOG.md).
 
 ## How the engine uses this
 
