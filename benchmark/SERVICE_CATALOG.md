@@ -45,9 +45,13 @@ Alibaba through their own SDKs (designed, not built yet).
 
 ## Coverage today
 
-Of **426** AWS services, **3** are the focus of a runnable repo so far — `ec2` (the uc1–uc3 batch
-jobs), `s3` (aws-s3-batch, published), and `rds` (aws-rds-api, generated). The rest are `empty`: the
-map is fully drawn, and now gets filled service by service.
+Of **426** AWS services, the corpus now exercises a focused set across **14 published, pinned AWS
+cases** — `ec2` (the EC2/runtime cases: wordcount, java-image, java-video, webapi, scheduled-cron),
+`s3` (aws-s3-batch, aws-static-cdn), `rds` (aws-rds-api), `elasticache` (aws-elasticache-service),
+`kinesis` (aws-streaming-kinesis), `lambda` + `sqs` (aws-lambda-queue), plus the etl / stateful / mlai
+cases — and **object storage on GCP and Azure** in 2 non-AWS cases (**17 cases total**). The rest are
+`empty`: the map is fully drawn, and gets filled service by service. The live, generated case list is in
+[`../README.md`](../README.md) and [`grid/cells.yaml`](grid/cells.yaml).
 
 About 185 of the 426 are sorted into their category group from a seed mapping; the remainder are
 `uncategorised` and get tidied as the catalog is maintained — exactly the kind of gap the watcher

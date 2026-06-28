@@ -22,22 +22,52 @@ See [`benchmark/PUBLIC_VISION.md`](benchmark/PUBLIC_VISION.md) for the full goal
 
 Each case is its own **public application repo, pinned to an exact commit** — the app
 only, with **no infrastructure-as-code**. Figuring out the infrastructure is the job of
-the system under test. Cases climb a difficulty ladder of cloud **building blocks**
-(B0 = bare compute → B5 = serverless + queue).
+the system under test.
 
-| Case | Block | What it adds | Workload | Status | App repo |
-|------|-------|--------------|----------|--------|----------|
-| `uc1` | B0 | bare compute | batch job | ✅ pinned | [cloudbench-aws-ec2-wordcount](https://github.com/oodunsi1/cloudbench-aws-ec2-wordcount) |
-| `uc2` | B1 | + language runtime | batch job | ✅ pinned | [cloudbench-aws-ec2-java-image](https://github.com/oodunsi1/cloudbench-aws-ec2-java-image) |
-| `uc3` | B1 | + language runtime | batch job | ✅ pinned | [cloudbench-aws-ec2-java-video](https://github.com/oodunsi1/cloudbench-aws-ec2-java-video) |
-| `aws-s3-batch` | B2 | + object storage (S3) | batch job | ✅ pinned | [cloudbench-aws-s3-batch](https://github.com/oodunsi1/cloudbench-aws-s3-batch) |
-| `aws-rds-api` | B3 | + managed database (RDS) | web service | ✅ pinned | [cloudbench-aws-rds-api](https://github.com/oodunsi1/cloudbench-aws-rds-api) |
-| `aws-alb-three-tier` | B4 | + load balancer | web service | 🛠 planned | — |
-| `aws-lambda-queue` | B5 | serverless + queue | event worker | 🛠 planned | — |
+**Two axes describe every case** (see [`benchmark/MAP.md`](benchmark/MAP.md) for the full version):
 
-Case contracts live in [`benchmark/cases/`](benchmark/cases/); the full grid of
-workload-kind × building-block × provider is in [`benchmark/grid/`](benchmark/grid/) and
-explained in [`benchmark/MAP.md`](benchmark/MAP.md).
+- **Workload — *what you run*.** The job the app does, one of ~10 kinds: `service` (always-on app/API),
+  `batch` (run-to-finish job), `scheduled` (on a timer), `event` (reacts to a trigger), `streaming`
+  (live data), `stateful` (a database/cache), `etl` (a data pipeline), `mlai` (an AI model), `static`
+  (a static site), `composite` (a mix).
+- **Building block — *what the cloud gives you to run it on*,** simple → complex: **B0** bare server ·
+  **B1** + a language runtime · **B2** + object storage · **B3** + a database/cache · **B4** + a load
+  balancer · **B5** serverless (functions + queues) · **B6** infra-only.
+
+Think of it as the dish (workload) and the kitchen equipment (building block): a `batch` job may need
+only B0, a `service` usually needs a database at B3. Each case is one workload × one block × one cloud.
+(Don't confuse the block rung with the **evaluation tiers** L1–L4 below — those are how *deeply* a run
+is graded, a different thing.)
+
+The full corpus (generated from [`benchmark/grid/cells.yaml`](benchmark/grid/cells.yaml), the source of
+truth — every case repo is public and pinned):
+
+<!-- cases:start -->
+| Case | Block | Workload | Cloud | Status | App repo |
+|------|-------|----------|-------|--------|----------|
+| `aws-ec2-wordcount` | B0 | batch | aws | ✅ covered | [cloudbench-aws-ec2-wordcount](https://github.com/oodunsi1/cloudbench-aws-ec2-wordcount) |
+| `aws-ec2-java-image` | B1 | batch | aws | ✅ covered | [cloudbench-aws-ec2-java-image](https://github.com/oodunsi1/cloudbench-aws-ec2-java-image) |
+| `aws-ec2-java-video` | B1 | batch | aws | ✅ covered | [cloudbench-aws-ec2-java-video](https://github.com/oodunsi1/cloudbench-aws-ec2-java-video) |
+| `aws-ec2-webapi` | B1 | service | aws | ✅ covered | [cloudbench-aws-ec2-webapi](https://github.com/oodunsi1/cloudbench-aws-ec2-webapi) |
+| `aws-scheduled-cron` | B1 | scheduled | aws | ✅ covered | [cloudbench-aws-scheduled-cron](https://github.com/oodunsi1/cloudbench-aws-scheduled-cron) |
+| `aws-s3-batch` | B2 | batch | aws | ✅ covered | [cloudbench-aws-s3-batch](https://github.com/oodunsi1/cloudbench-aws-s3-batch) |
+| `aws-static-cdn` | B2 | static | aws | ✅ covered | [cloudbench-aws-static-cdn](https://github.com/oodunsi1/cloudbench-aws-static-cdn) |
+| `aws-elasticache-service` | B3 | service | aws | ✅ covered | [cloudbench-aws-elasticache-service](https://github.com/oodunsi1/cloudbench-aws-elasticache-service) |
+| `aws-etl-pipeline` | B3 | etl | aws | ✅ covered | [cloudbench-aws-etl-pipeline](https://github.com/oodunsi1/cloudbench-aws-etl-pipeline) |
+| `aws-mlai-inference` | B3 | mlai | aws | ✅ covered | [cloudbench-aws-mlai-inference](https://github.com/oodunsi1/cloudbench-aws-mlai-inference) |
+| `aws-rds-api` | B3 | service | aws | ✅ covered | [cloudbench-aws-rds-api](https://github.com/oodunsi1/cloudbench-aws-rds-api) |
+| `aws-stateful-store` | B3 | stateful | aws | ✅ covered | [cloudbench-aws-stateful-store](https://github.com/oodunsi1/cloudbench-aws-stateful-store) |
+| `aws-alb-three-tier` | B4 | composite | aws | ✅ covered | [cloudbench-aws-alb-three-tier](https://github.com/oodunsi1/cloudbench-aws-alb-three-tier) |
+| `aws-lambda-queue` | B5 | event | aws | ✅ covered | [cloudbench-aws-lambda-queue](https://github.com/oodunsi1/cloudbench-aws-lambda-queue) |
+| `aws-streaming-kinesis` | B5 | streaming | aws | ✅ covered | [cloudbench-aws-streaming-kinesis](https://github.com/oodunsi1/cloudbench-aws-streaming-kinesis) |
+| `gcp-static-site` | B2 | static | gcp | ✅ covered | [cloudbench-gcp-static-site](https://github.com/oodunsi1/cloudbench-gcp-static-site) |
+| `azure-static-site` | B2 | static | azure | ✅ covered | [cloudbench-azure-static-site](https://github.com/oodunsi1/cloudbench-azure-static-site) |
+
+_17 covered of 17 cases across 3 clouds (aws, gcp, azure). Generated from `benchmark/grid/cells.yaml` by `scripts/sync_docs.py` — do not edit between the markers._
+<!-- cases:end -->
+
+Case contracts live in [`benchmark/cases/`](benchmark/cases/); the full grid is in
+[`benchmark/grid/`](benchmark/grid/) and explained in [`benchmark/MAP.md`](benchmark/MAP.md).
 
 ---
 
